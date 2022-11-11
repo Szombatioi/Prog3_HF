@@ -1,0 +1,9 @@
+Bomb
+	MultipleBomb (többet ér, pl 2-t)
+	ResetBomb
+	DefusedBomb
+	ClusterBomb
+	FlagResetBomb
+
+
+Images osztály -> loadimage mainbe (try, catch)

@@ -1,5 +1,7 @@
+package Frame;
 import javax.swing.*; //TODO csak a szükségeseket!
 import java.awt.*; //TODO csak a szükségeseket!
+import Game.MenuPanel;
 
 public class Window extends JFrame{
 	private JPanel Menu;
@@ -15,12 +17,10 @@ public class Window extends JFrame{
 		requestFocus();
 		setVisible(true);
 		
-		setLayout(new BorderLayout());
-		Menu = new JPanel();
-		Menu.add(new JLabel("MineSweeper 2.0"));
+//		setLayout(new BorderLayout());
 		
-		add(Menu);
-		
+		add(new MenuPanel(), BorderLayout.CENTER);
+//		add(new JLabel("MineSweeper 2.0"), BorderLayout.PAGE_START);
 		
 		
 		

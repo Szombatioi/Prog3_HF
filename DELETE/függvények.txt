@@ -1,0 +1,3 @@
+Difficulty ->
+	Difficulty diff = Difficulty.CUSTOM;
+	diff.setValues(34, 22, 33);
