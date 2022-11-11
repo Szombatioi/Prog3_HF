@@ -7,7 +7,7 @@ import javax.imageio.ImageIO;
 //import java.awt.Toolkit;
 
 public class Images {
-	private int db; //TODO delete
+	//private int db; //TODO delete
 	
 	public static Image one;
 	public static Image two;
@@ -24,14 +24,14 @@ public class Images {
 	public static Image tile;
 	public static Image hTile;
 	
-	public static Image images[];
+	//public static Image images[];
 	
 	public static Image icon;
 	public static Image error;
 	
-	public static Image test; //TODO delete
+	//public static Image test; //TODO delete
 	
-	public void loadImages() throws Exception {
+	public static void loadImages() throws Exception {
 		
 		try {
 			icon = ImageIO.read(new File("images/icon.png"));
