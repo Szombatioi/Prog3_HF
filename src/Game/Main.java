@@ -1,5 +1,5 @@
 package Game;
-import java.awt.Toolkit;
+//import java.awt.Toolkit;
 
 import Frame.Window;
 import Frame.ErrorWindow;
@@ -15,9 +15,11 @@ public class Main {
 			working = false;
 			ErrorWindow err = new ErrorWindow("Error", Images.error);
 		}
-		Window window;
+		Window window = null;
 		//if(working) window = new Window("MineSweeper 2.0", 600, 400, Toolkit.getDefaultToolkit().getImage("images/icon.png"));
 		if(working) window = new Window("MineSweeper 2.0", 600, 400, Images.icon);
+		
+		
 		
 	}
 }

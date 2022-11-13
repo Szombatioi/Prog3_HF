@@ -6,11 +6,13 @@ import javax.swing.border.EmptyBorder;
 
 public class MenuPanel extends JPanel{
 	JButton newGameBtn, loadBtn, settingsBtn, ranksBtn, exitBtn;
+	
 	public MenuPanel() {
 		setLayout(new GridLayout(2,1));
-		
 		setBackground(Color.red);
+		
 		JLabel title = new JLabel("MineSweeper 2.0");
+		
 		
 		JPanel center = new JPanel();
 		center.setLayout(new GridLayout(5,1));
@@ -30,4 +32,7 @@ public class MenuPanel extends JPanel{
 		center.add(exitBtn);
 		add(center);
 	}
+	
+	
+	
 }

@@ -18,8 +18,7 @@ public class Window extends JFrame{
 		setVisible(true);
 		
 //		setLayout(new BorderLayout());
-		
-		add(new MenuPanel(), BorderLayout.CENTER);
+		add(new MenuPanel());
 //		add(new JLabel("MineSweeper 2.0"), BorderLayout.PAGE_START);
 		
 		
