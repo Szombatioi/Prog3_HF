@@ -1,4 +1,4 @@
-package Game;
+package BackEnd;
 
 import java.awt.*; //TODO csak a szükségeseket
 import javax.swing.*; //TODO csak a szükségeseket

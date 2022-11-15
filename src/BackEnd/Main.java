@@ -1,8 +1,8 @@
-package Game;
+package BackEnd;
 //import java.awt.Toolkit;
 
-import Frame.Window;
-import Frame.ErrorWindow;
+import FrontEnd.ErrorWindow;
+import FrontEnd.Window;
 
 public class Main {
 	public static void main(String[] args) {
@@ -18,6 +18,7 @@ public class Main {
 		Window window = null;
 		//if(working) window = new Window("MineSweeper 2.0", 600, 400, Toolkit.getDefaultToolkit().getImage("images/icon.png"));
 		if(working) window = new Window("MineSweeper 2.0", 600, 400, Images.icon);
+		
 		
 		
 		

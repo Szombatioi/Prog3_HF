@@ -1,9 +1,10 @@
-package Game;
+package BackEnd;
 
 import java.awt.Graphics;
 import java.awt.Image;
 
 public class Tile {
+	//TODO isBomb törlése
 	protected boolean isBomb; //TODO vagy ez az isBomb boolean vagy public boolean reveal()
 	protected boolean isFlagged;
 //	protected boolean isRevealed;
@@ -24,6 +25,7 @@ public class Tile {
 		isBomb = false;
 	}
 	
+	//TODO más megoldás?
 	public boolean isBomb() {
 		return isBomb;
 	}
@@ -36,13 +38,19 @@ public class Tile {
 		bombsAround = b;
 	}
 	
+	public void setCoords(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+	
 	public void reveal() {
 		//TODO switch icon
+		icon = Images.tile;
 	}
 	
 	//TODO utÃ¡nanÃ©zni, megcsinÃ¡lni
-	public void draw(Graphics g) {
-		g.drawRect(x, y, w, h); //TODO draw Image
+	public void paintComponent(Graphics g) {
+		g.drawImage(icon, x, y, w, h, null);
 	}
 	
 }
