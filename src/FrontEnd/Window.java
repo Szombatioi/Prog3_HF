@@ -3,11 +3,10 @@ import javax.swing.*; //TODO csak a szükségeseket!
 
 import BackEnd.Difficulty;
 import BackEnd.Game;
-import BackEnd.MenuPanel;
 
 import java.awt.*; //TODO csak a szükségeseket!
 
-//TODO sz�ll� tenni, while(running)
+//TODO sz�ll� tenni, while(running)
 public class Window extends JFrame{
 	private JPanel Menu;
 	

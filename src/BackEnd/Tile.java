@@ -4,7 +4,7 @@ import java.awt.Graphics;
 import java.awt.Image;
 
 public class Tile {
-	//TODO isBomb törlése
+	//TODO isBomb tï¿½rlï¿½se
 	protected boolean isBomb; //TODO vagy ez az isBomb boolean vagy public boolean reveal()
 	protected boolean isFlagged;
 //	protected boolean isRevealed;
@@ -25,7 +25,7 @@ public class Tile {
 		isBomb = false;
 	}
 	
-	//TODO más megoldás?
+	//TODO mï¿½s megoldï¿½s?
 	public boolean isBomb() {
 		return isBomb;
 	}

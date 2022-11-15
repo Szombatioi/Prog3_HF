@@ -1,8 +1,12 @@
 package BackEnd;
 
+import java.awt.Graphics;
+
+import javax.swing.JPanel;
+
 import FrontEnd.Timer;
 
-public class Game{
+public class Game extends JPanel{
 	private Timer timer;
 	private Board board;
 	private boolean running;
@@ -23,10 +27,10 @@ public class Game{
 		}
 	}
 	
-//	public void paintComponent(Graphics g, int w, int h) {
-//		super.paintComponent(g);
-//		board.paintComponent(g, w/2 - board.getRows()*20/2, 0);
-//		timer.paintComponent(g);
-//	}
+	public void paintComponent(Graphics g, int w, int h) {
+		super.paintComponent(g);
+		board.paintComponent(g, w/2, 0);
+		timer.paintComponent(g);
+	}
 	
 }

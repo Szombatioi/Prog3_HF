@@ -1,4 +1,5 @@
 package BackEnd;
+import java.awt.Graphics;
 import java.io.Serializable;
 
 public class Board implements Serializable{
@@ -66,16 +67,16 @@ public class Board implements Serializable{
 	}
 	
 	//TODO utánanézni, megoldani
-//	public void paintComponent(Graphics g, int startX, int startY) {
-//		for(int i = 0; i < tiles.length; i++) {
-//			for(int j = 0; j < tiles[i].length; j++) {
-//				//calc x,y újra
-//				//TODO befejezni
-//				int xOffset = 0 + i*20;
-//				int yOffset = 0 + j*20;
-//				tiles[i][j].setCoords(xOffset, yOffset);
-//				tiles[i][j].paintComponent(g);
-//			}
-//		}
-//	}
+	public void paintComponent(Graphics g, int startX, int startY) {
+		for(int i = 0; i < tiles.length; i++) {
+			for(int j = 0; j < tiles[i].length; j++) {
+				//calc x,y újra
+				//TODO befejezni
+				int xOffset = startX + i*20;
+				int yOffset = startY + j*20;
+				tiles[i][j].setCoords(xOffset, yOffset);
+				tiles[i][j].paintComponent(g);
+			}
+		}
+	}
 }
