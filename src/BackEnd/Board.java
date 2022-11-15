@@ -7,6 +7,7 @@ public class Board implements Serializable{
 	private int placableTiles;
 	private int hiddenTiles;
 	private int rows, cols;
+	private int startX, startY;
 	
 	public Board(Difficulty d) {
 		placableTiles = d.bombs();	//A java egyből átfordítja a .bombs-ot .bombs()-ra??
