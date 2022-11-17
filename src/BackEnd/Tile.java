@@ -5,33 +5,45 @@ import java.awt.Image;
 
 public class Tile {
 	//TODO isBomb t�rl�se
-	protected boolean isBomb; //TODO vagy ez az isBomb boolean vagy public boolean reveal()
+//	protected boolean isBomb; //TODO vagy ez az isBomb boolean vagy public boolean reveal()
 	protected boolean isFlagged;
-//	protected boolean isRevealed;
+	protected boolean isRevealed; //ahhoz hogy a flood fill megálljon
 	protected Board master;
 	
-	protected int x,y,w,h;
+	protected int x,y;
 	protected int bombsAround;
 	
+	protected static int w = 20;
 	protected Image icon;
 	
 	public Tile(int x, int y, Image img, Board b) {
 		this.x = x;
 		this.y = y;
-		w = 20;
-		h = 20;
 		icon = img;
 		master = b;
-		isBomb = false;
+//		isBomb = false;
 	}
 	
-	//TODO m�s megold�s?
-	public boolean isBomb() {
-		return isBomb;
+	public int addValue() {
+		return 0;
 	}
+	
+	public static int getW() {return w;}
+	public int getBombsAround() {return bombsAround;}
 	
 	public boolean isFlagged() {
 		return isFlagged;
+	}
+	
+	public void flag() {
+		if(isFlagged) {
+			master.rmFlag();
+			icon = Images.flag;
+		}
+		else {
+			master.addFlag();
+			icon = Images.hTile;
+		}
 	}
 	
 	public void setBombsAround(int b) {
@@ -50,7 +62,6 @@ public class Tile {
 	
 	//TODO utánanézni, megcsinálni
 	public void paintComponent(Graphics g) {
-		g.drawImage(icon, x, y, w, h, null);
+		g.drawImage(icon, x, y, w, w, null);
 	}
-	
 }

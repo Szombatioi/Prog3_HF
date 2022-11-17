@@ -1,40 +1,33 @@
 package FrontEnd;
-import javax.swing.*; //TODO csak a szükségeseket!
 
-import BackEnd.Difficulty;
-import BackEnd.Game;
+import java.awt.Dimension;
+import java.awt.Image;
+import javax.swing.JFrame;
 
-import java.awt.*; //TODO csak a szükségeseket!
-
-//TODO sz�ll� tenni, while(running)
 public class Window extends JFrame{
-	private JPanel Menu;
 	
-	
+	MenuPanel menu;
 	
 	public Window(String title, int w, int h) {
 		setTitle(title);
-		setSize(new Dimension(w,h));
 		setMinimumSize(new Dimension(w,h));
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		requestFocus();
-		setVisible(true);
+		setResizable(false);
 		
-//		setLayout(new BorderLayout());
-//		add(new MenuPanel());
-//		add(new JLabel("MineSweeper 2.0"), BorderLayout.PAGE_START);
+		//TODO menubar csinalasa
+		menu = new MenuPanel();
+//		add(menu);
+		add(new GamePanel());
+
 		
-		//TODO menu csinalasa
-		add(new GamePanel(Difficulty.EASY));
-//		add(new GameButtonPanel(), BorderLayout.NORTH);
-		repaint();
 		pack();
+		setVisible(true);
 	}
 	
 	public Window(String title, int w, int h, Image img) {
 		this(title, w, h);
-//		if(img!=null) setIconImage(img);
 		setIconImage(img);
 	}
 }
