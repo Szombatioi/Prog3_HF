@@ -7,20 +7,15 @@ import FrontEnd.Window;
 public class Main {
 	public static void main(String[] args) {
 		boolean working = true;
-		
-		//Images images = new Images();
 		try {
 			Images.loadImages();
 		}catch(Exception e) {
 			working = false;
-			ErrorWindow err = new ErrorWindow("Error", "Error! Couldn't load one or more images!", Images.error);
+			new ErrorWindow("Error! Couldn't load one or more images!", Images.error);
 		}
-		Window window = null;
-		//if(working) window = new Window("MineSweeper 2.0", 600, 400, Toolkit.getDefaultToolkit().getImage("images/icon.png"));
-		if(working) window = new Window("MineSweeper 2.0", 600, 500, Images.icon);
-		
-		
-		
-		
+		if(working) {
+			Controller controller = new Controller();
+			new Window("MineSweeper 2.0", controller, Images.icon);
+		}
 	}
 }

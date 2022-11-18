@@ -8,15 +8,20 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import BackEnd.Controller;
 import BackEnd.Images;
 
+@SuppressWarnings("serial")
 public class MenuPanel extends JPanel{
-	private static final long serialVersionUID = -7952030833962914692L;
 	
 	JButton newGameBtn, loadBtn, settingsBtn, ranksBtn, exitBtn;
 	JLabel title;
+	Controller controller;
 	
-	public MenuPanel() {
+	public MenuPanel(Controller c) {
+		controller = c;
+		
 		Font f = new Font("Arial", Font.PLAIN, 24);
 		newGameBtn = new JButton("New Game");
 		loadBtn = new JButton("Load Game");
@@ -54,5 +59,11 @@ public class MenuPanel extends JPanel{
 		add(titlePanel, BorderLayout.NORTH);
 		add(elements, BorderLayout.CENTER);
 		add(creditPanel, BorderLayout.SOUTH);
+		
+		setActionListeners();
+	}
+	
+	public void setActionListeners() {
+		settingsBtn.addActionListener(a -> controller.setPanel(new SettingsPanel(controller)));
 	}
 }

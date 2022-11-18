@@ -2,15 +2,14 @@ package FrontEnd;
 
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.event.MouseAdapter;
 
 import javax.swing.JPanel;
 
 import BackEnd.Board;
 import BackEnd.Difficulty;
 
+@SuppressWarnings("serial")
 public class Game extends JPanel /*implements Runnable*/{
-	private static final long serialVersionUID = -8454174110585655395L;
 	
 	private Timer timer;
 	private Board board;
@@ -31,7 +30,7 @@ public class Game extends JPanel /*implements Runnable*/{
 	}
 	
 	public Game(Difficulty d) {
-		this(d.rows, d.cols, d.bombs);
+		this(d.rows(), d.cols(), d.bombs());
 	}
 	
 	public void setRun(boolean b) {
