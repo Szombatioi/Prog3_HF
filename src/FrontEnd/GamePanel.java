@@ -1,6 +1,7 @@
 package FrontEnd;
 
 import java.awt.BorderLayout;
+import java.awt.Dimension;
 import java.awt.Graphics;
 
 import javax.swing.JButton;
@@ -8,8 +9,8 @@ import javax.swing.JPanel;
 
 import BackEnd.Controller;
 
+@SuppressWarnings("serial")
 public class GamePanel extends JPanel{
-	private static final long serialVersionUID = -8011518685804605139L;
 	
 	Game game;
 	Controller controller;
@@ -46,12 +47,14 @@ public class GamePanel extends JPanel{
 			controller.setPanel(new MenuPanel(controller));
 			controller.resetWindowSize();
 		});
+		exitBtn.addActionListener(a->System.exit(0));
+		newGameBtn.addActionListener(a->game.restart());
 	}
 	
 	@Override
 	public void paint(Graphics g) {
 		super.paint(g);
 		buttonsPanel.repaint();
-		game.paintComponent(g, buttonsPanel.getHeight());
+		game.paintComponent(g);
 	}
 }

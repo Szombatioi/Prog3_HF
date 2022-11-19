@@ -2,6 +2,8 @@ package FrontEnd;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import javax.swing.JPanel;
 
@@ -10,57 +12,35 @@ import BackEnd.Difficulty;
 
 @SuppressWarnings("serial")
 public class Game extends JPanel /*implements Runnable*/{
-	
 	private Timer timer;
 	private Board board;
 	private boolean running;
-//	private boolean finished;
-	
-	private int mouseX, mouseY;
-	
-	public Game(int r, int c, int b) {
-		board = new Board(r,c,b);
-		timer = new Timer();
-		running = false;
-//		finished = false;
-		setBackground(Color.red);
-		
-		addMouseListener(new MouseListener(mouseX, mouseY, board));
-		
-	}
 	
 	public Game(Difficulty d) {
-		this(d.rows(), d.cols(), d.bombs());
-	}
-	
-	public void setRun(boolean b) {
-		running = b;
+		board = new Board(d);
+		timer = new Timer();
+		running = false;
+		addMouseListener(new MyMouseListener(board, this));
 	}
 	
 	public void tick() {
-		if(running) {
-			timer.tick();
-			board.tick();
-			
-		}
-		else {
-			
-		}
-		
+		if(running) timer.tick();
+	}
+	public void restart() {running = false; board.restart();}
+	public boolean running() {return running;}
+	public void start(int startX, int startY) {
+		running = true;
+		board.generateBombs(startX, startY);
+		board.setBombsAroundNums();
 	}
 	
-	public void paintComponent(Graphics g, int yOffset) {
+	@Override
+	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		board.paintComponent(g, getWidth()/2, yOffset);
+		board.paintComponent(g, getWidth()/2);
 		timer.paintComponent(g);
+		repaint();
+		tick();
 	}
-
-//	@Override
-//	public void run() {
-//		while(!finished) {
-//			tick();
-//		}
-//		
-//	}
 	
 }

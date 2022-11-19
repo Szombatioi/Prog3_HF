@@ -10,14 +10,8 @@ import javax.imageio.ImageIO;
 public class Images {
 	public static Font timerFont;
 	public static Font MineSweeperFont;
-	public static Image one;
-	public static Image two;
-	public static Image three;
-	public static Image four;
-	public static Image five;
-	public static Image six;
-	public static Image seven;
-	public static Image eight;
+	public static Image numbers[];
+	public static Image bomb;
 	public static Image resetFlagBomb;
 	public static Image redBomb;
 	public static Image difusedBomb;
@@ -26,7 +20,6 @@ public class Images {
 	public static Image clusterBomb;
 	public static Image flag;
 	public static Image flag2;
-	public static Image tile;
 	public static Image hTile;
 	public static Image icon;
 	public static Image error;
@@ -37,14 +30,10 @@ public class Images {
 			MineSweeperFont = Font.createFont(Font.TRUETYPE_FONT, new File("resources/mine-sweeper.ttf")).deriveFont(30f);
 			icon = ImageIO.read(new File("resources/icon.png"));
 			error = ImageIO.read(new File("resources/error.png"));
-			one = ImageIO.read(new File("resources/1.png"));
-			two = ImageIO.read(new File("resources/2.png"));
-			three = ImageIO.read(new File("resources/3.png"));
-			four = ImageIO.read(new File("resources/4.png"));
-			five = ImageIO.read(new File("resources/5.png"));
-			six = ImageIO.read(new File("resources/6.png"));
-			seven = ImageIO.read(new File("resources/7.png"));
-			eight = ImageIO.read(new File("resources/8.png"));
+			numbers = new Image[9];
+			for(int i = 0; i < 9; i++) {
+				numbers[i] =  ImageIO.read(new File("resources/"+i+".png"));
+			}
 			resetFlagBomb = ImageIO.read(new File("resources/resetFlagBomb.png"));
 			redBomb = ImageIO.read(new File("resources/bombRed.png"));
 			bigBomb = ImageIO.read(new File("resources/bigBomb.png"));
@@ -53,8 +42,8 @@ public class Images {
 			clusterBomb = ImageIO.read(new File("resources/clusterBomb.png"));
 			flag = ImageIO.read(new File("resources/flag.png"));
 			flag2 = ImageIO.read(new File("resources/flag2.png"));
-			tile = ImageIO.read(new File("resources/tile.png"));
 			hTile = ImageIO.read(new File("resources/hTile.png"));
+			bomb = ImageIO.read(new File("resources/bomb.png"));
 		} catch(Exception e) {
 			throw e;
 		}

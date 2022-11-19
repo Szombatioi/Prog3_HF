@@ -1,46 +1,85 @@
 package BackEnd;
 import java.awt.Graphics;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Random;
 
 public class Board implements Serializable{
 	private static final long serialVersionUID = -6327125171557330052L;
 	
 	private Tile[][] tiles;
-	private int placableTiles;
-	private int hiddenTiles;
+	private int placableTiles, hiddenTiles, flagsLeft, bombsNr, bombsLeft;
 	private int rows, cols;
-	private int flagsLeft;
-	private int bombs;
-	private int bombsLeft;
+	ArrayList<Bomb> bombs;
+	Difficulty diff;
+//	ArrayList<Tile> flaggedTiles;
 	
-	public Board(int r, int c, int b) {
-		restart(r,c,b);
+	public Board(Difficulty d) {
+		diff = d;
+		restart();
 	}
 	
 	public int getRows() {return rows;}
 	public int getCols() {return cols;}
-	public int getBombs() {return bombs;}
+	public int getBombs() {return bombsNr;}
 	
-	public void restart(int r, int c, int b) {
+	public void restart() {
+		int b = diff.bombs(), c = diff.cols(), r = diff.rows();
+		bombs = new ArrayList<Bomb>();
 		placableTiles = b;
 		hiddenTiles = c*r;
-		flagsLeft = bombsLeft = bombs = b;
-		
+		flagsLeft = bombsLeft = bombsNr = b;
 		rows = r;
 		cols = c;
 		
 		tiles = new Tile[cols][rows];
 		for(int i = 0; i < tiles.length; i++) {
 			for(int j = 0; j < tiles[i].length; j++) {
-				tiles[i][j] = new Tile(0,0,Images.hTile,this);
-				tiles[i][j].setBombsAround(getBombsAround(i,j));
+				tiles[i][j] = new Tile(this);
 			}
 		}
 	}
 	
-	public void generateBombs() {
-		//bombák arányát kitalálni
-		//ezen belül az egyes bombatípusok közti százalékos arány kiszámolása
+	public void generateBombs(int startX, int startY) {
+		Random random = new Random();
+		int c,r;
+		for(int i = 0; i < bombsNr; i++) {
+			c = random.nextInt(0, cols);
+			r= random.nextInt(0, rows);
+			if(c!=startX && r!=startY && !bombs.contains(tiles[c][r])) {
+				//TODO ezen szépíteni kéne...
+				Bomb result;
+				double chance = random.nextDouble(0,1);
+				if(chance<=0.05) 
+					result = new DifusedBomb(this);
+				else if(0.05<chance && chance <= 0.15) 
+					result = new ClusterBomb(this);
+				else if(0.15<chance && chance <= 0.25)
+					result = new ResetFlagBomb(this);
+				else if(0.25<chance && chance <= 0.45)
+					result = new BigBomb(this);
+				else if(0.45<chance && chance <= 0.65)
+					result = new ResetBomb(this);
+				else 
+					result = new Bomb(this);
+				bombs.add(result);
+				tiles[c][r] = result;
+			}
+			else i--;
+		}
+		
+	}
+	
+	public void setBombsAroundNums() {
+		for(int i = 0; i < cols; i++) {
+			for(int j = 0; j < rows; j++) {
+				tiles[i][j].setBombsAround(getBombsAround(i, j));
+			}
+		}
+	}
+	
+	public int getBombsAround(int row, int col) {
+		return 2;
 	}
 	
 	public void revealEveryTile() {
@@ -51,52 +90,22 @@ public class Board implements Serializable{
 		}
 	}
 	
-	public int getBombsAround(int row, int col) {
-		int sum = 0;
-		
-		for(int i = row-1; i < row+1; i++) {
-			for(int j = col-1; j < col+1; j++) {
-				if(i>0 && i < cols && j > 0 && j < rows) sum+=tiles[i][j].addValue();
-			}
-		}
-		
-		return sum;
-	}
-	
-	//TODO magába ebbe a függvénybe kell rekurziós floodFill alg.
 	public void revealTile(int row, int col) {
-		if(row<0 || row > rows || col < 0 || col > cols) return;
-		if(tiles[col][row].getBombsAround() > 1 || tiles[col][row].addValue()!=0) return;
-		
-		if(!tiles[col][row].isFlagged()) tiles[row][col].reveal(); //mivel ha meg van jelölve, biztosítva van a felfedés elől
-		revealTile(row-1, col);
-		revealTile(row, col+1);
-		revealTile(row+1, col);
-		revealTile(row, col-1);
-		
+//		if(row >= 0 && row < rows && col >= 0 && col < cols) tiles[col][row].reveal();
+		if(row >= 0 && row < rows && col >= 0 && col < cols) revealEveryTile();
 	}
 	
-	public void addFlag() {
-		flagsLeft++;
-	}
-	
-	public void rmFlag() {
-		flagsLeft--;
-	}
-	
-	public void tick() {
-		
-	}
-	
+	public void addFlag() {flagsLeft++;}
+	public void rmFlag() {flagsLeft--;}
 	public void addMoreBombs(int db) {
 		
 	}
 	
-	public void paintComponent(Graphics g, int startX, int startY) {
+	public void paintComponent(Graphics g, int startX) {
 		for(int i = 0; i < tiles.length; i++) {
 			for(int j = 0; j < tiles[i].length; j++) {
-				int xOffset = startX - cols*Tile.getW()/2 + i*20;
-				int yOffset = startY + j*20;
+				int xOffset = /*startX - cols*Tile.getW()/2 + */i*Tile.getW();
+				int yOffset = /*startY + */j*Tile.getW();
 				tiles[i][j].setCoords(xOffset, yOffset);
 				tiles[i][j].paintComponent(g);
 			}

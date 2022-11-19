@@ -1,22 +1,32 @@
 package BackEnd;
 
-import java.awt.Image;
-
 
 public class Bomb extends Tile {
-	
-	public Bomb(int x, int y, Image img, Board b) {
-		super(x, y, img, b);
+	private boolean first;
+	public Bomb(/*int x, int y, Image img, */Board b) {
+		super(/*x, y, img,*/ b);
+		first = false;
 	}
 	
 	@Override
 	public void reveal() {
-		icon = Images.redBomb;
-		execute();
+		isRevealed = true;
+		icon = first ? Images.redBomb : Images.bomb;
+//		execute();
+	}
+	
+	@Override
+	public void setBombsAround(int b) {
+		bombsAround = -1;
 	}
 	
 	private void execute() {
 		master.revealEveryTile();
+	}
+	
+	@Override
+	public int addValue() {
+		return 1;
 	}
 
 }
