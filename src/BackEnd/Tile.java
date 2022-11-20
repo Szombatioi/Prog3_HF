@@ -44,8 +44,9 @@ public class Tile {
 		this.y = y;
 	}
 	
+	
+	public void setRevealed(boolean b) {isRevealed = b;}
 	public void reveal() {
-		isRevealed = true;
 		icon = Images.numbers[bombsAround];
 	}
 	

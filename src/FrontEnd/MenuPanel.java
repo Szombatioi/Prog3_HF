@@ -65,5 +65,6 @@ public class MenuPanel extends JPanel{
 	
 	public void setActionListeners() {
 		settingsBtn.addActionListener(a -> controller.setPanel(new SettingsPanel(controller)));
+		newGameBtn.addActionListener(a -> controller.setPanel(new GamePanel(controller)));
 	}
 }

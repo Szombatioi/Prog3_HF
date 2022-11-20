@@ -20,8 +20,9 @@ public class MyMouseListener extends MouseAdapter{
         int c = e.getX()/Tile.getW();
         
 //        System.out.println(r+"-"+c);
-        if(!game.started()) game.start(r,c);
+        if(!game.started()) game.start(c,r);
         if(game.running()) board.revealTile(r,c);
+        
         game.repaint();
     }
 }

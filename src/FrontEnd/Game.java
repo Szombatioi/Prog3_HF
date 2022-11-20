@@ -1,12 +1,7 @@
 package FrontEnd;
 
-import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-
 import javax.swing.JPanel;
-
 import BackEnd.Board;
 import BackEnd.Difficulty;
 
@@ -28,10 +23,15 @@ public class Game extends JPanel /*implements Runnable*/{
 	public void tick() {
 		if(running) timer.tick();
 	}
-	public void restart() {running = false; board.restart();}
 	public boolean running() {return running;}
 	public void setRunning(boolean b) {running = b;}
 	public boolean started() {return started;}
+	
+	public void restart() {
+		running = false;
+		started = false;
+		board.restart();
+	}
 	
 	public void start(int startX, int startY) {
 		running = true;

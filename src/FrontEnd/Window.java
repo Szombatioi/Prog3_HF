@@ -10,7 +10,6 @@ import BackEnd.Controller;
 @SuppressWarnings("serial")
 public class Window extends JFrame{
 	Controller controller;
-	MenuPanel menuPanel;
 	int defWidth, defHeight;
 	
 	public Window(String title, Controller controller) {
@@ -27,10 +26,7 @@ public class Window extends JFrame{
 		setResizable(false);
 		
 		//TODO menubar csinalasa
-		menuPanel = new MenuPanel(controller);
-//		add(menu);
-//		add(new GamePanel());
-		add(new SettingsPanel(controller));
+		add(new MenuPanel(controller));
 
 		pack();
 		setVisible(true);

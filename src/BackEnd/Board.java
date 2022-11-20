@@ -67,7 +67,6 @@ public class Board implements Serializable{
 			}
 			else i--;
 		}
-		
 	}
 	
 	public void setBombsAroundNums() {
@@ -98,20 +97,24 @@ public class Board implements Serializable{
 	
 	public void findZerosAround(int row, int col) {
 		if(row<0 || row>=rows || col<0 || col>=cols) return;
-		if(tiles[col][row].getValue()!=0 || (tiles[col][row].getBombsAround()!=1 && tiles[col][row].getBombsAround()!=0)) return;
+		if(tiles[col][row].getValue()!=0) return;
 		if(tiles[col][row].isFlagged || tiles[col][row].isRevealed) return;
 		
 		tiles[col][row].reveal();
+		tiles[col][row].setRevealed(true);
 		
-		findZerosAround(row-1, col);
-		findZerosAround(row, col+1);
-		findZerosAround(row+1, col);
-		findZerosAround(row, col-1);
+		if(tiles[col][row].getBombsAround()<2) {
+			findZerosAround(row-1, col);
+			findZerosAround(row, col+1);
+			findZerosAround(row+1, col);
+			findZerosAround(row, col-1);
+		}
+		
 	}
 	
 	public void revealTile(int row, int col) {
-		if(row >= 0 && row < rows && col >= 0 && col < cols) tiles[col][row].reveal();
-		findZerosAround(row, col);
+		if(row >= 0 && row < rows && col >= 0 && col < cols && tiles[col][row].getBombsAround()!=0 && tiles[col][row].getBombsAround()!=1) tiles[col][row].reveal();
+		else findZerosAround(row, col);
 		
 //		
 //		
