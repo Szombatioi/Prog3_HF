@@ -10,16 +10,18 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import BackEnd.Images;
+
 @SuppressWarnings("serial")
-public class ErrorWindow extends JFrame{
+public class feedBackWindow extends JFrame{
 	
 	JButton btn;
 	
-	public ErrorWindow(String text, Image icon) {
-		setTitle("Error");
+	public feedBackWindow(String text, boolean success) {
+		setTitle(success ? "Success" : "Error");
 		requestFocus();
 		setLocationRelativeTo(null);
-		setIconImage(icon);
+		setIconImage(success ? Images.success : Images.error);
 		setMinimumSize(new Dimension(225, 100));
 		setResizable(false);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
@@ -41,6 +43,5 @@ public class ErrorWindow extends JFrame{
 		add(mainPanel);
 		pack();
 		setVisible(true);
-		
 	}
 }

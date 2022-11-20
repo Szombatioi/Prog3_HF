@@ -8,7 +8,8 @@ public class Board implements Serializable{
 	private static final long serialVersionUID = -6327125171557330052L;
 	
 	private Tile[][] tiles;
-	private int placableTiles, hiddenTiles, flagsLeft, bombsNr, bombsLeft;
+//	private int placableTiles, hiddenTiles, flagsLeft, bombsLeft;
+	private int bombsNr;
 	private int rows, cols;
 	ArrayList<Bomb> bombs;
 	Difficulty diff;
@@ -26,9 +27,10 @@ public class Board implements Serializable{
 	public void restart() {
 		int b = diff.bombs(), c = diff.cols(), r = diff.rows();
 		bombs = new ArrayList<Bomb>();
-		placableTiles = b;
-		hiddenTiles = c*r;
-		flagsLeft = bombsLeft = bombsNr = b;
+//		placableTiles = b;
+//		hiddenTiles = c*r;
+//		flagsLeft = bombsLeft = 
+		bombsNr = b;
 		rows = r;
 		cols = c;
 		
@@ -129,8 +131,8 @@ public class Board implements Serializable{
 //		if(row >= 0 && row < rows && col >= 0 && col < cols) revealEveryTile();
 	}
 	
-	public void addFlag() {flagsLeft++;}
-	public void rmFlag() {flagsLeft--;}
+//	public void addFlag() {flagsLeft++;}
+//	public void rmFlag() {flagsLeft--;}
 	public void addMoreBombs(int db) {
 		//if(hiddenTiles)
 	}

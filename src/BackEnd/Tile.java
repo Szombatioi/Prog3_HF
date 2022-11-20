@@ -24,16 +24,16 @@ public class Tile {
 	public int getBombsAround() {return bombsAround;}
 	public boolean isFlagged() {return isFlagged;}
 	
-	public void flag() {
-		if(isFlagged) {
-			master.rmFlag();
-			icon = Images.flag;
-		}
-		else {
-			master.addFlag();
-			icon = Images.hTile;
-		}
-	}
+//	public void flag() {
+//		if(isFlagged) {
+//			master.rmFlag();
+//			icon = Images.flag;
+//		}
+//		else {
+//			master.addFlag();
+//			icon = Images.hTile;
+//		}
+//	}
 	
 	public void setBombsAround(int b) {
 		bombsAround = b;

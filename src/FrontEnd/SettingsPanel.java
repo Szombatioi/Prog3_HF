@@ -14,7 +14,6 @@ import javax.swing.JTextField;
 import BackEnd.Controller;
 import BackEnd.Difficulty;
 import BackEnd.Images;
-import BackEnd.Tile;
 
 @SuppressWarnings("serial")
 public class SettingsPanel extends JPanel{
@@ -110,12 +109,12 @@ public class SettingsPanel extends JPanel{
 				cc = Integer.parseInt(colTextField.getText());
 				bb = Integer.parseInt(bombTextField.getText());
 			}catch (Exception e) {
-				new ErrorWindow("Values should be integers!", Images.error);
+				new feedBackWindow("Values should be integers!", false);
 				return false;
 			}
 			//game = new Game();
 			if(rr > 32 || cc > 32 || rr <= 0 || cc <= 0 || bb < (int)(cc*rr*10/100) || bb >= (int)(cc*rr*90/100)) {
-				new ErrorWindow("Wrong values given!", Images.error);
+				new feedBackWindow("Wrong values given!", false);
 				return false;
 			}
 		}

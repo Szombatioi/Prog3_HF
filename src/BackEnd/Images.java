@@ -23,6 +23,7 @@ public class Images {
 	public static Image hTile;
 	public static Image icon;
 	public static Image error;
+	public static Image success;
 	
 	public static void loadImages() throws Exception {
 		try {		
@@ -30,6 +31,7 @@ public class Images {
 			MineSweeperFont = Font.createFont(Font.TRUETYPE_FONT, new File("resources/mine-sweeper.ttf")).deriveFont(30f);
 			icon = ImageIO.read(new File("resources/icon.png"));
 			error = ImageIO.read(new File("resources/error.png"));
+			success = ImageIO.read(new File("resources/success.png"));
 			numbers = new Image[9];
 			for(int i = 0; i < 9; i++) {
 				numbers[i] =  ImageIO.read(new File("resources/"+i+".png"));
