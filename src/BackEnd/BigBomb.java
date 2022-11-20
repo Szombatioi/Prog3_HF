@@ -9,17 +9,17 @@ public class BigBomb extends Bomb {
 	}
 	
 	@Override
-	public void reveal() {
+	protected void changeIcon() {
 		icon = Images.bigBomb;
-//		execute();
 	}
 	
-	private void execute() {
+	@Override
+	protected void execute() {
 		master.revealEveryTile();
 	}
 	
 	@Override
-	public int addValue() {
-		return r.nextInt(2,5); //2 és 4 közötti értéket ad
+	public int getValue() {
+		return 2; //végül csak 2 lett az értéke, 2 VAGY 3 esetén túl nehéz lenne
 	}
 }

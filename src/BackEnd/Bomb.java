@@ -11,8 +11,12 @@ public class Bomb extends Tile {
 	@Override
 	public void reveal() {
 		isRevealed = true;
-		icon = first ? Images.redBomb : Images.bomb;
+		changeIcon();
 //		execute();
+	}
+	
+	protected void changeIcon() {
+		icon = first ? Images.redBomb : Images.bomb;
 	}
 	
 	@Override
@@ -20,13 +24,11 @@ public class Bomb extends Tile {
 		bombsAround = -1;
 	}
 	
-	private void execute() {
+	protected void execute() {
 		master.revealEveryTile();
 	}
 	
 	@Override
-	public int addValue() {
-		return 1;
-	}
+	public int getValue() {return 1;}
 
 }

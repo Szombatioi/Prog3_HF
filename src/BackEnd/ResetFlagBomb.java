@@ -5,12 +5,13 @@ public class ResetFlagBomb extends Bomb{
 		super(b);
 	}
 	
-	public void reveal() {
+	@Override
+	protected void changeIcon() {
 		icon = Images.resetFlagBomb;
-		execute();
 	}
 	
-	private void execute() {
-		
+	@Override
+	protected void execute() {
+		//...
 	}
 }

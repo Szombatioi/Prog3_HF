@@ -4,8 +4,6 @@ import java.awt.Graphics;
 import java.awt.Image;
 
 public class Tile {
-	//TODO isBomb törlése
-//	protected boolean isBomb; //TODO vagy ez az isBomb boolean vagy public boolean reveal()
 	protected boolean isFlagged;
 	protected boolean isRevealed; //ahhoz hogy a flood fill megálljon
 	protected Board master;
@@ -16,15 +14,12 @@ public class Tile {
 	protected static int w = 25;
 	protected Image icon;
 	
-	public Tile(/*int x, int y, Image img, */Board b) {
-//		this.x = x;
-//		this.y = y;
+	public Tile(Board b) {
 		icon = Images.hTile;
 		master = b;
-//		isBomb = false;
 	}
 	
-	public int addValue() {	return 0; }
+	public int getValue() {	return 0; }
 	public static int getW() {return w;}
 	public int getBombsAround() {return bombsAround;}
 	public boolean isFlagged() {return isFlagged;}
@@ -54,7 +49,6 @@ public class Tile {
 		icon = Images.numbers[bombsAround];
 	}
 	
-	//TODO utánanézni, megcsinálni
 	public void paintComponent(Graphics g) {
 		g.drawImage(icon, x, y, w, w, null);
 	}

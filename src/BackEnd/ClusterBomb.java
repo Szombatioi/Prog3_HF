@@ -1,23 +1,19 @@
 package BackEnd;
 
-import java.awt.Image;
-
 public class ClusterBomb extends Bomb {
 
-	public ClusterBomb(/*int x, int y, Image img, */Board b) {
-//		super(x, y, img, b);
+	public ClusterBomb(Board b) {
 		super(b);
 	}
 	
 	@Override
-	public void reveal() {
+	protected void changeIcon() {
 		icon = Images.clusterBomb;
-		execute();
 	}
 	
-
-	private void execute() {
-		master.addMoreBombs(1); //random szám legyen
+	@Override
+	protected void execute() {
+//		master.addMoreBombs(1); //random szám legyen
 	}
 	
 

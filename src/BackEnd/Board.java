@@ -73,13 +73,19 @@ public class Board implements Serializable{
 	public void setBombsAroundNums() {
 		for(int i = 0; i < cols; i++) {
 			for(int j = 0; j < rows; j++) {
-				tiles[i][j].setBombsAround(getBombsAround(i, j));
+				tiles[i][j].setBombsAround(getBombsAround(j, i));
 			}
 		}
 	}
 	
 	public int getBombsAround(int row, int col) {
-		return 2;
+		int sum = 0;
+		for(int i = col-1; i <= col+1; i++) {
+			for(int j = row-1; j <= row+1; j++) {
+				if(j>=0 && j<rows &&  i>=0 && i<cols && (i!=col || j!=row)) sum += tiles[i][j].getValue();
+			}
+		}
+		return sum;
 	}
 	
 	public void revealEveryTile() {
@@ -90,15 +96,40 @@ public class Board implements Serializable{
 		}
 	}
 	
+	public void findZerosAround(int row, int col) {
+		if(row<0 || row>=rows || col<0 || col>=cols) return;
+		if(tiles[col][row].getValue()!=0 || (tiles[col][row].getBombsAround()!=1 && tiles[col][row].getBombsAround()!=0)) return;
+		if(tiles[col][row].isFlagged || tiles[col][row].isRevealed) return;
+		
+		tiles[col][row].reveal();
+		
+		findZerosAround(row-1, col);
+		findZerosAround(row, col+1);
+		findZerosAround(row+1, col);
+		findZerosAround(row, col-1);
+	}
+	
 	public void revealTile(int row, int col) {
+		if(row >= 0 && row < rows && col >= 0 && col < cols) tiles[col][row].reveal();
+		findZerosAround(row, col);
+		
+//		
+//		
+//		tiles[col][row].reveal();
+//		
+//		revealTile(row-1, col);
+//		revealTile(row, col+1);
+//		revealTile(row+1, col);
+//		revealTile(row, col-1);
+		
 //		if(row >= 0 && row < rows && col >= 0 && col < cols) tiles[col][row].reveal();
-		if(row >= 0 && row < rows && col >= 0 && col < cols) revealEveryTile();
+//		if(row >= 0 && row < rows && col >= 0 && col < cols) revealEveryTile();
 	}
 	
 	public void addFlag() {flagsLeft++;}
 	public void rmFlag() {flagsLeft--;}
 	public void addMoreBombs(int db) {
-		
+		//if(hiddenTiles)
 	}
 	
 	public void paintComponent(Graphics g, int startX) {

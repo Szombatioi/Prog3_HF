@@ -1,7 +1,5 @@
 package BackEnd;
 
-import java.awt.Image;
-
 public class ResetBomb extends Bomb{
 
 	public ResetBomb(/*int x, int y, Image img, */Board b) {
@@ -10,13 +8,13 @@ public class ResetBomb extends Bomb{
 	}
 	
 	@Override
-	public void reveal() {
+	protected void changeIcon() {
 		icon = Images.resetBomb;
-			//thread.sleep()
-		execute();
 	}
 	
-	private void execute() {
+	@Override
+	protected void execute() {
+		//thread sleep
 //		master.restart(master.getRows(), master.getCols(), master.getBombs());
 	}
 

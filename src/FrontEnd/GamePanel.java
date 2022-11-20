@@ -49,6 +49,10 @@ public class GamePanel extends JPanel{
 		});
 		exitBtn.addActionListener(a->System.exit(0));
 		newGameBtn.addActionListener(a->game.restart());
+		pauseBtn.addActionListener(a->{
+			game.setRunning(!game.running());
+			pauseBtn.setText(game.running() ? "Pause" : "Continue");
+		});
 	}
 	
 	@Override
