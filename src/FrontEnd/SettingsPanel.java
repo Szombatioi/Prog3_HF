@@ -24,7 +24,7 @@ public class SettingsPanel extends JPanel{
 	JComboBox<Difficulty> cb;
 	JLabel rowText, colText, bombText, titleText;
 	JTextField rowTextField,colTextField,bombTextField;
-	JButton submitBtn, menuBtn, newGameBtn, exitBtn;
+	JButton menuBtn, newGameBtn, exitBtn;
 	
 	Difficulty chosen;
 	
@@ -53,7 +53,6 @@ public class SettingsPanel extends JPanel{
 		rowTextField = new JTextField(2);
 		colTextField = new JTextField(2);
 		bombTextField = new JTextField(2);
-		submitBtn = new JButton("Submit");
 		
 		rowTextField.setEnabled(false);
 		rowTextField.setText(String.valueOf(Difficulty.CUSTOM.rows()));
@@ -68,7 +67,6 @@ public class SettingsPanel extends JPanel{
 		setPanel.add(colTextField);
 		setPanel.add(bombText);
 		setPanel.add(bombTextField);
-		setPanel.add(submitBtn);
 		
 		//////////////////////////////////////////////////////////////
 		
@@ -101,17 +99,43 @@ public class SettingsPanel extends JPanel{
 		
 	}
 	
+	//submit gomb helyett
+	public boolean submit() {
+		int rr=0, cc=0, bb=0;
+		Difficulty ch = (Difficulty)cb.getSelectedItem();
+		
+		if(ch.equals(Difficulty.CUSTOM)) {
+			try {
+				rr = Integer.parseInt(rowTextField.getText());
+				cc = Integer.parseInt(colTextField.getText());
+				bb = Integer.parseInt(bombTextField.getText());
+			}catch (Exception e) {
+				new ErrorWindow("Values should be integers!", Images.error);
+				return false;
+			}
+			//game = new Game();
+			if(rr > 32 || cc > 32 || rr <= 0 || cc <= 0 || bb < (int)(cc*rr*10/100) || bb >= (int)(cc*rr*90/100)) {
+				new ErrorWindow("Wrong values given!", Images.error);
+				return false;
+			}
+		}
+		Difficulty.CUSTOM.set(rr, cc, bb);
+		chosen = ch;
+		controller.setDiff(chosen);
+		return true;
+	}
+	
 	public Difficulty getDiff() {return chosen;}
 	
 	public void setActionListeners() {
-		menuBtn.addActionListener(a -> controller.setPanel(new MenuPanel(controller)));
+		menuBtn.addActionListener(a -> {
+			if(submit()) controller.setPanel(new MenuPanel(controller));
+			controller.resetWindowSize();
+		});
+		
 		newGameBtn.addActionListener(a -> {
-			controller.setPanel(new GamePanel(controller));
-			if(chosen.rows() > 21 || chosen.cols() > 29) {
-				int newW = (chosen.cols()+1)*Tile.getW();
-				int newH = (chosen.rows()+4)*Tile.getW();
-				controller.setWindowSize(newW, newH);
-			}
+			if(submit()) controller.setPanel(new GamePanel(controller));
+			
 		});
 		exitBtn.addActionListener(a -> System.exit(0));
 		
@@ -123,32 +147,6 @@ public class SettingsPanel extends JPanel{
 			colTextField.setEnabled(val);
 			bombTextField.setEnabled(val);
 			
-		});
-		
-		submitBtn.addActionListener(al -> {
-			int rr=0, cc=0, bb=0;
-			
-			Difficulty ch = (Difficulty)cb.getSelectedItem();
-			
-			if(ch.equals(Difficulty.CUSTOM)) {
-				try {
-					rr = Integer.parseInt(rowTextField.getText());
-					cc = Integer.parseInt(colTextField.getText());
-					bb = Integer.parseInt(bombTextField.getText());
-				}catch (Exception e) {
-					new ErrorWindow("Values should be integers!", Images.error);
-					return;
-				}
-				//game = new Game();
-				if(rr > 32 || cc > 32 || rr <= 0 || cc <= 0 || bb < (int)(cc*rr*10/100) || bb >= (int)(cc*rr*90/100)) {
-					new ErrorWindow("Wrong values given!", Images.error);
-					return;
-				}
-			}
-			Difficulty.CUSTOM.set(rr, cc, bb);
-			chosen = ch;
-			controller.setDiff(chosen);
-			System.out.println(chosen+"-"+chosen.rows()+"-"+chosen.cols()+"-"+chosen.bombs());
 		});
 	}
 }
