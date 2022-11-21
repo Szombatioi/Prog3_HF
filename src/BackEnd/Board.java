@@ -19,7 +19,7 @@ public class Board implements Serializable{
 		diff = d;
 		restart();
 	}
-	
+	//éáéá
 	public int getRows() {return rows;}
 	public int getCols() {return cols;}
 	public int getBombs() {return bombsNr;}
@@ -46,12 +46,16 @@ public class Board implements Serializable{
 		Random random = new Random();
 		int c,r;
 		for(int i = 0; i < bombsNr; i++) {
-			c = random.nextInt(0, cols);
-			r= random.nextInt(0, rows);
+//			c = random.nextInt(0, cols);
+//			r= random.nextInt(0, rows);
+			c = random.nextInt(cols);
+			r= random.nextInt(rows);
+			
 			if(c!=startX && r!=startY && !bombs.contains(tiles[c][r])) {
 				//TODO ezen szépíteni kéne...
 				Bomb result;
-				double chance = random.nextDouble(0,1);
+//				double chance = random.nextDouble(0,1);
+				double chance = random.nextDouble();
 				if(chance<=0.05) 
 					result = new DifusedBomb(this);
 				else if(0.05<chance && chance <= 0.15) 

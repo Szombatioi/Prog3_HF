@@ -17,7 +17,6 @@ public class Main {
 			Controller controller = new Controller();
 			new Window("MineSweeper 2.0", controller, Images.icon);
 		}
-		new feedBackWindow("Hello there", true);
 		
 	}
 }
