@@ -12,7 +12,7 @@ public class Board implements Serializable{
 	private Tile[][] tiles;
 	private int placableTiles, hiddenTiles, flagsLeft, bombsLeft, bombsNr;
 	private int rows, cols;
-	ArrayList<Bomb> bombs;
+	ArrayList<Tile> emptyTiles;
 	Difficulty diff;
 //	ArrayList<Tile> flaggedTiles;
 	
@@ -31,7 +31,8 @@ public class Board implements Serializable{
 	
 	public void restart() {
 		int b = diff.bombs(), c = diff.cols(), r = diff.rows();
-		bombs = new ArrayList<Bomb>();
+		emptyTiles = new ArrayList<Tile>();
+		
 		placableTiles = b;
 		hiddenTiles = c*r;
 		flagsLeft = bombsLeft = bombsNr = b;
@@ -42,6 +43,7 @@ public class Board implements Serializable{
 		for(int i = 0; i < tiles.length; i++) {
 			for(int j = 0; j < tiles[i].length; j++) {
 				tiles[i][j] = new Tile(this);
+				emptyTiles.add(tiles[i][j]);
 			}
 		}
 	}
@@ -55,7 +57,7 @@ public class Board implements Serializable{
 			c = random.nextInt(cols);
 			r= random.nextInt(rows);
 			
-			if(c!=startX && r!=startY && !bombs.contains(tiles[c][r])) {
+			if(c!=startX && r!=startY && emptyTiles.contains(tiles[c][r])) {
 				//TODO ezen szépíteni kéne...
 				Bomb result;
 //				double chance = random.nextDouble(0,1);
@@ -72,7 +74,7 @@ public class Board implements Serializable{
 					result = new ResetBomb(this);
 				else 
 					result = new Bomb(this);
-				bombs.add(result);
+				emptyTiles.remove(tiles[c][r]);
 				tiles[c][r] = result;
 			}
 			else i--;
