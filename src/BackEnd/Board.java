@@ -4,9 +4,11 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Random;
 
+import FrontEnd.Game;
+
 public class Board implements Serializable{
 	private static final long serialVersionUID = -6327125171557330052L;
-	
+	Game game;
 	private Tile[][] tiles;
 	private int placableTiles, hiddenTiles, flagsLeft, bombsLeft, bombsNr;
 	private int rows, cols;
@@ -14,13 +16,18 @@ public class Board implements Serializable{
 	Difficulty diff;
 //	ArrayList<Tile> flaggedTiles;
 	
-	public Board(Difficulty d) {
+	public Board(Difficulty d, Game g) {
 		diff = d;
 		restart();
+		game = g;
 	}
 	public int getRows() {return rows;}
 	public int getCols() {return cols;}
 	public int getBombs() {return bombsNr;}
+	
+	public void end() {
+		game.setFinished(false);
+	}
 	
 	public void restart() {
 		int b = diff.bombs(), c = diff.cols(), r = diff.rows();

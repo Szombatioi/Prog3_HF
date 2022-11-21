@@ -28,6 +28,7 @@ public class Bomb extends Tile {
 	
 	protected void execute() {
 		master.revealEveryTile();
+		master.end();
 	}
 	
 	@Override

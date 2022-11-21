@@ -16,10 +16,27 @@ public class GamePanel extends JPanel{
 	JButton newGameBtn, pauseBtn, saveBtn, menuBtn, exitBtn;
 	JPanel buttonsPanel;
 	
+	public GamePanel(Controller controller, Game g) {
+		game = g;
+		init(controller);
+	}
+	
+	
 	public GamePanel(Controller controller) {
+		game = new Game(controller.getDiff());
+		init(controller);
+	}
+	
+	public void init(Controller controller) {
 		this.controller = controller;
+		initComponents();
+		add(game, BorderLayout.CENTER);	
+		add(buttonsPanel, BorderLayout.NORTH);
+		setActionListeners();
+	}
+	
+	public void initComponents() {
 		setLayout(new BorderLayout());
-		
 		buttonsPanel = new JPanel();		
 		
 		pauseBtn = new JButton("Pause");
@@ -33,19 +50,13 @@ public class GamePanel extends JPanel{
 		buttonsPanel.add(saveBtn);
 		buttonsPanel.add(menuBtn);
 		buttonsPanel.add(exitBtn);
-		
-		
-		game = new Game(controller.getDiff());
-		add(game, BorderLayout.CENTER);	
-		add(buttonsPanel, BorderLayout.NORTH);
-		
-		setActionListeners();
 	}
 	
 	public void setActionListeners() {
 		menuBtn.addActionListener(a -> {
 			controller.setPanel(new MenuPanel(controller));
 			controller.resetWindowSize();
+			game.setRunning(false);
 		});
 		exitBtn.addActionListener(a->System.exit(0));
 		newGameBtn.addActionListener(a->{
@@ -58,6 +69,7 @@ public class GamePanel extends JPanel{
 				pauseBtn.setText(game.running() ? "Pause" : "Continue");
 			}
 		});
+		saveBtn.addActionListener(a-> controller.save(game));
 	}
 	
 	@Override

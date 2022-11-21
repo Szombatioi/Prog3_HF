@@ -14,7 +14,7 @@ public class Tile implements Serializable{
 	protected int bombsAround;
 	
 	protected static int w = 25;
-	protected Image icon;
+	transient protected Image icon;
 	
 	public Tile(Board b) {
 		icon = Images.hTile;

@@ -64,7 +64,15 @@ public class MenuPanel extends JPanel{
 	}
 	
 	public void setActionListeners() {
-		settingsBtn.addActionListener(a -> controller.setPanel(new SettingsPanel(controller)));
+		settingsBtn.addActionListener(a -> {
+			controller.setPanel(new SettingsPanel(controller));
+			controller.resetWindowSize();
+			
+		});
 		newGameBtn.addActionListener(a -> controller.setPanel(new GamePanel(controller)));
+		loadBtn.addActionListener(a->{
+			Game g = controller.load();
+			controller.setPanel(new GamePanel(controller, g));
+		});
 	}
 }

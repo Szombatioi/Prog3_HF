@@ -4,10 +4,11 @@ package BackEnd;
 import java.awt.Font;
 import java.awt.Image;
 import java.io.File;
+import java.io.Serializable;
 
 import javax.imageio.ImageIO;
 
-public class Images {
+public class Images{
 	public static Font timerFont;
 	public static Font MineSweeperFont;
 	public static Image numbers[];

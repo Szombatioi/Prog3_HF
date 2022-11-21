@@ -9,11 +9,15 @@ import BackEnd.Board;
 import BackEnd.Tile;
 
 public class MyMouseListener extends MouseAdapter{
-	private Board board;
+	private static Board board;
 	private Game game;
 	public MyMouseListener(Board b, Game g) {
 		board = b;
 		game = g;
+	}
+	
+	public static void setBoard(Board b) {
+		board = b;
 	}
 
     @Override
@@ -29,8 +33,6 @@ public class MyMouseListener extends MouseAdapter{
         else if(SwingUtilities.isRightMouseButton(e)) {
         	if(game.started() && game.running()) board.flagTile(c,r); 
         }
-        
-        
         game.repaint();
     }
 }
