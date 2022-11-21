@@ -8,8 +8,7 @@ public class Board implements Serializable{
 	private static final long serialVersionUID = -6327125171557330052L;
 	
 	private Tile[][] tiles;
-//	private int placableTiles, hiddenTiles, flagsLeft, bombsLeft;
-	private int bombsNr;
+	private int placableTiles, hiddenTiles, flagsLeft, bombsLeft, bombsNr;
 	private int rows, cols;
 	ArrayList<Bomb> bombs;
 	Difficulty diff;
@@ -19,7 +18,6 @@ public class Board implements Serializable{
 		diff = d;
 		restart();
 	}
-	//éáéá
 	public int getRows() {return rows;}
 	public int getCols() {return cols;}
 	public int getBombs() {return bombsNr;}
@@ -27,10 +25,9 @@ public class Board implements Serializable{
 	public void restart() {
 		int b = diff.bombs(), c = diff.cols(), r = diff.rows();
 		bombs = new ArrayList<Bomb>();
-//		placableTiles = b;
-//		hiddenTiles = c*r;
-//		flagsLeft = bombsLeft = 
-		bombsNr = b;
+		placableTiles = b;
+		hiddenTiles = c*r;
+		flagsLeft = bombsLeft = bombsNr = b;
 		rows = r;
 		cols = c;
 		
@@ -96,7 +93,9 @@ public class Board implements Serializable{
 	public void revealEveryTile() {
 		for(int i = 0; i < cols; i++) {
 			for(int j = 0; j < rows; j++) {
-				tiles[i][j].reveal();
+				if(!tiles[i][j].isRevealed) {
+					tiles[i][j].reveal();
+				}
 			}
 		}
 	}
@@ -107,8 +106,6 @@ public class Board implements Serializable{
 		if(tiles[col][row].isFlagged || tiles[col][row].isRevealed) return;
 		
 		tiles[col][row].reveal();
-		tiles[col][row].setRevealed(true);
-		
 		if(tiles[col][row].getBombsAround()<2) {
 			findZerosAround(row-1, col);
 			findZerosAround(row, col+1);
@@ -121,22 +118,16 @@ public class Board implements Serializable{
 	public void revealTile(int row, int col) {
 		if(row >= 0 && row < rows && col >= 0 && col < cols && tiles[col][row].getBombsAround()!=0 && tiles[col][row].getBombsAround()!=1) tiles[col][row].reveal();
 		else findZerosAround(row, col);
-		
-//		
-//		
-//		tiles[col][row].reveal();
-//		
-//		revealTile(row-1, col);
-//		revealTile(row, col+1);
-//		revealTile(row+1, col);
-//		revealTile(row, col-1);
-		
-//		if(row >= 0 && row < rows && col >= 0 && col < cols) tiles[col][row].reveal();
-//		if(row >= 0 && row < rows && col >= 0 && col < cols) revealEveryTile();
 	}
 	
-//	public void addFlag() {flagsLeft++;}
-//	public void rmFlag() {flagsLeft--;}
+	public void flagTile(int col, int row) {
+		tiles[col][row].flag();
+	}
+	public void modFlag(int f) {
+		flagsLeft+=f;
+		bombsLeft-=f;
+	}
+	
 	public void addMoreBombs(int db) {
 		//if(hiddenTiles)
 	}
@@ -145,7 +136,7 @@ public class Board implements Serializable{
 		for(int i = 0; i < tiles.length; i++) {
 			for(int j = 0; j < tiles[i].length; j++) {
 				int xOffset = /*startX - cols*Tile.getW()/2 + */i*Tile.getW();
-				int yOffset = /*startY + */j*Tile.getW();
+				int yOffset = j*Tile.getW();
 				tiles[i][j].setCoords(xOffset, yOffset);
 				tiles[i][j].paintComponent(g);
 			}

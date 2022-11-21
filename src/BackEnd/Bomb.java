@@ -10,9 +10,11 @@ public class Bomb extends Tile {
 	
 	@Override
 	public void reveal() {
-		isRevealed = true;
-		changeIcon();
-//		execute();
+		if(!isFlagged) {
+			changeIcon();
+			isRevealed = true;
+			execute();
+		}
 	}
 	
 	protected void changeIcon() {

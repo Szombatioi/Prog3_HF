@@ -2,8 +2,10 @@ package BackEnd;
 
 import java.awt.Graphics;
 import java.awt.Image;
+import java.io.Serializable;
 
-public class Tile {
+@SuppressWarnings("serial")
+public class Tile implements Serializable{
 	protected boolean isFlagged;
 	protected boolean isRevealed; //ahhoz hogy a flood fill megálljon
 	protected Board master;
@@ -24,16 +26,13 @@ public class Tile {
 	public int getBombsAround() {return bombsAround;}
 	public boolean isFlagged() {return isFlagged;}
 	
-//	public void flag() {
-//		if(isFlagged) {
-//			master.rmFlag();
-//			icon = Images.flag;
-//		}
-//		else {
-//			master.addFlag();
-//			icon = Images.hTile;
-//		}
-//	}
+	public void flag() {
+		if(!isRevealed) {
+			isFlagged = !isFlagged;
+			master.modFlag(isFlagged ? -1 : 1);
+			icon = isFlagged ? Images.flag : Images.hTile;
+		}
+	}
 	
 	public void setBombsAround(int b) {
 		bombsAround = b;
@@ -47,8 +46,12 @@ public class Tile {
 	
 	public void setRevealed(boolean b) {isRevealed = b;}
 	public void reveal() {
-		icon = Images.numbers[bombsAround];
+		if(!isFlagged) {
+			icon = Images.numbers[bombsAround];
+			isRevealed = true;
+		}
 	}
+	
 	
 	public void paintComponent(Graphics g) {
 		g.drawImage(icon, x, y, w, w, null);

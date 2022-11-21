@@ -20,7 +20,7 @@ public class GamePanel extends JPanel{
 		this.controller = controller;
 		setLayout(new BorderLayout());
 		
-		buttonsPanel = new JPanel();
+		buttonsPanel = new JPanel();		
 		
 		pauseBtn = new JButton("Pause");
 		newGameBtn = new JButton("New Game");
@@ -34,10 +34,11 @@ public class GamePanel extends JPanel{
 		buttonsPanel.add(menuBtn);
 		buttonsPanel.add(exitBtn);
 		
-		game = new Game(controller.getDiff()); //Controller.getGameDifficulty
 		
-		add(buttonsPanel, BorderLayout.NORTH);
+		game = new Game(controller.getDiff());
 		add(game, BorderLayout.CENTER);	
+		add(buttonsPanel, BorderLayout.NORTH);
+		
 		setActionListeners();
 	}
 	
@@ -47,10 +48,15 @@ public class GamePanel extends JPanel{
 			controller.resetWindowSize();
 		});
 		exitBtn.addActionListener(a->System.exit(0));
-		newGameBtn.addActionListener(a->game.restart());
+		newGameBtn.addActionListener(a->{
+			game.restart();
+			pauseBtn.setText("Pause");
+		});
 		pauseBtn.addActionListener(a->{
-			game.setRunning(!game.running());
-			pauseBtn.setText(game.running() ? "Pause" : "Continue");
+			if(game.started()) {
+				game.setRunning(!game.running());
+				pauseBtn.setText(game.running() ? "Pause" : "Continue");
+			}
 		});
 	}
 	
