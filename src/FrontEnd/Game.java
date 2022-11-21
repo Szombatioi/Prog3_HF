@@ -20,7 +20,7 @@ public class Game extends JPanel /*implements Runnable*/{
 	public Game(Difficulty d) {
 		board = new Board(d);
 		timer = new Timer();
-		running = false;
+		running = true;
 		started = false;
 		addMouseListener(new MyMouseListener(board, this));
 	}
@@ -33,7 +33,7 @@ public class Game extends JPanel /*implements Runnable*/{
 	public boolean started() {return started;}
 	
 	public void restart() {
-		running = false;
+		running = true;
 		started = false;
 		board.restart();
 		
@@ -62,7 +62,7 @@ public class Game extends JPanel /*implements Runnable*/{
 	@Override
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		board.paintComponent(g, getWidth()/2);
+		if(running) board.paintComponent(g, getWidth()/2);
 		timer.paintComponent(g, getWidth());
 		repaint();
 	}
