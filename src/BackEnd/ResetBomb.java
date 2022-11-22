@@ -10,12 +10,13 @@ public class ResetBomb extends Bomb{
 	
 	@Override
 	protected void changeIcon() {
-		icon = Images.resetBomb;
+		icon = Images.resetBomb; //TODO ez lehet nem kell
 	}
 	
 	@Override
 	protected void execute() {
 		//thread sleep
+		System.out.println("ResetBomb");
 		master.restart();
 		master.resetGame();
 	}

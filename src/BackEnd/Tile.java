@@ -21,6 +21,7 @@ public class Tile implements Serializable{
 		isFlagged = false;
 		icon = Images.hTile;
 		master = b;
+		loadIcon();
 	}
 	
 	public int getValue() {	return 0; }
@@ -40,6 +41,17 @@ public class Tile implements Serializable{
 		bombsAround = b;
 	}
 	
+	public void loadIcon() {
+		if(!isRevealed) {
+			icon = isFlagged ? Images.flag : Images.hTile;
+		}
+		else changeIcon();
+	}
+	
+	protected void changeIcon() {
+		icon = Images.numbers[bombsAround];
+	}
+	
 	public void setCoords(int x, int y) {
 		this.x = x;
 		this.y = y;
@@ -52,6 +64,11 @@ public class Tile implements Serializable{
 			icon = Images.numbers[bombsAround];
 			isRevealed = true;
 		}
+	}
+	
+	public void revealEnd() {
+		icon = isFlagged ? Images.flag2 : Images.numbers[bombsAround];
+		isRevealed = true;
 	}
 	
 	

@@ -11,13 +11,19 @@ public class Bomb extends Tile {
 	
 	@Override
 	public void reveal() {
+		revealEnd();
+		execute();
+	}
+	
+	@Override
+	public void revealEnd() {
 		if(!isFlagged) {
 			changeIcon();
 			isRevealed = true;
-			execute();
 		}
 	}
 	
+	@Override
 	protected void changeIcon() {
 		icon = first ? Images.redBomb : Images.bomb;
 	}
@@ -28,6 +34,7 @@ public class Bomb extends Tile {
 	}
 	
 	protected void execute() {
+		System.out.println("bomb");
 		master.revealEveryTile();
 		master.end();
 	}

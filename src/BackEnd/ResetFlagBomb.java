@@ -12,6 +12,6 @@ public class ResetFlagBomb extends Bomb{
 	
 	@Override
 	protected void execute() {
-		//...
+		System.out.println("resetFlagBomb");
 	}
 }

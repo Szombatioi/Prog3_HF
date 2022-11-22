@@ -2,6 +2,7 @@ package BackEnd;
 
 import java.util.Random;
 
+@SuppressWarnings("serial")
 public class BigBomb extends Bomb {
 	Random r = new Random();
 	public BigBomb(Board b) {
@@ -11,11 +12,6 @@ public class BigBomb extends Bomb {
 	@Override
 	protected void changeIcon() {
 		icon = Images.bigBomb;
-	}
-	
-	@Override
-	protected void execute() {
-		master.revealEveryTile();
 	}
 	
 	@Override

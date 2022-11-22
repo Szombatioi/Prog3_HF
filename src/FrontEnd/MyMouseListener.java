@@ -11,9 +11,15 @@ import BackEnd.Tile;
 public class MyMouseListener extends MouseAdapter{
 	private static Board board;
 	private Game game;
+	private int xOffset;
 	public MyMouseListener(Board b, Game g) {
 		board = b;
 		game = g;
+		System.out.println(game.getUIClassID());
+	}
+	
+	public void setOffset(int x) {
+		xOffset = x;
 	}
 	
 	public static void setBoard(Board b) {
@@ -23,8 +29,8 @@ public class MyMouseListener extends MouseAdapter{
     @Override
     public void mouseReleased(MouseEvent e) {
         int r = e.getY()/Tile.getW();
-        int c = e.getX()/Tile.getW();
         
+        int c = (e.getX()-xOffset)/Tile.getW();
 //        System.out.println(r+"-"+c);
         if(SwingUtilities.isLeftMouseButton(e)) {
         	if(!game.started()) game.start(c,r);

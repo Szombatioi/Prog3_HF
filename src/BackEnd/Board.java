@@ -6,18 +6,21 @@ import java.util.Random;
 
 import FrontEnd.Game;
 
+@SuppressWarnings("serial")
 public class Board implements Serializable{
-	private static final long serialVersionUID = -6327125171557330052L;
+	
 	Game game;
 	private Tile[][] tiles;
 	private int placableTiles, hiddenTiles, flagsLeft, bombsLeft, bombsNr;
 	private int rows, cols;
 	ArrayList<Tile> emptyTiles;
 	Difficulty diff;
+	int xOffset, yOffset;
 //	ArrayList<Tile> flaggedTiles;
 	
 	public Board(Difficulty d, Game g) {
 		diff = d;
+		xOffset = yOffset = 0;
 		restart();
 		game = g;
 	}
@@ -62,9 +65,9 @@ public class Board implements Serializable{
 			if(c!=startX && r!=startY && emptyTiles.contains(tiles[c][r])) {
 				//TODO ezen szépíteni kéne...
 				Bomb result;
-//				double chance = random.nextDouble(0,1);
-//				double chance = random.nextDouble();
-				double chance = 0.46;
+
+				double chance = random.nextDouble();
+
 				if(chance<=0.05) 
 					result = new DifusedBomb(this);
 				else if(0.05<chance && chance <= 0.15) 
@@ -106,7 +109,7 @@ public class Board implements Serializable{
 		for(int i = 0; i < cols; i++) {
 			for(int j = 0; j < rows; j++) {
 				if(!tiles[i][j].isRevealed) {
-					tiles[i][j].reveal();
+					tiles[i][j].revealEnd();
 				}
 			}
 		}
@@ -147,9 +150,11 @@ public class Board implements Serializable{
 	public void paintComponent(Graphics g, int startX) {
 		for(int i = 0; i < tiles.length; i++) {
 			for(int j = 0; j < tiles[i].length; j++) {
-				int xOffset = /*startX - cols*Tile.getW()/2 + */i*Tile.getW();
-				int yOffset = j*Tile.getW();
+//				xOffset = /*startX - cols*Tile.getW()/2 + */i*Tile.getW();
+				xOffset = startX - cols*Tile.getW()/2 + i*Tile.getW();
+				yOffset = j*Tile.getW();
 				tiles[i][j].setCoords(xOffset, yOffset);
+				Controller.passOffset(startX - cols*Tile.getW()/2);
 				tiles[i][j].paintComponent(g);
 			}
 		}

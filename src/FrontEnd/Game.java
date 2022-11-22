@@ -5,6 +5,7 @@ import java.io.Serializable;
 import javax.swing.JPanel;
 
 import BackEnd.Board;
+import BackEnd.Controller;
 import BackEnd.Difficulty;
 
 @SuppressWarnings("serial")
@@ -14,6 +15,7 @@ public class Game extends JPanel implements Serializable{
 	private boolean running;
 	private boolean started;
 	private boolean finished;
+	private transient MyMouseListener mml;
 	
 	public Game(Board b) {
 		board = b;
@@ -30,9 +32,11 @@ public class Game extends JPanel implements Serializable{
 		running = true;
 		started = false;
 		finished = false;
-		addMouseListener(new MyMouseListener(board, this));
+		mml = new MyMouseListener(board, this);
+		addMouseListener(mml);
+		Controller.setML(mml);
 	}
-	
+	public MyMouseListener getListener() {return mml;}
 	public boolean running() {return running;}
 	public boolean finished() {return finished;}
 	public boolean started() {return started;}

@@ -31,7 +31,7 @@ public class Timer extends Thread implements Serializable{
 	
 	public void run() {
 		while(!finished) {
-			if(running) { tick(); System.out.println(toString());}
+			if(running) tick();
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {

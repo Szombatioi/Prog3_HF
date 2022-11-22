@@ -1,5 +1,6 @@
 package BackEnd;
 
+@SuppressWarnings("serial")
 public class DifusedBomb extends Bomb {
 
 	public DifusedBomb(Board b) {
@@ -10,9 +11,16 @@ public class DifusedBomb extends Bomb {
 	protected void changeIcon() {
 		icon = Images.difusedBomb;
 	}
-	//TODO na ezt tüntessük el
+	
 	@Override
-	protected void execute() {
-		
+	public void reveal() {
+		icon = Images.difusedBomb;
+		isRevealed = true;
+		System.out.println("difused");
+	}
+	
+	@Override
+	public void revealEnd() {
+		reveal();
 	}
 }
