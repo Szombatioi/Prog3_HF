@@ -12,19 +12,26 @@ public class MyMouseListener extends MouseAdapter{
 	private static Board board;
 	private Game game;
 	private int xOffset;
-	public MyMouseListener(Board b, Game g) {
-		board = b;
+//	public MyMouseListener(Board b, Game g) {
+//		board = b;
+//		game = g;
+//		System.out.println(game.getUIClassID());
+//	}
+	public MyMouseListener() {
+		
+	}
+	
+	public void setGame(Game g) {
 		game = g;
-		System.out.println(game.getUIClassID());
+	}
+	public static void setBoard(Board b) {
+		board = b;
 	}
 	
 	public void setOffset(int x) {
 		xOffset = x;
 	}
 	
-	public static void setBoard(Board b) {
-		board = b;
-	}
 
     @Override
     public void mouseReleased(MouseEvent e) {
