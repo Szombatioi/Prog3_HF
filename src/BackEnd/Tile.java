@@ -17,6 +17,8 @@ public class Tile implements Serializable{
 	transient protected Image icon;
 	
 	public Tile(Board b) {
+		isRevealed = false;
+		isFlagged = false;
 		icon = Images.hTile;
 		master = b;
 	}

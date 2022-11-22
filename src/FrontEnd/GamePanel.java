@@ -64,7 +64,7 @@ public class GamePanel extends JPanel{
 			pauseBtn.setText("Pause");
 		});
 		pauseBtn.addActionListener(a->{
-			if(game.started()) {
+			if(game.started() && !game.finished()) {
 				game.setRunning(!game.running());
 				pauseBtn.setText(game.running() ? "Pause" : "Continue");
 			}

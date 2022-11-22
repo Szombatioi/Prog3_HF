@@ -1,5 +1,6 @@
 package BackEnd;
 
+@SuppressWarnings("serial")
 public class ResetBomb extends Bomb{
 
 	public ResetBomb(/*int x, int y, Image img, */Board b) {
@@ -15,7 +16,8 @@ public class ResetBomb extends Bomb{
 	@Override
 	protected void execute() {
 		//thread sleep
-//		master.restart(master.getRows(), master.getCols(), master.getBombs());
+		master.restart();
+		master.resetGame();
 	}
 
 }

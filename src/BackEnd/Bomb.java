@@ -1,10 +1,11 @@
 package BackEnd;
 
 
+@SuppressWarnings("serial")
 public class Bomb extends Tile {
 	private boolean first;
-	public Bomb(/*int x, int y, Image img, */Board b) {
-		super(/*x, y, img,*/ b);
+	public Bomb(Board b) {
+		super(b);
 		first = false;
 	}
 	

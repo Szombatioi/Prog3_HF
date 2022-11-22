@@ -36,10 +36,11 @@ public class Game extends JPanel implements Serializable{
 	public boolean running() {return running;}
 	public boolean finished() {return finished;}
 	public boolean started() {return started;}
+	public void setStarted(boolean b) {started = b;}
 	
 	public void setFinished(boolean b) {
 		finished = b;
-		timer.setRunning(b);
+		timer.setRunning(!b);
 	}
 	public void setRunning(boolean b) {
 		running = b;
@@ -66,7 +67,7 @@ public class Game extends JPanel implements Serializable{
 		started = true;
 		board.generateBombs(startX, startY);
 		board.setBombsAroundNums();
-		timer.start();
+		if(!timer.running()) timer.start();
 		timer.setRunning(true);
 	}
 	

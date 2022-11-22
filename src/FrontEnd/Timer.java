@@ -47,6 +47,7 @@ public class Timer extends Thread implements Serializable{
 	public void setRunning(boolean run) {
 		running = run;
 	}
+	public boolean running() {return running;}
 	
 	public void tick() {
 		if(time<5999) time++; //99:60-nál megáll az óra

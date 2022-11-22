@@ -31,7 +31,7 @@ public class MyMouseListener extends MouseAdapter{
             if(game.running()) board.revealTile(r,c);
         }
         else if(SwingUtilities.isRightMouseButton(e)) {
-        	if(game.started() && game.running()) board.flagTile(c,r); 
+        	if(game.started() && game.running() && !game.finished()) board.flagTile(c,r); 
         }
         game.repaint();
     }

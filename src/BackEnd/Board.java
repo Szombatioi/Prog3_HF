@@ -25,8 +25,10 @@ public class Board implements Serializable{
 	public int getCols() {return cols;}
 	public int getBombs() {return bombsNr;}
 	
+	public void resetGame() {game.setStarted(false);}
+	
 	public void end() {
-		game.setFinished(false);
+		game.setFinished(true);
 	}
 	
 	public void restart() {
@@ -61,7 +63,8 @@ public class Board implements Serializable{
 				//TODO ezen szépíteni kéne...
 				Bomb result;
 //				double chance = random.nextDouble(0,1);
-				double chance = random.nextDouble();
+//				double chance = random.nextDouble();
+				double chance = 0.46;
 				if(chance<=0.05) 
 					result = new DifusedBomb(this);
 				else if(0.05<chance && chance <= 0.15) 
