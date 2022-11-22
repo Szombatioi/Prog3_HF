@@ -5,16 +5,17 @@ import java.awt.Graphics;
 import java.io.Serializable;
 
 import BackEnd.Images;
+import BackEnd.Time;
 
 @SuppressWarnings("serial")
 public class Timer extends Thread implements Serializable{
-	private int time;
+	private Time time;
 	private boolean finished, running;
 	private int w,h;
 	private int delta;
 	
 	public Timer() {
-		time = 0;
+		time = new Time();
 		finished = false;
 		running = false;
 		w = 100;
@@ -23,9 +24,7 @@ public class Timer extends Thread implements Serializable{
 	}
 
 	public String toString() {
-		int min = time/60;
-		int sec = time%60;
-		return String.format("%02d", min)+":"+String.format("%02d", sec);
+		return String.format("%02d", time.getM())+":"+String.format("%02d", time.getS());
 	}
 	
 	
@@ -40,17 +39,12 @@ public class Timer extends Thread implements Serializable{
 		}
 	}
 	
-	public void setFinished(boolean b) {
-		finished = b;
-	}
-	
-	public void setRunning(boolean run) {
-		running = run;
-	}
+	public void setFinished(boolean b) {finished = b;}
+	public void setRunning(boolean run) {running = run;}
 	public boolean running() {return running;}
 	
 	public void tick() {
-		if(time<5999) time++; //99:60-nál megáll az óra
+		if(time.lt(5999)) time.increase(); //99:60-nál megáll az óra
 	}
 	
 	public void paintComponent(Graphics g, int width) {

@@ -4,7 +4,6 @@ package BackEnd;
 import java.awt.Font;
 import java.awt.Image;
 import java.io.File;
-import java.io.Serializable;
 
 import javax.imageio.ImageIO;
 
@@ -12,6 +11,7 @@ public class Images{
 	public static Font timerFont;
 	public static Font MineSweeperFont;
 	public static Image numbers[];
+	public static Image unknown;
 	public static Image bomb;
 	public static Image resetFlagBomb;
 	public static Image redBomb;
@@ -37,6 +37,7 @@ public class Images{
 			for(int i = 0; i < 9; i++) {
 				numbers[i] =  ImageIO.read(new File("resources/"+i+".png"));
 			}
+			unknown = ImageIO.read(new File("resources/unknown.png"));
 			resetFlagBomb = ImageIO.read(new File("resources/resetFlagBomb.png"));
 			redBomb = ImageIO.read(new File("resources/bombRed.png"));
 			bigBomb = ImageIO.read(new File("resources/bigBomb.png"));

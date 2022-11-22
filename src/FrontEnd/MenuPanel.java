@@ -21,7 +21,11 @@ public class MenuPanel extends JPanel{
 	
 	public MenuPanel(Controller c) {
 		controller = c;
-		
+		initComponents();
+		setActionListeners();
+	}
+	
+	public void initComponents() {
 		Font f = new Font("Arial", Font.PLAIN, 24);
 		newGameBtn = new JButton("New Game");
 		loadBtn = new JButton("Load Game");
@@ -59,8 +63,6 @@ public class MenuPanel extends JPanel{
 		add(titlePanel, BorderLayout.NORTH);
 		add(elements, BorderLayout.CENTER);
 		add(creditPanel, BorderLayout.SOUTH);
-		
-		setActionListeners();
 	}
 	
 	public void setActionListeners() {
@@ -72,7 +74,10 @@ public class MenuPanel extends JPanel{
 		newGameBtn.addActionListener(a -> controller.setPanel(new GamePanel(controller)));
 		loadBtn.addActionListener(a->{
 			Game g = controller.load();
+			g.setStarted(true);
 			controller.setPanel(new GamePanel(controller, g));
+			Controller.setML(g.getListener());
+			Controller.setMMLBoard(g.getBoard());
 		});
 	}
 }

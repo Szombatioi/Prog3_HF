@@ -57,17 +57,22 @@ public class Tile implements Serializable{
 		this.y = y;
 	}
 	
+	public Image getCorrespondingIcon() {
+		
+		return bombsAround<=8 ? Images.numbers[bombsAround] : Images.unknown;
+		
+	}
 	
 	public void setRevealed(boolean b) {isRevealed = b;}
 	public void reveal() {
 		if(!isFlagged) {
-			icon = Images.numbers[bombsAround];
+			icon = getCorrespondingIcon();
 			isRevealed = true;
 		}
 	}
 	
 	public void revealEnd() {
-		icon = isFlagged ? Images.flag2 : Images.numbers[bombsAround];
+		icon = isFlagged ? Images.flag2 : getCorrespondingIcon();
 		isRevealed = true;
 	}
 	

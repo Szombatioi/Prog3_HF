@@ -2,29 +2,23 @@ package FrontEnd;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-
+import java.io.Serializable;
 import javax.swing.SwingUtilities;
 
 import BackEnd.Board;
 import BackEnd.Tile;
 
-public class MyMouseListener extends MouseAdapter{
-	private static Board board;
+@SuppressWarnings("serial")
+public class MyMouseListener extends MouseAdapter implements Serializable{
+	private Board board;
 	private Game game;
 	private int xOffset;
-//	public MyMouseListener(Board b, Game g) {
-//		board = b;
-//		game = g;
-//		System.out.println(game.getUIClassID());
-//	}
-	public MyMouseListener() {
-		
-	}
-	
-	public void setGame(Game g) {
+	public MyMouseListener(Board b, Game g) {
+		board = b;
 		game = g;
 	}
-	public static void setBoard(Board b) {
+
+	public void setBoard(Board b) {
 		board = b;
 	}
 	

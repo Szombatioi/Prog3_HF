@@ -25,8 +25,10 @@ public class Window extends JFrame{
 		requestFocus();
 		setResizable(false);
 		
-		//TODO menubar csinalasa
+		setJMenuBar(new MyMenuBar(controller));
 		add(new MenuPanel(controller));
+//		add(new VictoryPanel(3, 22,false));
+		
 
 		pack();
 		setVisible(true);

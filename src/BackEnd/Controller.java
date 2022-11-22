@@ -10,6 +10,7 @@ import java.io.ObjectOutputStream;
 import javax.swing.JPanel;
 
 import FrontEnd.Game;
+import FrontEnd.GamePanel;
 import FrontEnd.MyMouseListener;
 import FrontEnd.Window;
 import FrontEnd.feedBackWindow;
@@ -18,14 +19,13 @@ public class Controller {
 	private Window window;
 	private Difficulty diff;
 	private static MyMouseListener mml;
+	//LinkedList<> records;
+	//addRecord(type, name, value)
 	
 	public Controller() {
 		diff = Difficulty.EASY; //alapból easy
 	}
 	
-	public static void setML(MyMouseListener m) {
-		mml = m;
-	}
 	public void setWindow(Window w) {window = w;}
 	public Difficulty getDiff() {return diff;}
 	public void setDiff(Difficulty d) {diff = d;}
@@ -40,11 +40,10 @@ public class Controller {
 	public void setWindowSize(int w, int h) {window.setMinimumSize(new Dimension(w, h));}
 	public void resetWindowSize() {window.resetSize();}
 	
-	public static void passOffset(int x) {
-		mml.setOffset(x);
-	}
+	public static void setML(MyMouseListener m) {mml = m;}
+	public static void setMMLBoard(Board b) {mml.setBoard(b);}
+	public static void passOffset(int x) {mml.setOffset(x);}
 	
-	//public void loadImages
 	public void save(Game g) {
 		try {
 			FileOutputStream f = new FileOutputStream("save.mswp");
@@ -70,6 +69,9 @@ public class Controller {
 		} catch(IOException | ClassNotFoundException c) {
 			new feedBackWindow("Couldn't load game!", false);
 		}
+		
+		res.getBoard().loadImages();
+		res.setRunning(false);
 		return res;
 	}
 }

@@ -15,7 +15,7 @@ public class Game extends JPanel implements Serializable{
 	private boolean running;
 	private boolean started;
 	private boolean finished;
-	private transient MyMouseListener mml;
+	private MyMouseListener mml;
 	
 	public Game(Board b) {
 		board = b;
@@ -25,6 +25,10 @@ public class Game extends JPanel implements Serializable{
 	public Game(Difficulty d) {
 		board = new Board(d, this);
 		init();
+	}
+	
+	public Board getBoard() {
+		return board;
 	}
 	
 	public void init() {
@@ -78,7 +82,9 @@ public class Game extends JPanel implements Serializable{
 	@Override
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		if(running) board.paintComponent(g, getWidth()/2);
+//		if(running) board.paintComponent(g, getWidth()/2);
+		board.paintComponent(g, getWidth()/2);
+		board.paintComponent(g, getWidth()/2);
 		timer.paintComponent(g, getWidth());
 		repaint();
 	}

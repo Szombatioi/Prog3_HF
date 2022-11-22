@@ -52,6 +52,8 @@ public class GamePanel extends JPanel{
 		buttonsPanel.add(exitBtn);
 	}
 	
+	public void setGame(Game g) {game = g;}
+	
 	public void setActionListeners() {
 		menuBtn.addActionListener(a -> {
 			controller.setPanel(new MenuPanel(controller));
@@ -69,7 +71,10 @@ public class GamePanel extends JPanel{
 				pauseBtn.setText(game.running() ? "Pause" : "Continue");
 			}
 		});
-		saveBtn.addActionListener(a-> controller.save(game));
+		saveBtn.addActionListener(a->{
+			 controller.save(game);
+			 game.setRunning(false);
+		});
 	}
 	
 	@Override

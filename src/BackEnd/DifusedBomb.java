@@ -14,9 +14,10 @@ public class DifusedBomb extends Bomb {
 	
 	@Override
 	public void reveal() {
-		icon = Images.difusedBomb;
-		isRevealed = true;
-		System.out.println("difused");
+		if(!isRevealed) {
+			icon = Images.difusedBomb;
+			isRevealed = true;
+		}
 	}
 	
 	@Override

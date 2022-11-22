@@ -130,6 +130,12 @@ public class Board implements Serializable{
 		
 	}
 	
+	public void loadImages() {
+		for(int i = 0; i < tiles.length; i++) 
+			for(int j = 0; j < tiles[i].length; j++) 
+				tiles[i][j].loadIcon();
+	}
+	
 	public void revealTile(int row, int col) {
 		if(row >= 0 && row < rows && col >= 0 && col < cols && tiles[col][row].getBombsAround()!=0 && tiles[col][row].getBombsAround()!=1) tiles[col][row].reveal();
 		else findZerosAround(row, col);
@@ -150,7 +156,6 @@ public class Board implements Serializable{
 	public void paintComponent(Graphics g, int startX) {
 		for(int i = 0; i < tiles.length; i++) {
 			for(int j = 0; j < tiles[i].length; j++) {
-//				xOffset = /*startX - cols*Tile.getW()/2 + */i*Tile.getW();
 				xOffset = startX - cols*Tile.getW()/2 + i*Tile.getW();
 				yOffset = j*Tile.getW();
 				tiles[i][j].setCoords(xOffset, yOffset);
