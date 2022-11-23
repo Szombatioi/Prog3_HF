@@ -1,0 +1,570 @@
+\begin{theindex}
+
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/BackEnd/BigBomb.java}, 
+		\hyperpage{89}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/BackEnd/Board.java}, 
+		\hyperpage{89}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/BackEnd/Bomb.java}, 
+		\hyperpage{89}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/BackEnd/ClusterBomb.java}, 
+		\hyperpage{90}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/BackEnd/Controller.java}, 
+		\hyperpage{90}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/BackEnd/Difficulty.java}, 
+		\hyperpage{90}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/BackEnd/DifusedBomb.java}, 
+		\hyperpage{90}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/BackEnd/Images.java}, 
+		\hyperpage{91}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/BackEnd/Main.java}, 
+		\hyperpage{91}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/BackEnd/ResetBomb.java}, 
+		\hyperpage{91}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/BackEnd/ResetFlagBomb.java}, 
+		\hyperpage{91}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/BackEnd/Tile.java}, 
+		\hyperpage{92}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/BackEnd/Time.java}, 
+		\hyperpage{92}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/FrontEnd/Game.java}, 
+		\hyperpage{92}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/FrontEnd/MenuPanel.java}, 
+		\hyperpage{93}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/FrontEnd/MyMenuBar.java}, 
+		\hyperpage{93}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/FrontEnd/MyMouseListener.java}, 
+		\hyperpage{93}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/FrontEnd/SettingsPanel.java}, 
+		\hyperpage{93}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/FrontEnd/Timer.java}, 
+		\hyperpage{94}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/FrontEnd/VictoryPanel.java}, 
+		\hyperpage{94}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/FrontEnd/Window.java}, 
+		\hyperpage{94}
+  \item {/home/szoliver/eclipse-\/workspace/Prog3\_HF/Prog3\_HF/src/FrontEnd/feedBackWindow.java}, 
+		\hyperpage{92}
+
+  \indexspace
+
+  \item {addMoreBombs}
+    \subitem {BackEnd.Board}, \hyperpage{15}
+
+  \indexspace
+
+  \item {BackEnd}, \hyperpage{9}
+  \item {BackEnd.BigBomb}, \hyperpage{11}
+    \subitem {BigBomb}, \hyperpage{12}
+    \subitem {changeIcon}, \hyperpage{13}
+    \subitem {getValue}, \hyperpage{13}
+  \item {BackEnd.Board}, \hyperpage{13}
+    \subitem {addMoreBombs}, \hyperpage{15}
+    \subitem {Board}, \hyperpage{14}
+    \subitem {decHiddenTiles}, \hyperpage{15}
+    \subitem {end}, \hyperpage{15}
+    \subitem {findZerosAround}, \hyperpage{15}
+    \subitem {flagTile}, \hyperpage{16}
+    \subitem {generateBombs}, \hyperpage{16}
+    \subitem {getBombsAround}, \hyperpage{17}
+    \subitem {getCols}, \hyperpage{17}
+    \subitem {getFlags}, \hyperpage{17}
+    \subitem {getHiddenTiles}, \hyperpage{17}
+    \subitem {getRows}, \hyperpage{18}
+    \subitem {loadImages}, \hyperpage{18}
+    \subitem {modFlag}, \hyperpage{18}
+    \subitem {paintComponent}, \hyperpage{18}
+    \subitem {resetFlags}, \hyperpage{19}
+    \subitem {resetGame}, \hyperpage{19}
+    \subitem {restart}, \hyperpage{20}
+    \subitem {revealEveryTile}, \hyperpage{20}
+    \subitem {revealTile}, \hyperpage{20}
+    \subitem {setBombsAroundNums}, \hyperpage{21}
+  \item {BackEnd.Bomb}, \hyperpage{22}
+    \subitem {Bomb}, \hyperpage{23}
+    \subitem {changeIcon}, \hyperpage{23}
+    \subitem {execute}, \hyperpage{23}
+    \subitem {getValue}, \hyperpage{23}
+    \subitem {reveal}, \hyperpage{24}
+    \subitem {revealEnd}, \hyperpage{24}
+    \subitem {setBombsAround}, \hyperpage{24}
+  \item {BackEnd.ClusterBomb}, \hyperpage{25}
+    \subitem {changeIcon}, \hyperpage{27}
+    \subitem {ClusterBomb}, \hyperpage{26}
+    \subitem {execute}, \hyperpage{27}
+  \item {BackEnd.Controller}, \hyperpage{27}
+    \subitem {Controller}, \hyperpage{28}
+    \subitem {getDiff}, \hyperpage{28}
+    \subitem {load}, \hyperpage{28}
+    \subitem {passOffset}, \hyperpage{28}
+    \subitem {pauseGame}, \hyperpage{29}
+    \subitem {resetWindowSize}, \hyperpage{29}
+    \subitem {save}, \hyperpage{30}
+    \subitem {setDiff}, \hyperpage{30}
+    \subitem {setGame}, \hyperpage{31}
+    \subitem {setGameMenuBar}, \hyperpage{31}
+    \subitem {setMenuBar}, \hyperpage{32}
+    \subitem {setML}, \hyperpage{32}
+    \subitem {setMMLBoard}, \hyperpage{32}
+    \subitem {setPanel}, \hyperpage{33}
+    \subitem {setWindow}, \hyperpage{33}
+    \subitem {setWindowSize}, \hyperpage{34}
+  \item {BackEnd.Difficulty}, \hyperpage{34}
+    \subitem {bombs}, \hyperpage{35}, \hyperpage{37}
+    \subitem {cols}, \hyperpage{35}, \hyperpage{37}
+    \subitem {CUSTOM}, \hyperpage{37}
+    \subitem {EASY}, \hyperpage{37}
+    \subitem {HARD}, \hyperpage{38}
+    \subitem {NORMAL}, \hyperpage{38}
+    \subitem {rows}, \hyperpage{36}
+    \subitem {set}, \hyperpage{37}
+  \item {BackEnd.DifusedBomb}, \hyperpage{38}
+    \subitem {changeIcon}, \hyperpage{40}
+    \subitem {DifusedBomb}, \hyperpage{39}
+    \subitem {reveal}, \hyperpage{40}
+    \subitem {revealEnd}, \hyperpage{40}
+  \item {BackEnd.Images}, \hyperpage{49}
+    \subitem {bigBomb}, \hyperpage{50}
+    \subitem {bomb}, \hyperpage{50}
+    \subitem {clusterBomb}, \hyperpage{50}
+    \subitem {difusedBomb}, \hyperpage{50}
+    \subitem {error}, \hyperpage{50}
+    \subitem {flag}, \hyperpage{51}
+    \subitem {flag2}, \hyperpage{51}
+    \subitem {hTile}, \hyperpage{51}
+    \subitem {icon}, \hyperpage{51}
+    \subitem {loadImages}, \hyperpage{50}
+    \subitem {MineSweeperFont}, \hyperpage{51}
+    \subitem {numbers}, \hyperpage{51}
+    \subitem {redBomb}, \hyperpage{51}
+    \subitem {resetBomb}, \hyperpage{51}
+    \subitem {resetFlagBomb}, \hyperpage{52}
+    \subitem {success}, \hyperpage{52}
+    \subitem {timerFont}, \hyperpage{52}
+    \subitem {unknown}, \hyperpage{52}
+  \item {BackEnd.Main}, \hyperpage{52}
+    \subitem {main}, \hyperpage{52}
+  \item {BackEnd.ResetBomb}, \hyperpage{60}
+    \subitem {changeIcon}, \hyperpage{62}
+    \subitem {execute}, \hyperpage{62}
+    \subitem {ResetBomb}, \hyperpage{61}
+  \item {BackEnd.ResetFlagBomb}, \hyperpage{62}
+    \subitem {changeIcon}, \hyperpage{64}
+    \subitem {execute}, \hyperpage{64}
+    \subitem {ResetFlagBomb}, \hyperpage{63}
+  \item {BackEnd.Tile}, \hyperpage{67}
+    \subitem {bombsAround}, \hyperpage{75}
+    \subitem {changeIcon}, \hyperpage{69}
+    \subitem {flag}, \hyperpage{69}
+    \subitem {getBombsAround}, \hyperpage{70}
+    \subitem {getCorrespondingIcon}, \hyperpage{70}
+    \subitem {getValue}, \hyperpage{70}
+    \subitem {getW}, \hyperpage{71}
+    \subitem {icon}, \hyperpage{75}
+    \subitem {isFlagged}, \hyperpage{71}, \hyperpage{75}
+    \subitem {isRevealed}, \hyperpage{75}
+    \subitem {loadIcon}, \hyperpage{72}
+    \subitem {master}, \hyperpage{75}
+    \subitem {paintComponent}, \hyperpage{72}
+    \subitem {reveal}, \hyperpage{73}
+    \subitem {revealEnd}, \hyperpage{73}
+    \subitem {setBombsAround}, \hyperpage{74}
+    \subitem {setCoords}, \hyperpage{74}
+    \subitem {setFlagged}, \hyperpage{74}
+    \subitem {setRevealed}, \hyperpage{75}
+    \subitem {Tile}, \hyperpage{69}
+    \subitem {w}, \hyperpage{76}
+    \subitem {x}, \hyperpage{76}
+  \item {BackEnd.Time}, \hyperpage{76}
+    \subitem {getM}, \hyperpage{77}
+    \subitem {getS}, \hyperpage{77}
+    \subitem {increase}, \hyperpage{78}
+    \subitem {lt}, \hyperpage{78}
+    \subitem {Time}, \hyperpage{77}
+  \item {BigBomb}
+    \subitem {BackEnd.BigBomb}, \hyperpage{12}
+  \item {bigBomb}
+    \subitem {BackEnd.Images}, \hyperpage{50}
+  \item {Board}
+    \subitem {BackEnd.Board}, \hyperpage{14}
+  \item {Bomb}
+    \subitem {BackEnd.Bomb}, \hyperpage{23}
+  \item {bomb}
+    \subitem {BackEnd.Images}, \hyperpage{50}
+  \item {bombs}
+    \subitem {BackEnd.Difficulty}, \hyperpage{35}, \hyperpage{37}
+  \item {bombsAround}
+    \subitem {BackEnd.Tile}, \hyperpage{75}
+
+  \indexspace
+
+  \item {changeIcon}
+    \subitem {BackEnd.BigBomb}, \hyperpage{13}
+    \subitem {BackEnd.Bomb}, \hyperpage{23}
+    \subitem {BackEnd.ClusterBomb}, \hyperpage{27}
+    \subitem {BackEnd.DifusedBomb}, \hyperpage{40}
+    \subitem {BackEnd.ResetBomb}, \hyperpage{62}
+    \subitem {BackEnd.ResetFlagBomb}, \hyperpage{64}
+    \subitem {BackEnd.Tile}, \hyperpage{69}
+  \item {ClusterBomb}
+    \subitem {BackEnd.ClusterBomb}, \hyperpage{26}
+  \item {clusterBomb}
+    \subitem {BackEnd.Images}, \hyperpage{50}
+  \item {cols}
+    \subitem {BackEnd.Difficulty}, \hyperpage{35}, \hyperpage{37}
+  \item {Controller}
+    \subitem {BackEnd.Controller}, \hyperpage{28}
+  \item {CUSTOM}
+    \subitem {BackEnd.Difficulty}, \hyperpage{37}
+
+  \indexspace
+
+  \item {decHiddenTiles}
+    \subitem {BackEnd.Board}, \hyperpage{15}
+  \item {DifusedBomb}
+    \subitem {BackEnd.DifusedBomb}, \hyperpage{39}
+  \item {difusedBomb}
+    \subitem {BackEnd.Images}, \hyperpage{50}
+
+  \indexspace
+
+  \item {EASY}
+    \subitem {BackEnd.Difficulty}, \hyperpage{37}
+  \item {end}
+    \subitem {BackEnd.Board}, \hyperpage{15}
+  \item {error}
+    \subitem {BackEnd.Images}, \hyperpage{50}
+  \item {execute}
+    \subitem {BackEnd.Bomb}, \hyperpage{23}
+    \subitem {BackEnd.ClusterBomb}, \hyperpage{27}
+    \subitem {BackEnd.ResetBomb}, \hyperpage{62}
+    \subitem {BackEnd.ResetFlagBomb}, \hyperpage{64}
+
+  \indexspace
+
+  \item {feedBackWindow}
+    \subitem {FrontEnd.feedBackWindow}, \hyperpage{41}
+  \item {findZerosAround}
+    \subitem {BackEnd.Board}, \hyperpage{15}
+  \item {finished}
+    \subitem {FrontEnd.Game}, \hyperpage{43}
+  \item {flag}
+    \subitem {BackEnd.Images}, \hyperpage{51}
+    \subitem {BackEnd.Tile}, \hyperpage{69}
+  \item {flag2}
+    \subitem {BackEnd.Images}, \hyperpage{51}
+  \item {flagTile}
+    \subitem {BackEnd.Board}, \hyperpage{16}
+  \item {FrontEnd}, \hyperpage{9}
+  \item {FrontEnd.feedBackWindow}, \hyperpage{41}
+    \subitem {feedBackWindow}, \hyperpage{41}
+  \item {FrontEnd.Game}, \hyperpage{42}
+    \subitem {finished}, \hyperpage{43}
+    \subitem {Game}, \hyperpage{42}
+    \subitem {getListener}, \hyperpage{43}
+    \subitem {init}, \hyperpage{44}
+    \subitem {paintComponent}, \hyperpage{44}
+    \subitem {restart}, \hyperpage{44}
+    \subitem {running}, \hyperpage{45}
+    \subitem {setFinished}, \hyperpage{45}
+    \subitem {setRunning}, \hyperpage{46}
+    \subitem {setStarted}, \hyperpage{47}
+    \subitem {start}, \hyperpage{47}
+    \subitem {started}, \hyperpage{48}
+  \item {FrontEnd.MenuPanel}, \hyperpage{53}
+    \subitem {initComponents}, \hyperpage{54}
+    \subitem {MenuPanel}, \hyperpage{54}
+    \subitem {setActionListeners}, \hyperpage{54}
+  \item {FrontEnd.MyMenuBar}, \hyperpage{55}
+    \subitem {initComponents}, \hyperpage{56}
+    \subitem {MyMenuBar}, \hyperpage{56}
+    \subitem {setActionListeners}, \hyperpage{56}
+    \subitem {setGameBar}, \hyperpage{57}
+  \item {FrontEnd.MyMouseListener}, \hyperpage{58}
+    \subitem {mouseReleased}, \hyperpage{59}
+    \subitem {MyMouseListener}, \hyperpage{58}
+    \subitem {setBoard}, \hyperpage{59}
+    \subitem {setOffset}, \hyperpage{59}
+  \item {FrontEnd.SettingsPanel}, \hyperpage{65}
+    \subitem {getDiff}, \hyperpage{66}
+    \subitem {setActionListeners}, \hyperpage{66}
+    \subitem {SettingsPanel}, \hyperpage{66}
+    \subitem {submit}, \hyperpage{66}
+  \item {FrontEnd.Timer}, \hyperpage{79}
+    \subitem {getHeight}, \hyperpage{80}
+    \subitem {paintComponent}, \hyperpage{81}
+    \subitem {run}, \hyperpage{81}
+    \subitem {running}, \hyperpage{81}
+    \subitem {setFinished}, \hyperpage{82}
+    \subitem {setRunning}, \hyperpage{82}
+    \subitem {tick}, \hyperpage{83}
+    \subitem {Timer}, \hyperpage{80}
+    \subitem {toString}, \hyperpage{83}
+  \item {FrontEnd.VictoryPanel}, \hyperpage{84}
+    \subitem {initComponents}, \hyperpage{85}
+    \subitem {VictoryPanel}, \hyperpage{85}
+  \item {FrontEnd.Window}, \hyperpage{85}
+    \subitem {getDefSize}, \hyperpage{87}
+    \subitem {resetSize}, \hyperpage{87}
+    \subitem {setPanel}, \hyperpage{87}
+    \subitem {Window}, \hyperpage{86}
+
+  \indexspace
+
+  \item {Game}
+    \subitem {FrontEnd.Game}, \hyperpage{42}
+  \item {generateBombs}
+    \subitem {BackEnd.Board}, \hyperpage{16}
+  \item {getBombsAround}
+    \subitem {BackEnd.Board}, \hyperpage{17}
+    \subitem {BackEnd.Tile}, \hyperpage{70}
+  \item {getCols}
+    \subitem {BackEnd.Board}, \hyperpage{17}
+  \item {getCorrespondingIcon}
+    \subitem {BackEnd.Tile}, \hyperpage{70}
+  \item {getDefSize}
+    \subitem {FrontEnd.Window}, \hyperpage{87}
+  \item {getDiff}
+    \subitem {BackEnd.Controller}, \hyperpage{28}
+    \subitem {FrontEnd.SettingsPanel}, \hyperpage{66}
+  \item {getFlags}
+    \subitem {BackEnd.Board}, \hyperpage{17}
+  \item {getHeight}
+    \subitem {FrontEnd.Timer}, \hyperpage{80}
+  \item {getHiddenTiles}
+    \subitem {BackEnd.Board}, \hyperpage{17}
+  \item {getListener}
+    \subitem {FrontEnd.Game}, \hyperpage{43}
+  \item {getM}
+    \subitem {BackEnd.Time}, \hyperpage{77}
+  \item {getRows}
+    \subitem {BackEnd.Board}, \hyperpage{18}
+  \item {getS}
+    \subitem {BackEnd.Time}, \hyperpage{77}
+  \item {getValue}
+    \subitem {BackEnd.BigBomb}, \hyperpage{13}
+    \subitem {BackEnd.Bomb}, \hyperpage{23}
+    \subitem {BackEnd.Tile}, \hyperpage{70}
+  \item {getW}
+    \subitem {BackEnd.Tile}, \hyperpage{71}
+
+  \indexspace
+
+  \item {HARD}
+    \subitem {BackEnd.Difficulty}, \hyperpage{38}
+  \item {hTile}
+    \subitem {BackEnd.Images}, \hyperpage{51}
+
+  \indexspace
+
+  \item {icon}
+    \subitem {BackEnd.Images}, \hyperpage{51}
+    \subitem {BackEnd.Tile}, \hyperpage{75}
+  \item {increase}
+    \subitem {BackEnd.Time}, \hyperpage{78}
+  \item {init}
+    \subitem {FrontEnd.Game}, \hyperpage{44}
+  \item {initComponents}
+    \subitem {FrontEnd.MenuPanel}, \hyperpage{54}
+    \subitem {FrontEnd.MyMenuBar}, \hyperpage{56}
+    \subitem {FrontEnd.VictoryPanel}, \hyperpage{85}
+  \item {isFlagged}
+    \subitem {BackEnd.Tile}, \hyperpage{71}, \hyperpage{75}
+  \item {isRevealed}
+    \subitem {BackEnd.Tile}, \hyperpage{75}
+
+  \indexspace
+
+  \item {load}
+    \subitem {BackEnd.Controller}, \hyperpage{28}
+  \item {loadIcon}
+    \subitem {BackEnd.Tile}, \hyperpage{72}
+  \item {loadImages}
+    \subitem {BackEnd.Board}, \hyperpage{18}
+    \subitem {BackEnd.Images}, \hyperpage{50}
+  \item {lt}
+    \subitem {BackEnd.Time}, \hyperpage{78}
+
+  \indexspace
+
+  \item {main}
+    \subitem {BackEnd.Main}, \hyperpage{52}
+  \item {master}
+    \subitem {BackEnd.Tile}, \hyperpage{75}
+  \item {MenuPanel}
+    \subitem {FrontEnd.MenuPanel}, \hyperpage{54}
+  \item {MineSweeperFont}
+    \subitem {BackEnd.Images}, \hyperpage{51}
+  \item {modFlag}
+    \subitem {BackEnd.Board}, \hyperpage{18}
+  \item {mouseReleased}
+    \subitem {FrontEnd.MyMouseListener}, \hyperpage{59}
+  \item {MyMenuBar}
+    \subitem {FrontEnd.MyMenuBar}, \hyperpage{56}
+  \item {MyMouseListener}
+    \subitem {FrontEnd.MyMouseListener}, \hyperpage{58}
+
+  \indexspace
+
+  \item {NORMAL}
+    \subitem {BackEnd.Difficulty}, \hyperpage{38}
+  \item {numbers}
+    \subitem {BackEnd.Images}, \hyperpage{51}
+
+  \indexspace
+
+  \item {paintComponent}
+    \subitem {BackEnd.Board}, \hyperpage{18}
+    \subitem {BackEnd.Tile}, \hyperpage{72}
+    \subitem {FrontEnd.Game}, \hyperpage{44}
+    \subitem {FrontEnd.Timer}, \hyperpage{81}
+  \item {passOffset}
+    \subitem {BackEnd.Controller}, \hyperpage{28}
+  \item {pauseGame}
+    \subitem {BackEnd.Controller}, \hyperpage{29}
+
+  \indexspace
+
+  \item {redBomb}
+    \subitem {BackEnd.Images}, \hyperpage{51}
+  \item {ResetBomb}
+    \subitem {BackEnd.ResetBomb}, \hyperpage{61}
+  \item {resetBomb}
+    \subitem {BackEnd.Images}, \hyperpage{51}
+  \item {ResetFlagBomb}
+    \subitem {BackEnd.ResetFlagBomb}, \hyperpage{63}
+  \item {resetFlagBomb}
+    \subitem {BackEnd.Images}, \hyperpage{52}
+  \item {resetFlags}
+    \subitem {BackEnd.Board}, \hyperpage{19}
+  \item {resetGame}
+    \subitem {BackEnd.Board}, \hyperpage{19}
+  \item {resetSize}
+    \subitem {FrontEnd.Window}, \hyperpage{87}
+  \item {resetWindowSize}
+    \subitem {BackEnd.Controller}, \hyperpage{29}
+  \item {restart}
+    \subitem {BackEnd.Board}, \hyperpage{20}
+    \subitem {FrontEnd.Game}, \hyperpage{44}
+  \item {reveal}
+    \subitem {BackEnd.Bomb}, \hyperpage{24}
+    \subitem {BackEnd.DifusedBomb}, \hyperpage{40}
+    \subitem {BackEnd.Tile}, \hyperpage{73}
+  \item {revealEnd}
+    \subitem {BackEnd.Bomb}, \hyperpage{24}
+    \subitem {BackEnd.DifusedBomb}, \hyperpage{40}
+    \subitem {BackEnd.Tile}, \hyperpage{73}
+  \item {revealEveryTile}
+    \subitem {BackEnd.Board}, \hyperpage{20}
+  \item {revealTile}
+    \subitem {BackEnd.Board}, \hyperpage{20}
+  \item {rows}
+    \subitem {BackEnd.Difficulty}, \hyperpage{36}
+  \item {run}
+    \subitem {FrontEnd.Timer}, \hyperpage{81}
+  \item {running}
+    \subitem {FrontEnd.Game}, \hyperpage{45}
+    \subitem {FrontEnd.Timer}, \hyperpage{81}
+
+  \indexspace
+
+  \item {save}
+    \subitem {BackEnd.Controller}, \hyperpage{30}
+  \item {set}
+    \subitem {BackEnd.Difficulty}, \hyperpage{37}
+  \item {setActionListeners}
+    \subitem {FrontEnd.MenuPanel}, \hyperpage{54}
+    \subitem {FrontEnd.MyMenuBar}, \hyperpage{56}
+    \subitem {FrontEnd.SettingsPanel}, \hyperpage{66}
+  \item {setBoard}
+    \subitem {FrontEnd.MyMouseListener}, \hyperpage{59}
+  \item {setBombsAround}
+    \subitem {BackEnd.Bomb}, \hyperpage{24}
+    \subitem {BackEnd.Tile}, \hyperpage{74}
+  \item {setBombsAroundNums}
+    \subitem {BackEnd.Board}, \hyperpage{21}
+  \item {setCoords}
+    \subitem {BackEnd.Tile}, \hyperpage{74}
+  \item {setDiff}
+    \subitem {BackEnd.Controller}, \hyperpage{30}
+  \item {setFinished}
+    \subitem {FrontEnd.Game}, \hyperpage{45}
+    \subitem {FrontEnd.Timer}, \hyperpage{82}
+  \item {setFlagged}
+    \subitem {BackEnd.Tile}, \hyperpage{74}
+  \item {setGame}
+    \subitem {BackEnd.Controller}, \hyperpage{31}
+  \item {setGameBar}
+    \subitem {FrontEnd.MyMenuBar}, \hyperpage{57}
+  \item {setGameMenuBar}
+    \subitem {BackEnd.Controller}, \hyperpage{31}
+  \item {setMenuBar}
+    \subitem {BackEnd.Controller}, \hyperpage{32}
+  \item {setML}
+    \subitem {BackEnd.Controller}, \hyperpage{32}
+  \item {setMMLBoard}
+    \subitem {BackEnd.Controller}, \hyperpage{32}
+  \item {setOffset}
+    \subitem {FrontEnd.MyMouseListener}, \hyperpage{59}
+  \item {setPanel}
+    \subitem {BackEnd.Controller}, \hyperpage{33}
+    \subitem {FrontEnd.Window}, \hyperpage{87}
+  \item {setRevealed}
+    \subitem {BackEnd.Tile}, \hyperpage{75}
+  \item {setRunning}
+    \subitem {FrontEnd.Game}, \hyperpage{46}
+    \subitem {FrontEnd.Timer}, \hyperpage{82}
+  \item {setStarted}
+    \subitem {FrontEnd.Game}, \hyperpage{47}
+  \item {SettingsPanel}
+    \subitem {FrontEnd.SettingsPanel}, \hyperpage{66}
+  \item {setWindow}
+    \subitem {BackEnd.Controller}, \hyperpage{33}
+  \item {setWindowSize}
+    \subitem {BackEnd.Controller}, \hyperpage{34}
+  \item {start}
+    \subitem {FrontEnd.Game}, \hyperpage{47}
+  \item {started}
+    \subitem {FrontEnd.Game}, \hyperpage{48}
+  \item {submit}
+    \subitem {FrontEnd.SettingsPanel}, \hyperpage{66}
+  \item {success}
+    \subitem {BackEnd.Images}, \hyperpage{52}
+
+  \indexspace
+
+  \item {tick}
+    \subitem {FrontEnd.Timer}, \hyperpage{83}
+  \item {Tile}
+    \subitem {BackEnd.Tile}, \hyperpage{69}
+  \item {Time}
+    \subitem {BackEnd.Time}, \hyperpage{77}
+  \item {Timer}
+    \subitem {FrontEnd.Timer}, \hyperpage{80}
+  \item {timerFont}
+    \subitem {BackEnd.Images}, \hyperpage{52}
+  \item {toString}
+    \subitem {FrontEnd.Timer}, \hyperpage{83}
+
+  \indexspace
+
+  \item {unknown}
+    \subitem {BackEnd.Images}, \hyperpage{52}
+
+  \indexspace
+
+  \item {VictoryPanel}
+    \subitem {FrontEnd.VictoryPanel}, \hyperpage{85}
+
+  \indexspace
+
+  \item {w}
+    \subitem {BackEnd.Tile}, \hyperpage{76}
+  \item {Window}
+    \subitem {FrontEnd.Window}, \hyperpage{86}
+
+  \indexspace
+
+  \item {x}
+    \subitem {BackEnd.Tile}, \hyperpage{76}
+
+\end{theindex}

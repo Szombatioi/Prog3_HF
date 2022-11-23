@@ -1,0 +1,264 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Namespace Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Packages}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Namespace Documentation}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Package Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End}{9}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Package Front\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End}{9}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Class Documentation}{11}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Big\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bomb Class Reference}{11}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Constructor \& Destructor Documentation}{12}{subsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.1.1}BigBomb()}{13}{subsubsection.6.1.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Member Function Documentation}{13}{subsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.1}changeIcon()}{13}{subsubsection.6.1.2.1}%
+\contentsline {subsubsection}{\numberline {6.1.2.2}getValue()}{13}{subsubsection.6.1.2.2}%
+\contentsline {section}{\numberline {6.2}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Board Class Reference}{13}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Constructor \& Destructor Documentation}{14}{subsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.1.1}Board()}{15}{subsubsection.6.2.1.1}%
+\contentsline {subsection}{\numberline {6.2.2}Member Function Documentation}{15}{subsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.1}addMoreBombs()}{15}{subsubsection.6.2.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2.2}decHiddenTiles()}{15}{subsubsection.6.2.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.3}end()}{15}{subsubsection.6.2.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.2.4}findZerosAround()}{16}{subsubsection.6.2.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.2.5}flagTile()}{16}{subsubsection.6.2.2.5}%
+\contentsline {subsubsection}{\numberline {6.2.2.6}generateBombs()}{17}{subsubsection.6.2.2.6}%
+\contentsline {subsubsection}{\numberline {6.2.2.7}getBombsAround()}{17}{subsubsection.6.2.2.7}%
+\contentsline {subsubsection}{\numberline {6.2.2.8}getCols()}{17}{subsubsection.6.2.2.8}%
+\contentsline {subsubsection}{\numberline {6.2.2.9}getFlags()}{17}{subsubsection.6.2.2.9}%
+\contentsline {subsubsection}{\numberline {6.2.2.10}getHiddenTiles()}{18}{subsubsection.6.2.2.10}%
+\contentsline {subsubsection}{\numberline {6.2.2.11}getRows()}{18}{subsubsection.6.2.2.11}%
+\contentsline {subsubsection}{\numberline {6.2.2.12}loadImages()}{18}{subsubsection.6.2.2.12}%
+\contentsline {subsubsection}{\numberline {6.2.2.13}modFlag()}{18}{subsubsection.6.2.2.13}%
+\contentsline {subsubsection}{\numberline {6.2.2.14}paintComponent()}{18}{subsubsection.6.2.2.14}%
+\contentsline {subsubsection}{\numberline {6.2.2.15}resetFlags()}{19}{subsubsection.6.2.2.15}%
+\contentsline {subsubsection}{\numberline {6.2.2.16}resetGame()}{19}{subsubsection.6.2.2.16}%
+\contentsline {subsubsection}{\numberline {6.2.2.17}restart()}{20}{subsubsection.6.2.2.17}%
+\contentsline {subsubsection}{\numberline {6.2.2.18}revealEveryTile()}{20}{subsubsection.6.2.2.18}%
+\contentsline {subsubsection}{\numberline {6.2.2.19}revealTile()}{21}{subsubsection.6.2.2.19}%
+\contentsline {subsubsection}{\numberline {6.2.2.20}setBombsAroundNums()}{21}{subsubsection.6.2.2.20}%
+\contentsline {section}{\numberline {6.3}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bomb Class Reference}{22}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Constructor \& Destructor Documentation}{23}{subsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.1}Bomb()}{23}{subsubsection.6.3.1.1}%
+\contentsline {subsection}{\numberline {6.3.2}Member Function Documentation}{23}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.1}changeIcon()}{23}{subsubsection.6.3.2.1}%
+\contentsline {subsubsection}{\numberline {6.3.2.2}execute()}{23}{subsubsection.6.3.2.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.3}getValue()}{24}{subsubsection.6.3.2.3}%
+\contentsline {subsubsection}{\numberline {6.3.2.4}reveal()}{24}{subsubsection.6.3.2.4}%
+\contentsline {subsubsection}{\numberline {6.3.2.5}revealEnd()}{24}{subsubsection.6.3.2.5}%
+\contentsline {subsubsection}{\numberline {6.3.2.6}setBombsAround()}{24}{subsubsection.6.3.2.6}%
+\contentsline {section}{\numberline {6.4}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cluster\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bomb Class Reference}{25}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Constructor \& Destructor Documentation}{26}{subsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.1.1}ClusterBomb()}{27}{subsubsection.6.4.1.1}%
+\contentsline {subsection}{\numberline {6.4.2}Member Function Documentation}{27}{subsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.2.1}changeIcon()}{27}{subsubsection.6.4.2.1}%
+\contentsline {subsubsection}{\numberline {6.4.2.2}execute()}{27}{subsubsection.6.4.2.2}%
+\contentsline {section}{\numberline {6.5}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller Class Reference}{27}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Constructor \& Destructor Documentation}{28}{subsection.6.5.1}%
+\contentsline {subsubsection}{\numberline {6.5.1.1}Controller()}{28}{subsubsection.6.5.1.1}%
+\contentsline {subsection}{\numberline {6.5.2}Member Function Documentation}{28}{subsection.6.5.2}%
+\contentsline {subsubsection}{\numberline {6.5.2.1}getDiff()}{28}{subsubsection.6.5.2.1}%
+\contentsline {subsubsection}{\numberline {6.5.2.2}load()}{28}{subsubsection.6.5.2.2}%
+\contentsline {subsubsection}{\numberline {6.5.2.3}passOffset()}{29}{subsubsection.6.5.2.3}%
+\contentsline {subsubsection}{\numberline {6.5.2.4}pauseGame()}{29}{subsubsection.6.5.2.4}%
+\contentsline {subsubsection}{\numberline {6.5.2.5}resetWindowSize()}{30}{subsubsection.6.5.2.5}%
+\contentsline {subsubsection}{\numberline {6.5.2.6}save()}{30}{subsubsection.6.5.2.6}%
+\contentsline {subsubsection}{\numberline {6.5.2.7}setDiff()}{30}{subsubsection.6.5.2.7}%
+\contentsline {subsubsection}{\numberline {6.5.2.8}setGame()}{31}{subsubsection.6.5.2.8}%
+\contentsline {subsubsection}{\numberline {6.5.2.9}setGameMenuBar()}{31}{subsubsection.6.5.2.9}%
+\contentsline {subsubsection}{\numberline {6.5.2.10}setMenuBar()}{32}{subsubsection.6.5.2.10}%
+\contentsline {subsubsection}{\numberline {6.5.2.11}setML()}{32}{subsubsection.6.5.2.11}%
+\contentsline {subsubsection}{\numberline {6.5.2.12}setMMLBoard()}{33}{subsubsection.6.5.2.12}%
+\contentsline {subsubsection}{\numberline {6.5.2.13}setPanel()}{33}{subsubsection.6.5.2.13}%
+\contentsline {subsubsection}{\numberline {6.5.2.14}setWindow()}{34}{subsubsection.6.5.2.14}%
+\contentsline {subsubsection}{\numberline {6.5.2.15}setWindowSize()}{34}{subsubsection.6.5.2.15}%
+\contentsline {section}{\numberline {6.6}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Difficulty Enum Reference}{34}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Member Function Documentation}{35}{subsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.6.1.1}bombs()}{35}{subsubsection.6.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.6.1.2}cols()}{36}{subsubsection.6.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.6.1.3}rows()}{36}{subsubsection.6.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.6.1.4}set()}{37}{subsubsection.6.6.1.4}%
+\contentsline {subsection}{\numberline {6.6.2}Member Data Documentation}{37}{subsection.6.6.2}%
+\contentsline {subsubsection}{\numberline {6.6.2.1}bombs}{37}{subsubsection.6.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.6.2.2}cols}{37}{subsubsection.6.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.6.2.3}CUSTOM}{37}{subsubsection.6.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.6.2.4}EASY}{38}{subsubsection.6.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.6.2.5}HARD}{38}{subsubsection.6.6.2.5}%
+\contentsline {subsubsection}{\numberline {6.6.2.6}NORMAL}{38}{subsubsection.6.6.2.6}%
+\contentsline {section}{\numberline {6.7}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Difused\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bomb Class Reference}{38}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Constructor \& Destructor Documentation}{39}{subsection.6.7.1}%
+\contentsline {subsubsection}{\numberline {6.7.1.1}DifusedBomb()}{40}{subsubsection.6.7.1.1}%
+\contentsline {subsection}{\numberline {6.7.2}Member Function Documentation}{40}{subsection.6.7.2}%
+\contentsline {subsubsection}{\numberline {6.7.2.1}changeIcon()}{40}{subsubsection.6.7.2.1}%
+\contentsline {subsubsection}{\numberline {6.7.2.2}reveal()}{40}{subsubsection.6.7.2.2}%
+\contentsline {subsubsection}{\numberline {6.7.2.3}revealEnd()}{40}{subsubsection.6.7.2.3}%
+\contentsline {section}{\numberline {6.8}Front\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}feed\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window Class Reference}{41}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}Constructor \& Destructor Documentation}{41}{subsection.6.8.1}%
+\contentsline {subsubsection}{\numberline {6.8.1.1}feedBackWindow()}{41}{subsubsection.6.8.1.1}%
+\contentsline {section}{\numberline {6.9}Front\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Game Class Reference}{42}{section.6.9}%
+\contentsline {subsection}{\numberline {6.9.1}Constructor \& Destructor Documentation}{42}{subsection.6.9.1}%
+\contentsline {subsubsection}{\numberline {6.9.1.1}Game()}{43}{subsubsection.6.9.1.1}%
+\contentsline {subsection}{\numberline {6.9.2}Member Function Documentation}{43}{subsection.6.9.2}%
+\contentsline {subsubsection}{\numberline {6.9.2.1}finished()}{43}{subsubsection.6.9.2.1}%
+\contentsline {subsubsection}{\numberline {6.9.2.2}getListener()}{44}{subsubsection.6.9.2.2}%
+\contentsline {subsubsection}{\numberline {6.9.2.3}init()}{44}{subsubsection.6.9.2.3}%
+\contentsline {subsubsection}{\numberline {6.9.2.4}paintComponent()}{44}{subsubsection.6.9.2.4}%
+\contentsline {subsubsection}{\numberline {6.9.2.5}restart()}{45}{subsubsection.6.9.2.5}%
+\contentsline {subsubsection}{\numberline {6.9.2.6}running()}{45}{subsubsection.6.9.2.6}%
+\contentsline {subsubsection}{\numberline {6.9.2.7}setFinished()}{46}{subsubsection.6.9.2.7}%
+\contentsline {subsubsection}{\numberline {6.9.2.8}setRunning()}{46}{subsubsection.6.9.2.8}%
+\contentsline {subsubsection}{\numberline {6.9.2.9}setStarted()}{47}{subsubsection.6.9.2.9}%
+\contentsline {subsubsection}{\numberline {6.9.2.10}start()}{47}{subsubsection.6.9.2.10}%
+\contentsline {subsubsection}{\numberline {6.9.2.11}started()}{48}{subsubsection.6.9.2.11}%
+\contentsline {section}{\numberline {6.10}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Images Class Reference}{49}{section.6.10}%
+\contentsline {subsection}{\numberline {6.10.1}Member Function Documentation}{50}{subsection.6.10.1}%
+\contentsline {subsubsection}{\numberline {6.10.1.1}loadImages()}{50}{subsubsection.6.10.1.1}%
+\contentsline {subsection}{\numberline {6.10.2}Member Data Documentation}{50}{subsection.6.10.2}%
+\contentsline {subsubsection}{\numberline {6.10.2.1}bigBomb}{50}{subsubsection.6.10.2.1}%
+\contentsline {subsubsection}{\numberline {6.10.2.2}bomb}{50}{subsubsection.6.10.2.2}%
+\contentsline {subsubsection}{\numberline {6.10.2.3}clusterBomb}{50}{subsubsection.6.10.2.3}%
+\contentsline {subsubsection}{\numberline {6.10.2.4}difusedBomb}{50}{subsubsection.6.10.2.4}%
+\contentsline {subsubsection}{\numberline {6.10.2.5}error}{51}{subsubsection.6.10.2.5}%
+\contentsline {subsubsection}{\numberline {6.10.2.6}flag}{51}{subsubsection.6.10.2.6}%
+\contentsline {subsubsection}{\numberline {6.10.2.7}flag2}{51}{subsubsection.6.10.2.7}%
+\contentsline {subsubsection}{\numberline {6.10.2.8}hTile}{51}{subsubsection.6.10.2.8}%
+\contentsline {subsubsection}{\numberline {6.10.2.9}icon}{51}{subsubsection.6.10.2.9}%
+\contentsline {subsubsection}{\numberline {6.10.2.10}MineSweeperFont}{51}{subsubsection.6.10.2.10}%
+\contentsline {subsubsection}{\numberline {6.10.2.11}numbers}{51}{subsubsection.6.10.2.11}%
+\contentsline {subsubsection}{\numberline {6.10.2.12}redBomb}{51}{subsubsection.6.10.2.12}%
+\contentsline {subsubsection}{\numberline {6.10.2.13}resetBomb}{52}{subsubsection.6.10.2.13}%
+\contentsline {subsubsection}{\numberline {6.10.2.14}resetFlagBomb}{52}{subsubsection.6.10.2.14}%
+\contentsline {subsubsection}{\numberline {6.10.2.15}success}{52}{subsubsection.6.10.2.15}%
+\contentsline {subsubsection}{\numberline {6.10.2.16}timerFont}{52}{subsubsection.6.10.2.16}%
+\contentsline {subsubsection}{\numberline {6.10.2.17}unknown}{52}{subsubsection.6.10.2.17}%
+\contentsline {section}{\numberline {6.11}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main Class Reference}{52}{section.6.11}%
+\contentsline {subsection}{\numberline {6.11.1}Member Function Documentation}{52}{subsection.6.11.1}%
+\contentsline {subsubsection}{\numberline {6.11.1.1}main()}{53}{subsubsection.6.11.1.1}%
+\contentsline {section}{\numberline {6.12}Front\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Panel Class Reference}{53}{section.6.12}%
+\contentsline {subsection}{\numberline {6.12.1}Constructor \& Destructor Documentation}{54}{subsection.6.12.1}%
+\contentsline {subsubsection}{\numberline {6.12.1.1}MenuPanel()}{54}{subsubsection.6.12.1.1}%
+\contentsline {subsection}{\numberline {6.12.2}Member Function Documentation}{54}{subsection.6.12.2}%
+\contentsline {subsubsection}{\numberline {6.12.2.1}initComponents()}{54}{subsubsection.6.12.2.1}%
+\contentsline {subsubsection}{\numberline {6.12.2.2}setActionListeners()}{55}{subsubsection.6.12.2.2}%
+\contentsline {section}{\numberline {6.13}Front\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bar Class Reference}{55}{section.6.13}%
+\contentsline {subsection}{\numberline {6.13.1}Constructor \& Destructor Documentation}{56}{subsection.6.13.1}%
+\contentsline {subsubsection}{\numberline {6.13.1.1}MyMenuBar()}{56}{subsubsection.6.13.1.1}%
+\contentsline {subsection}{\numberline {6.13.2}Member Function Documentation}{56}{subsection.6.13.2}%
+\contentsline {subsubsection}{\numberline {6.13.2.1}initComponents()}{56}{subsubsection.6.13.2.1}%
+\contentsline {subsubsection}{\numberline {6.13.2.2}setActionListeners()}{57}{subsubsection.6.13.2.2}%
+\contentsline {subsubsection}{\numberline {6.13.2.3}setGameBar()}{57}{subsubsection.6.13.2.3}%
+\contentsline {section}{\numberline {6.14}Front\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mouse\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Listener Class Reference}{58}{section.6.14}%
+\contentsline {subsection}{\numberline {6.14.1}Constructor \& Destructor Documentation}{58}{subsection.6.14.1}%
+\contentsline {subsubsection}{\numberline {6.14.1.1}MyMouseListener()}{58}{subsubsection.6.14.1.1}%
+\contentsline {subsection}{\numberline {6.14.2}Member Function Documentation}{59}{subsection.6.14.2}%
+\contentsline {subsubsection}{\numberline {6.14.2.1}mouseReleased()}{59}{subsubsection.6.14.2.1}%
+\contentsline {subsubsection}{\numberline {6.14.2.2}setBoard()}{59}{subsubsection.6.14.2.2}%
+\contentsline {subsubsection}{\numberline {6.14.2.3}setOffset()}{60}{subsubsection.6.14.2.3}%
+\contentsline {section}{\numberline {6.15}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reset\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bomb Class Reference}{60}{section.6.15}%
+\contentsline {subsection}{\numberline {6.15.1}Constructor \& Destructor Documentation}{61}{subsection.6.15.1}%
+\contentsline {subsubsection}{\numberline {6.15.1.1}ResetBomb()}{62}{subsubsection.6.15.1.1}%
+\contentsline {subsection}{\numberline {6.15.2}Member Function Documentation}{62}{subsection.6.15.2}%
+\contentsline {subsubsection}{\numberline {6.15.2.1}changeIcon()}{62}{subsubsection.6.15.2.1}%
+\contentsline {subsubsection}{\numberline {6.15.2.2}execute()}{62}{subsubsection.6.15.2.2}%
+\contentsline {section}{\numberline {6.16}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reset\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Flag\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bomb Class Reference}{62}{section.6.16}%
+\contentsline {subsection}{\numberline {6.16.1}Constructor \& Destructor Documentation}{63}{subsection.6.16.1}%
+\contentsline {subsubsection}{\numberline {6.16.1.1}ResetFlagBomb()}{64}{subsubsection.6.16.1.1}%
+\contentsline {subsection}{\numberline {6.16.2}Member Function Documentation}{64}{subsection.6.16.2}%
+\contentsline {subsubsection}{\numberline {6.16.2.1}changeIcon()}{64}{subsubsection.6.16.2.1}%
+\contentsline {subsubsection}{\numberline {6.16.2.2}execute()}{64}{subsubsection.6.16.2.2}%
+\contentsline {section}{\numberline {6.17}Front\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Settings\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Panel Class Reference}{65}{section.6.17}%
+\contentsline {subsection}{\numberline {6.17.1}Constructor \& Destructor Documentation}{66}{subsection.6.17.1}%
+\contentsline {subsubsection}{\numberline {6.17.1.1}SettingsPanel()}{66}{subsubsection.6.17.1.1}%
+\contentsline {subsection}{\numberline {6.17.2}Member Function Documentation}{66}{subsection.6.17.2}%
+\contentsline {subsubsection}{\numberline {6.17.2.1}getDiff()}{66}{subsubsection.6.17.2.1}%
+\contentsline {subsubsection}{\numberline {6.17.2.2}setActionListeners()}{66}{subsubsection.6.17.2.2}%
+\contentsline {subsubsection}{\numberline {6.17.2.3}submit()}{67}{subsubsection.6.17.2.3}%
+\contentsline {section}{\numberline {6.18}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tile Class Reference}{67}{section.6.18}%
+\contentsline {subsection}{\numberline {6.18.1}Constructor \& Destructor Documentation}{69}{subsection.6.18.1}%
+\contentsline {subsubsection}{\numberline {6.18.1.1}Tile()}{69}{subsubsection.6.18.1.1}%
+\contentsline {subsection}{\numberline {6.18.2}Member Function Documentation}{69}{subsection.6.18.2}%
+\contentsline {subsubsection}{\numberline {6.18.2.1}changeIcon()}{69}{subsubsection.6.18.2.1}%
+\contentsline {subsubsection}{\numberline {6.18.2.2}flag()}{70}{subsubsection.6.18.2.2}%
+\contentsline {subsubsection}{\numberline {6.18.2.3}getBombsAround()}{70}{subsubsection.6.18.2.3}%
+\contentsline {subsubsection}{\numberline {6.18.2.4}getCorrespondingIcon()}{70}{subsubsection.6.18.2.4}%
+\contentsline {subsubsection}{\numberline {6.18.2.5}getValue()}{71}{subsubsection.6.18.2.5}%
+\contentsline {subsubsection}{\numberline {6.18.2.6}getW()}{71}{subsubsection.6.18.2.6}%
+\contentsline {subsubsection}{\numberline {6.18.2.7}isFlagged()}{71}{subsubsection.6.18.2.7}%
+\contentsline {subsubsection}{\numberline {6.18.2.8}loadIcon()}{72}{subsubsection.6.18.2.8}%
+\contentsline {subsubsection}{\numberline {6.18.2.9}paintComponent()}{72}{subsubsection.6.18.2.9}%
+\contentsline {subsubsection}{\numberline {6.18.2.10}reveal()}{73}{subsubsection.6.18.2.10}%
+\contentsline {subsubsection}{\numberline {6.18.2.11}revealEnd()}{73}{subsubsection.6.18.2.11}%
+\contentsline {subsubsection}{\numberline {6.18.2.12}setBombsAround()}{74}{subsubsection.6.18.2.12}%
+\contentsline {subsubsection}{\numberline {6.18.2.13}setCoords()}{74}{subsubsection.6.18.2.13}%
+\contentsline {subsubsection}{\numberline {6.18.2.14}setFlagged()}{75}{subsubsection.6.18.2.14}%
+\contentsline {subsubsection}{\numberline {6.18.2.15}setRevealed()}{75}{subsubsection.6.18.2.15}%
+\contentsline {subsection}{\numberline {6.18.3}Member Data Documentation}{75}{subsection.6.18.3}%
+\contentsline {subsubsection}{\numberline {6.18.3.1}bombsAround}{75}{subsubsection.6.18.3.1}%
+\contentsline {subsubsection}{\numberline {6.18.3.2}icon}{75}{subsubsection.6.18.3.2}%
+\contentsline {subsubsection}{\numberline {6.18.3.3}isFlagged}{75}{subsubsection.6.18.3.3}%
+\contentsline {subsubsection}{\numberline {6.18.3.4}isRevealed}{75}{subsubsection.6.18.3.4}%
+\contentsline {subsubsection}{\numberline {6.18.3.5}master}{76}{subsubsection.6.18.3.5}%
+\contentsline {subsubsection}{\numberline {6.18.3.6}w}{76}{subsubsection.6.18.3.6}%
+\contentsline {subsubsection}{\numberline {6.18.3.7}x}{76}{subsubsection.6.18.3.7}%
+\contentsline {section}{\numberline {6.19}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Time Class Reference}{76}{section.6.19}%
+\contentsline {subsection}{\numberline {6.19.1}Detailed Description}{77}{subsection.6.19.1}%
+\contentsline {subsection}{\numberline {6.19.2}Constructor \& Destructor Documentation}{77}{subsection.6.19.2}%
+\contentsline {subsubsection}{\numberline {6.19.2.1}Time()}{77}{subsubsection.6.19.2.1}%
+\contentsline {subsection}{\numberline {6.19.3}Member Function Documentation}{77}{subsection.6.19.3}%
+\contentsline {subsubsection}{\numberline {6.19.3.1}getM()}{77}{subsubsection.6.19.3.1}%
+\contentsline {subsubsection}{\numberline {6.19.3.2}getS()}{78}{subsubsection.6.19.3.2}%
+\contentsline {subsubsection}{\numberline {6.19.3.3}increase()}{78}{subsubsection.6.19.3.3}%
+\contentsline {subsubsection}{\numberline {6.19.3.4}lt()}{78}{subsubsection.6.19.3.4}%
+\contentsline {section}{\numberline {6.20}Front\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Timer Class Reference}{79}{section.6.20}%
+\contentsline {subsection}{\numberline {6.20.1}Constructor \& Destructor Documentation}{80}{subsection.6.20.1}%
+\contentsline {subsubsection}{\numberline {6.20.1.1}Timer()}{80}{subsubsection.6.20.1.1}%
+\contentsline {subsection}{\numberline {6.20.2}Member Function Documentation}{80}{subsection.6.20.2}%
+\contentsline {subsubsection}{\numberline {6.20.2.1}getHeight()}{81}{subsubsection.6.20.2.1}%
+\contentsline {subsubsection}{\numberline {6.20.2.2}paintComponent()}{81}{subsubsection.6.20.2.2}%
+\contentsline {subsubsection}{\numberline {6.20.2.3}run()}{81}{subsubsection.6.20.2.3}%
+\contentsline {subsubsection}{\numberline {6.20.2.4}running()}{82}{subsubsection.6.20.2.4}%
+\contentsline {subsubsection}{\numberline {6.20.2.5}setFinished()}{82}{subsubsection.6.20.2.5}%
+\contentsline {subsubsection}{\numberline {6.20.2.6}setRunning()}{83}{subsubsection.6.20.2.6}%
+\contentsline {subsubsection}{\numberline {6.20.2.7}tick()}{83}{subsubsection.6.20.2.7}%
+\contentsline {subsubsection}{\numberline {6.20.2.8}toString()}{83}{subsubsection.6.20.2.8}%
+\contentsline {section}{\numberline {6.21}Front\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Victory\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Panel Class Reference}{84}{section.6.21}%
+\contentsline {subsection}{\numberline {6.21.1}Constructor \& Destructor Documentation}{85}{subsection.6.21.1}%
+\contentsline {subsubsection}{\numberline {6.21.1.1}VictoryPanel()}{85}{subsubsection.6.21.1.1}%
+\contentsline {subsection}{\numberline {6.21.2}Member Function Documentation}{85}{subsection.6.21.2}%
+\contentsline {subsubsection}{\numberline {6.21.2.1}initComponents()}{85}{subsubsection.6.21.2.1}%
+\contentsline {section}{\numberline {6.22}Front\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window Class Reference}{85}{section.6.22}%
+\contentsline {subsection}{\numberline {6.22.1}Constructor \& Destructor Documentation}{86}{subsection.6.22.1}%
+\contentsline {subsubsection}{\numberline {6.22.1.1}Window()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{86}{subsubsection.6.22.1.1}%
+\contentsline {subsubsection}{\numberline {6.22.1.2}Window()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{87}{subsubsection.6.22.1.2}%
+\contentsline {subsection}{\numberline {6.22.2}Member Function Documentation}{87}{subsection.6.22.2}%
+\contentsline {subsubsection}{\numberline {6.22.2.1}getDefSize()}{87}{subsubsection.6.22.2.1}%
+\contentsline {subsubsection}{\numberline {6.22.2.2}resetSize()}{87}{subsubsection.6.22.2.2}%
+\contentsline {subsubsection}{\numberline {6.22.2.3}setPanel()}{87}{subsubsection.6.22.2.3}%
+\contentsline {chapter}{\numberline {7}File Documentation}{89}{chapter.7}%
+\contentsline {section}{\numberline {7.1}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Big\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bomb.java File Reference}{89}{section.7.1}%
+\contentsline {section}{\numberline {7.2}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Board.java File Reference}{89}{section.7.2}%
+\contentsline {section}{\numberline {7.3}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bomb.java File Reference}{89}{section.7.3}%
+\contentsline {section}{\numberline {7.4}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cluster\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bomb.java File Reference}{90}{section.7.4}%
+\contentsline {section}{\numberline {7.5}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller.java File Reference}{90}{section.7.5}%
+\contentsline {section}{\numberline {7.6}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Difficulty.java File Reference}{90}{section.7.6}%
+\contentsline {section}{\numberline {7.7}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Difused\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bomb.java File Reference}{90}{section.7.7}%
+\contentsline {section}{\numberline {7.8}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Images.java File Reference}{91}{section.7.8}%
+\contentsline {section}{\numberline {7.9}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main.java File Reference}{91}{section.7.9}%
+\contentsline {section}{\numberline {7.10}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reset\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bomb.java File Reference}{91}{section.7.10}%
+\contentsline {section}{\numberline {7.11}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reset\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Flag\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bomb.java File Reference}{91}{section.7.11}%
+\contentsline {section}{\numberline {7.12}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tile.java File Reference}{92}{section.7.12}%
+\contentsline {section}{\numberline {7.13}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Time.java File Reference}{92}{section.7.13}%
+\contentsline {section}{\numberline {7.14}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Front\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/feed\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window.java File Reference}{92}{section.7.14}%
+\contentsline {section}{\numberline {7.15}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Front\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Game.java File Reference}{92}{section.7.15}%
+\contentsline {section}{\numberline {7.16}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Front\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Panel.java File Reference}{93}{section.7.16}%
+\contentsline {section}{\numberline {7.17}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Front\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bar.java File Reference}{93}{section.7.17}%
+\contentsline {section}{\numberline {7.18}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Front\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mouse\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Listener.java File Reference}{93}{section.7.18}%
+\contentsline {section}{\numberline {7.19}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Front\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Settings\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Panel.java File Reference}{93}{section.7.19}%
+\contentsline {section}{\numberline {7.20}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Front\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Timer.java File Reference}{94}{section.7.20}%
+\contentsline {section}{\numberline {7.21}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Front\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Victory\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Panel.java File Reference}{94}{section.7.21}%
+\contentsline {section}{\numberline {7.22}/home/szoliver/eclipse-\/workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prog3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}HF/src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Front\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window.java File Reference}{94}{section.7.22}%
+\contentsline {chapter}{Index}{95}{section*.227}%

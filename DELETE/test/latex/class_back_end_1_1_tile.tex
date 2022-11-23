@@ -1,0 +1,375 @@
+\hypertarget{class_back_end_1_1_tile}{}\doxysection{Back\+End.\+Tile Class Reference}
+\label{class_back_end_1_1_tile}\index{BackEnd.Tile@{BackEnd.Tile}}
+
+
+Inheritance diagram for Back\+End.\+Tile\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_back_end_1_1_tile__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Back\+End.\+Tile\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{class_back_end_1_1_tile__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_back_end_1_1_tile_a11f9ae6edc9d9bffb9c22e3f213bcd2c}{Tile}} (\mbox{\hyperlink{class_back_end_1_1_board}{Board}} b)
+\item 
+int \mbox{\hyperlink{class_back_end_1_1_tile_a18228d4f45fd93a26fcc9a133c64d1a3}{get\+Value}} ()
+\item 
+int \mbox{\hyperlink{class_back_end_1_1_tile_a946b51aa60f5de00a35292e787927b9d}{get\+Bombs\+Around}} ()
+\item 
+boolean \mbox{\hyperlink{class_back_end_1_1_tile_aeeb9086dfd0ccdd9184f2ec9b37bc215}{is\+Flagged}} ()
+\item 
+void \mbox{\hyperlink{class_back_end_1_1_tile_a8dcb1bd855e852a96ba2474b1a6cf8c2}{set\+Flagged}} (boolean b)
+\item 
+void \mbox{\hyperlink{class_back_end_1_1_tile_abf0f68227ea3f443aa5f5771ae000667}{flag}} ()
+\item 
+void \mbox{\hyperlink{class_back_end_1_1_tile_a5b1b7cb7a7a3d0f86ef8935c85a8b251}{set\+Bombs\+Around}} (int b)
+\item 
+void \mbox{\hyperlink{class_back_end_1_1_tile_a196fd5ab2f32418647b9605855551b0b}{load\+Icon}} ()
+\item 
+void \mbox{\hyperlink{class_back_end_1_1_tile_af6ba1b196f396f9927d1e835c15058ab}{set\+Coords}} (int \mbox{\hyperlink{class_back_end_1_1_tile_a6ad705c6eae3c646d933ae88c0556a0c}{x}}, int y)
+\item 
+Image \mbox{\hyperlink{class_back_end_1_1_tile_a00e2e60d5cf56d4f140a694a20826ad6}{get\+Corresponding\+Icon}} ()
+\item 
+void \mbox{\hyperlink{class_back_end_1_1_tile_ae4f51f71dbba5bc26bbdc99a7f6b6e3e}{set\+Revealed}} (boolean b)
+\item 
+void \mbox{\hyperlink{class_back_end_1_1_tile_a48f45509660892ccb1d3fd7a0993518d}{reveal}} ()
+\item 
+void \mbox{\hyperlink{class_back_end_1_1_tile_a06f480e1db1ea7053474def1b96356d7}{reveal\+End}} ()
+\item 
+void \mbox{\hyperlink{class_back_end_1_1_tile_ac77bf45c8867789e4930c97cb5b2897f}{paint\+Component}} (Graphics g)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_back_end_1_1_tile_a8dfadef5d1049aa0d9a59ba545dd5476}{getW}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_back_end_1_1_tile_a11593a24b36695447c1d73802f2476ff}{change\+Icon}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{class_back_end_1_1_tile_a086a0bcea56a042398b42b5caad3f6e6}{is\+Flagged}}
+\item 
+boolean \mbox{\hyperlink{class_back_end_1_1_tile_a34ad1b8c2ab0252a3da1f2c8826d5f66}{is\+Revealed}}
+\item 
+\mbox{\hyperlink{class_back_end_1_1_board}{Board}} \mbox{\hyperlink{class_back_end_1_1_tile_a1d4869784ea284bd4984bddf085cbc08}{master}}
+\item 
+int \mbox{\hyperlink{class_back_end_1_1_tile_a6ad705c6eae3c646d933ae88c0556a0c}{x}}
+\item 
+int \mbox{\hyperlink{class_back_end_1_1_tile_af31214b912e4a33631ab4642592a7eda}{bombs\+Around}}
+\item 
+transient Image \mbox{\hyperlink{class_back_end_1_1_tile_ae92311f2f70c0ab5f67ecc22b22de51a}{icon}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_back_end_1_1_tile_a991dbd0a17d162c20a5429f549f9e298}{w}} = 25
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_back_end_1_1_tile_a11f9ae6edc9d9bffb9c22e3f213bcd2c}\label{class_back_end_1_1_tile_a11f9ae6edc9d9bffb9c22e3f213bcd2c}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!Tile@{Tile}}
+\index{Tile@{Tile}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{Tile()}{Tile()}}
+{\footnotesize\ttfamily Back\+End.\+Tile.\+Tile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_back_end_1_1_board}{Board}}}]{b }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_back_end_1_1_tile_a11593a24b36695447c1d73802f2476ff}\label{class_back_end_1_1_tile_a11593a24b36695447c1d73802f2476ff}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!changeIcon@{changeIcon}}
+\index{changeIcon@{changeIcon}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{changeIcon()}{changeIcon()}}
+{\footnotesize\ttfamily void Back\+End.\+Tile.\+change\+Icon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_back_end_1_1_reset_flag_bomb_ace31b95c3b915bc21fa1a6e4304c9fb0}{Back\+End.\+Reset\+Flag\+Bomb}}, \mbox{\hyperlink{class_back_end_1_1_reset_bomb_a7758f0f3dfb2e8bb6426bd42a6930043}{Back\+End.\+Reset\+Bomb}}, \mbox{\hyperlink{class_back_end_1_1_difused_bomb_af24b46bc23d5e5bbd350607910b3e1a6}{Back\+End.\+Difused\+Bomb}}, \mbox{\hyperlink{class_back_end_1_1_cluster_bomb_a904640b459e9ccba83bb0ebe2ac24e09}{Back\+End.\+Cluster\+Bomb}}, \mbox{\hyperlink{class_back_end_1_1_bomb_a433ce010ebcb06f4d3bed57c862b6381}{Back\+End.\+Bomb}}, and \mbox{\hyperlink{class_back_end_1_1_big_bomb_a921a7cf274ed81074a37dbb5d55bd1be}{Back\+End.\+Big\+Bomb}}.
+
+\mbox{\Hypertarget{class_back_end_1_1_tile_abf0f68227ea3f443aa5f5771ae000667}\label{class_back_end_1_1_tile_abf0f68227ea3f443aa5f5771ae000667}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!flag@{flag}}
+\index{flag@{flag}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{flag()}{flag()}}
+{\footnotesize\ttfamily void Back\+End.\+Tile.\+flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_back_end_1_1_tile_abf0f68227ea3f443aa5f5771ae000667_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_back_end_1_1_tile_abf0f68227ea3f443aa5f5771ae000667_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_back_end_1_1_tile_a946b51aa60f5de00a35292e787927b9d}\label{class_back_end_1_1_tile_a946b51aa60f5de00a35292e787927b9d}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!getBombsAround@{getBombsAround}}
+\index{getBombsAround@{getBombsAround}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{getBombsAround()}{getBombsAround()}}
+{\footnotesize\ttfamily int Back\+End.\+Tile.\+get\+Bombs\+Around (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_back_end_1_1_tile_a00e2e60d5cf56d4f140a694a20826ad6}\label{class_back_end_1_1_tile_a00e2e60d5cf56d4f140a694a20826ad6}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!getCorrespondingIcon@{getCorrespondingIcon}}
+\index{getCorrespondingIcon@{getCorrespondingIcon}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{getCorrespondingIcon()}{getCorrespondingIcon()}}
+{\footnotesize\ttfamily Image Back\+End.\+Tile.\+get\+Corresponding\+Icon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_back_end_1_1_tile_a18228d4f45fd93a26fcc9a133c64d1a3}\label{class_back_end_1_1_tile_a18228d4f45fd93a26fcc9a133c64d1a3}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!getValue@{getValue}}
+\index{getValue@{getValue}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily int Back\+End.\+Tile.\+get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_back_end_1_1_bomb_a5ddbed4df0f822a97519bcab048b3ee4}{Back\+End.\+Bomb}}, and \mbox{\hyperlink{class_back_end_1_1_big_bomb_a788b2a0017fab23023e47f05d413d14b}{Back\+End.\+Big\+Bomb}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_back_end_1_1_tile_a18228d4f45fd93a26fcc9a133c64d1a3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_back_end_1_1_tile_a8dfadef5d1049aa0d9a59ba545dd5476}\label{class_back_end_1_1_tile_a8dfadef5d1049aa0d9a59ba545dd5476}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!getW@{getW}}
+\index{getW@{getW}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{getW()}{getW()}}
+{\footnotesize\ttfamily static int Back\+End.\+Tile.\+getW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_back_end_1_1_tile_a8dfadef5d1049aa0d9a59ba545dd5476_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_back_end_1_1_tile_aeeb9086dfd0ccdd9184f2ec9b37bc215}\label{class_back_end_1_1_tile_aeeb9086dfd0ccdd9184f2ec9b37bc215}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!isFlagged@{isFlagged}}
+\index{isFlagged@{isFlagged}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{isFlagged()}{isFlagged()}}
+{\footnotesize\ttfamily boolean Back\+End.\+Tile.\+is\+Flagged (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_back_end_1_1_tile_aeeb9086dfd0ccdd9184f2ec9b37bc215_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_back_end_1_1_tile_aeeb9086dfd0ccdd9184f2ec9b37bc215_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_back_end_1_1_tile_a196fd5ab2f32418647b9605855551b0b}\label{class_back_end_1_1_tile_a196fd5ab2f32418647b9605855551b0b}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!loadIcon@{loadIcon}}
+\index{loadIcon@{loadIcon}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{loadIcon()}{loadIcon()}}
+{\footnotesize\ttfamily void Back\+End.\+Tile.\+load\+Icon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_back_end_1_1_tile_a196fd5ab2f32418647b9605855551b0b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_back_end_1_1_tile_ac77bf45c8867789e4930c97cb5b2897f}\label{class_back_end_1_1_tile_ac77bf45c8867789e4930c97cb5b2897f}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!paintComponent@{paintComponent}}
+\index{paintComponent@{paintComponent}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{paintComponent()}{paintComponent()}}
+{\footnotesize\ttfamily void Back\+End.\+Tile.\+paint\+Component (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_back_end_1_1_tile_ac77bf45c8867789e4930c97cb5b2897f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_back_end_1_1_tile_a48f45509660892ccb1d3fd7a0993518d}\label{class_back_end_1_1_tile_a48f45509660892ccb1d3fd7a0993518d}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!reveal@{reveal}}
+\index{reveal@{reveal}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{reveal()}{reveal()}}
+{\footnotesize\ttfamily void Back\+End.\+Tile.\+reveal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_back_end_1_1_difused_bomb_acf6585c11841b38f93ca6eca94c76c2f}{Back\+End.\+Difused\+Bomb}}, and \mbox{\hyperlink{class_back_end_1_1_bomb_a1c40c6952776cec362312853d8807b8a}{Back\+End.\+Bomb}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_back_end_1_1_tile_a48f45509660892ccb1d3fd7a0993518d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_back_end_1_1_tile_a48f45509660892ccb1d3fd7a0993518d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_back_end_1_1_tile_a06f480e1db1ea7053474def1b96356d7}\label{class_back_end_1_1_tile_a06f480e1db1ea7053474def1b96356d7}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!revealEnd@{revealEnd}}
+\index{revealEnd@{revealEnd}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{revealEnd()}{revealEnd()}}
+{\footnotesize\ttfamily void Back\+End.\+Tile.\+reveal\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_back_end_1_1_difused_bomb_a233c5fe9cab33e8d8900af333ce211b2}{Back\+End.\+Difused\+Bomb}}, and \mbox{\hyperlink{class_back_end_1_1_bomb_a2f8a924c3eedafe5bdfef1bc03d13c52}{Back\+End.\+Bomb}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_back_end_1_1_tile_a06f480e1db1ea7053474def1b96356d7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_back_end_1_1_tile_a06f480e1db1ea7053474def1b96356d7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_back_end_1_1_tile_a5b1b7cb7a7a3d0f86ef8935c85a8b251}\label{class_back_end_1_1_tile_a5b1b7cb7a7a3d0f86ef8935c85a8b251}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!setBombsAround@{setBombsAround}}
+\index{setBombsAround@{setBombsAround}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{setBombsAround()}{setBombsAround()}}
+{\footnotesize\ttfamily void Back\+End.\+Tile.\+set\+Bombs\+Around (\begin{DoxyParamCaption}\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_back_end_1_1_bomb_a57234789b8b65618193273f9f7335bbc}{Back\+End.\+Bomb}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_back_end_1_1_tile_a5b1b7cb7a7a3d0f86ef8935c85a8b251_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_back_end_1_1_tile_af6ba1b196f396f9927d1e835c15058ab}\label{class_back_end_1_1_tile_af6ba1b196f396f9927d1e835c15058ab}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!setCoords@{setCoords}}
+\index{setCoords@{setCoords}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{setCoords()}{setCoords()}}
+{\footnotesize\ttfamily void Back\+End.\+Tile.\+set\+Coords (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_back_end_1_1_tile_af6ba1b196f396f9927d1e835c15058ab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_back_end_1_1_tile_a8dcb1bd855e852a96ba2474b1a6cf8c2}\label{class_back_end_1_1_tile_a8dcb1bd855e852a96ba2474b1a6cf8c2}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!setFlagged@{setFlagged}}
+\index{setFlagged@{setFlagged}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{setFlagged()}{setFlagged()}}
+{\footnotesize\ttfamily void Back\+End.\+Tile.\+set\+Flagged (\begin{DoxyParamCaption}\item[{boolean}]{b }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_back_end_1_1_tile_a8dcb1bd855e852a96ba2474b1a6cf8c2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_back_end_1_1_tile_ae4f51f71dbba5bc26bbdc99a7f6b6e3e}\label{class_back_end_1_1_tile_ae4f51f71dbba5bc26bbdc99a7f6b6e3e}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!setRevealed@{setRevealed}}
+\index{setRevealed@{setRevealed}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{setRevealed()}{setRevealed()}}
+{\footnotesize\ttfamily void Back\+End.\+Tile.\+set\+Revealed (\begin{DoxyParamCaption}\item[{boolean}]{b }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_back_end_1_1_tile_af31214b912e4a33631ab4642592a7eda}\label{class_back_end_1_1_tile_af31214b912e4a33631ab4642592a7eda}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!bombsAround@{bombsAround}}
+\index{bombsAround@{bombsAround}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{bombsAround}{bombsAround}}
+{\footnotesize\ttfamily int Back\+End.\+Tile.\+bombs\+Around\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_back_end_1_1_tile_ae92311f2f70c0ab5f67ecc22b22de51a}\label{class_back_end_1_1_tile_ae92311f2f70c0ab5f67ecc22b22de51a}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!icon@{icon}}
+\index{icon@{icon}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{icon}{icon}}
+{\footnotesize\ttfamily transient Image Back\+End.\+Tile.\+icon\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_back_end_1_1_tile_a086a0bcea56a042398b42b5caad3f6e6}\label{class_back_end_1_1_tile_a086a0bcea56a042398b42b5caad3f6e6}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!isFlagged@{isFlagged}}
+\index{isFlagged@{isFlagged}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{isFlagged}{isFlagged}}
+{\footnotesize\ttfamily boolean Back\+End.\+Tile.\+is\+Flagged\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_back_end_1_1_tile_a34ad1b8c2ab0252a3da1f2c8826d5f66}\label{class_back_end_1_1_tile_a34ad1b8c2ab0252a3da1f2c8826d5f66}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!isRevealed@{isRevealed}}
+\index{isRevealed@{isRevealed}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{isRevealed}{isRevealed}}
+{\footnotesize\ttfamily boolean Back\+End.\+Tile.\+is\+Revealed\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_back_end_1_1_tile_a1d4869784ea284bd4984bddf085cbc08}\label{class_back_end_1_1_tile_a1d4869784ea284bd4984bddf085cbc08}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!master@{master}}
+\index{master@{master}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{master}{master}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_back_end_1_1_board}{Board}} Back\+End.\+Tile.\+master\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_back_end_1_1_tile_a991dbd0a17d162c20a5429f549f9e298}\label{class_back_end_1_1_tile_a991dbd0a17d162c20a5429f549f9e298}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!w@{w}}
+\index{w@{w}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily int Back\+End.\+Tile.\+w = 25\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_back_end_1_1_tile_a6ad705c6eae3c646d933ae88c0556a0c}\label{class_back_end_1_1_tile_a6ad705c6eae3c646d933ae88c0556a0c}} 
+\index{BackEnd.Tile@{BackEnd.Tile}!x@{x}}
+\index{x@{x}!BackEnd.Tile@{BackEnd.Tile}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int Back\+End.\+Tile.\+x\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/szoliver/eclipse-\/workspace/\+Prog3\+\_\+\+HF/\+Prog3\+\_\+\+HF/src/\+Back\+End/\mbox{\hyperlink{_tile_8java}{Tile.\+java}}\end{DoxyCompactItemize}

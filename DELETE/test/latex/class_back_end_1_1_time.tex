@@ -1,0 +1,125 @@
+\hypertarget{class_back_end_1_1_time}{}\doxysection{Back\+End.\+Time Class Reference}
+\label{class_back_end_1_1_time}\index{BackEnd.Time@{BackEnd.Time}}
+
+
+Inheritance diagram for Back\+End.\+Time\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{class_back_end_1_1_time__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Back\+End.\+Time\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{class_back_end_1_1_time__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_back_end_1_1_time_a6e8415b40eadcb87283b8ac7f7c80fdd}{Time}} ()
+\item 
+void \mbox{\hyperlink{class_back_end_1_1_time_ae2f7f59a23babf8b7d8a55fb3e8d7536}{increase}} ()
+\item 
+boolean \mbox{\hyperlink{class_back_end_1_1_time_ac09c1fb2c59af1f4778c0b7dedba9767}{lt}} (int num)
+\item 
+int \mbox{\hyperlink{class_back_end_1_1_time_a8edad6eb7eaafbb1ddd4e719c109627e}{getM}} ()
+\item 
+int \mbox{\hyperlink{class_back_end_1_1_time_a23858adf98acf8d42a978bcc50e87fb4}{getS}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Egyszerű idő osztály, ami a mostani feladat megoldásához elegendő. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_back_end_1_1_time_a6e8415b40eadcb87283b8ac7f7c80fdd}\label{class_back_end_1_1_time_a6e8415b40eadcb87283b8ac7f7c80fdd}} 
+\index{BackEnd.Time@{BackEnd.Time}!Time@{Time}}
+\index{Time@{Time}!BackEnd.Time@{BackEnd.Time}}
+\doxysubsubsection{\texorpdfstring{Time()}{Time()}}
+{\footnotesize\ttfamily Back\+End.\+Time.\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Tárolja az időt percekben és másodpercekben. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_back_end_1_1_time_a8edad6eb7eaafbb1ddd4e719c109627e}\label{class_back_end_1_1_time_a8edad6eb7eaafbb1ddd4e719c109627e}} 
+\index{BackEnd.Time@{BackEnd.Time}!getM@{getM}}
+\index{getM@{getM}!BackEnd.Time@{BackEnd.Time}}
+\doxysubsubsection{\texorpdfstring{getM()}{getM()}}
+{\footnotesize\ttfamily int Back\+End.\+Time.\+getM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get függvény a percek lekérésére. \begin{DoxyReturn}{Returns}
+A percek értéke. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_back_end_1_1_time_a8edad6eb7eaafbb1ddd4e719c109627e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_back_end_1_1_time_a23858adf98acf8d42a978bcc50e87fb4}\label{class_back_end_1_1_time_a23858adf98acf8d42a978bcc50e87fb4}} 
+\index{BackEnd.Time@{BackEnd.Time}!getS@{getS}}
+\index{getS@{getS}!BackEnd.Time@{BackEnd.Time}}
+\doxysubsubsection{\texorpdfstring{getS()}{getS()}}
+{\footnotesize\ttfamily int Back\+End.\+Time.\+getS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get függvény a másodpercek lekérésére. \begin{DoxyReturn}{Returns}
+A másodpercek értéke. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_back_end_1_1_time_a23858adf98acf8d42a978bcc50e87fb4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_back_end_1_1_time_ae2f7f59a23babf8b7d8a55fb3e8d7536}\label{class_back_end_1_1_time_ae2f7f59a23babf8b7d8a55fb3e8d7536}} 
+\index{BackEnd.Time@{BackEnd.Time}!increase@{increase}}
+\index{increase@{increase}!BackEnd.Time@{BackEnd.Time}}
+\doxysubsubsection{\texorpdfstring{increase()}{increase()}}
+{\footnotesize\ttfamily void Back\+End.\+Time.\+increase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Megnöveli eggyel az idő értékét. Ha a másodperc elér a 60-\/at, akkor a percet növeli eggyel, azt meg lenullázza. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_back_end_1_1_time_ae2f7f59a23babf8b7d8a55fb3e8d7536_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_back_end_1_1_time_ac09c1fb2c59af1f4778c0b7dedba9767}\label{class_back_end_1_1_time_ac09c1fb2c59af1f4778c0b7dedba9767}} 
+\index{BackEnd.Time@{BackEnd.Time}!lt@{lt}}
+\index{lt@{lt}!BackEnd.Time@{BackEnd.Time}}
+\doxysubsubsection{\texorpdfstring{lt()}{lt()}}
+{\footnotesize\ttfamily boolean Back\+End.\+Time.\+lt (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+Függvény annak eldöntésére, hogy az idő kisebb-\/e, mint a megadott érték. 
+\begin{DoxyParams}{Parameters}
+{\em num} & A vizsgált idő másodpercekben \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, ha valóban kisebb. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{class_back_end_1_1_time_ac09c1fb2c59af1f4778c0b7dedba9767_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/szoliver/eclipse-\/workspace/\+Prog3\+\_\+\+HF/\+Prog3\+\_\+\+HF/src/\+Back\+End/\mbox{\hyperlink{_time_8java}{Time.\+java}}\end{DoxyCompactItemize}
