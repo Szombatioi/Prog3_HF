@@ -12,7 +12,7 @@ import BackEnd.Tile;
 public class MyMouseListener extends MouseAdapter implements Serializable{
 	private Board board;
 	private Game game;
-	private int xOffset;
+	private int xOffset, yOffset;
 	public MyMouseListener(Board b, Game g) {
 		board = b;
 		game = g;
@@ -22,14 +22,15 @@ public class MyMouseListener extends MouseAdapter implements Serializable{
 		board = b;
 	}
 	
-	public void setOffset(int x) {
+	public void setOffset(int x, int y) {
 		xOffset = x;
+		yOffset = y;
 	}
 	
 
     @Override
     public void mouseReleased(MouseEvent e) {
-        int r = e.getY()/Tile.getW();
+        int r = (e.getY()-yOffset)/Tile.getW();
         
         int c = (e.getX()-xOffset)/Tile.getW();
 //        System.out.println(r+"-"+c);

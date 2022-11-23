@@ -1,6 +1,7 @@
 package FrontEnd;
 
 import java.awt.Desktop;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -15,12 +16,18 @@ import BackEnd.Controller;
 public class MyMenuBar extends JMenuBar{
 	
 	private Controller controller;
-	private JMenuItem menu, settings, exit, help;
+	JMenu gameMenu;
+	private JMenuItem menu, settings, exit, help, newGame, pause, save;
 	
 	public MyMenuBar(Controller controller) {
 		this.controller = controller;
-		
+		initComponents();
+		setActionListeners();
+	}
+	
+	public void initComponents() {
 		JMenu programMenu = new JMenu("Program");
+		programMenu.setMnemonic(KeyEvent.VK_F1);
 		menu = new JMenuItem("Menu");
 		settings = new JMenuItem("Settings");
 		exit = new JMenuItem("Exit");
@@ -28,15 +35,13 @@ public class MyMenuBar extends JMenuBar{
 		programMenu.add(menu);
 		programMenu.add(settings);
 		programMenu.addSeparator();
-		programMenu.add(exit);
+		programMenu.add(exit);		
 		
-		
-		
-		JMenu gameMenu = new JMenu("Game");
+		gameMenu = new JMenu("Game");
 		gameMenu.setEnabled(false);
-		JMenuItem newGame = new JMenuItem("New Game");
-		JMenuItem pause = new JMenuItem("Pause");
-		JMenuItem save = new JMenuItem("Save");
+		newGame = new JMenuItem("New Game");
+		pause = new JMenuItem("Pause");
+		save = new JMenuItem("Save");
 		gameMenu.add(newGame);
 		gameMenu.add(pause);
 		gameMenu.add(save);
@@ -48,19 +53,24 @@ public class MyMenuBar extends JMenuBar{
 		add(programMenu);
 		add(gameMenu);
 		add(aboutMenu);
-		
-		setActionListeners();
 	}
 	
-	public void initComponents() {
-		
+	public void setGameBar(boolean b) {
+		gameMenu.setEnabled(b);
 	}
 	
 	public void setActionListeners() {
-		menu.addActionListener(a -> controller.setPanel(new MenuPanel(controller)));
-		settings.addActionListener(a -> controller.setPanel(new SettingsPanel(controller)));
+		menu.addActionListener(a -> {
+			controller.setPanel(new MenuPanel(controller));
+			controller.resetWindowSize();
+			controller.setGameMenuBar(false);
+		});
+		settings.addActionListener(a -> {
+			controller.setPanel(new SettingsPanel(controller));
+			controller.resetWindowSize();
+			controller.setGameMenuBar(false);
+		});
 		exit.addActionListener(a -> System.exit(0));
-		
 		help.addActionListener(a -> {
 			Desktop desktop = java.awt.Desktop.getDesktop();
 			try {
@@ -69,6 +79,16 @@ public class MyMenuBar extends JMenuBar{
 			} catch (URISyntaxException | IOException e) {
 				e.printStackTrace();
 			}
+		});
+		
+		newGame.addActionListener(a->{
+			Game g = new Game(controller);
+			controller.setPanel(g);
+			controller.setGame(g);
+			pause.setText("Pause");
+		});
+		pause.addActionListener(a->{
+			pause.setText(controller.pauseGame() ? "Pause" : "Continue"); //pauseGame() azzal tér vissza, hogy MOST meg lesz-e állítva
 		});
 	}
 

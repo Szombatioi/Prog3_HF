@@ -16,29 +16,35 @@ public class Game extends JPanel implements Serializable{
 	private boolean started;
 	private boolean finished;
 	private MyMouseListener mml;
+	private Controller controller;
+	int yOffset; //idő+flags rajzolása miatt
 	
-	public Game(Board b) {
-		board = b;
+	public Game(Controller controller) {
+		this.controller = controller;
+		board = new Board(controller.getDiff(), this, controller);
 		init();
+		controller.setGameMenuBar(true);
 	}
 	
-	public Game(Difficulty d) {
-		board = new Board(d, this);
-		init();
-	}
+//	public Game(Board b) {
+//		board = b;
+//		init();
+//	}
 	
-	public Board getBoard() {
-		return board;
-	}
+//	public Board getBoard() {
+//		return board;
+//	}
 	
 	public void init() {
 		timer = new Timer();
+		yOffset = timer.getHeight();
 		running = true;
+//		running = false;
 		started = false;
 		finished = false;
 		mml = new MyMouseListener(board, this);
 		addMouseListener(mml);
-		Controller.setML(mml);
+		controller.setML(mml);
 	}
 	public MyMouseListener getListener() {return mml;}
 	public boolean running() {return running;}
@@ -83,8 +89,7 @@ public class Game extends JPanel implements Serializable{
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 //		if(running) board.paintComponent(g, getWidth()/2);
-		board.paintComponent(g, getWidth()/2);
-		board.paintComponent(g, getWidth()/2);
+		board.paintComponent(g, getWidth()/2, yOffset+10);
 		timer.paintComponent(g, getWidth());
 		repaint();
 	}

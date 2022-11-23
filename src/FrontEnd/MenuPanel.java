@@ -71,13 +71,17 @@ public class MenuPanel extends JPanel{
 			controller.resetWindowSize();
 			
 		});
-		newGameBtn.addActionListener(a -> controller.setPanel(new GamePanel(controller)));
+		newGameBtn.addActionListener(a -> {
+			Game g = new Game(controller);
+			controller.setPanel(g);
+			controller.setGame(g);
+		});
 		loadBtn.addActionListener(a->{
 			Game g = controller.load();
 			g.setStarted(true);
-			controller.setPanel(new GamePanel(controller, g));
-			Controller.setML(g.getListener());
-			Controller.setMMLBoard(g.getBoard());
+			controller.setPanel(g); //ide még lehet kell egy setController
+			controller.setML(g.getListener());
+//			controller.setMMLBoard(g.getBoard());
 		});
 	}
 }

@@ -23,6 +23,8 @@ public class Timer extends Thread implements Serializable{
 		delta = 10;
 	}
 
+	public int getHeight() {return h;}
+	
 	public String toString() {
 		return String.format("%02d", time.getM())+":"+String.format("%02d", time.getS());
 	}
@@ -56,7 +58,7 @@ public class Timer extends Thread implements Serializable{
 		g.drawRect(width-w-delta, 0, width-delta-5, h+5);
 		
 		g.setColor(Color.red);
-		g.drawString(toString(), width-w-delta, 34);
+		g.drawString(toString(), width-w-delta, h);
 		
 	}
 }

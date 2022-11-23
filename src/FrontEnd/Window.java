@@ -25,7 +25,9 @@ public class Window extends JFrame{
 		requestFocus();
 		setResizable(false);
 		
-		setJMenuBar(new MyMenuBar(controller));
+		MyMenuBar menuBar = new MyMenuBar(controller);
+		setJMenuBar(menuBar);
+		controller.setMenuBar(menuBar);
 		add(new MenuPanel(controller));
 //		add(new VictoryPanel(3, 22,false));
 		

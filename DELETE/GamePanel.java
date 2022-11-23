@@ -23,7 +23,7 @@ public class GamePanel extends JPanel{
 	
 	
 	public GamePanel(Controller controller) {
-		game = new Game(controller.getDiff());
+//		game = new Game(controller.getDiff());
 		init(controller);
 	}
 	

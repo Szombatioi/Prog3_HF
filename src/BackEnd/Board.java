@@ -16,10 +16,12 @@ public class Board implements Serializable{
 	ArrayList<Tile> emptyTiles;
 	Difficulty diff;
 	int xOffset, yOffset;
+	Controller controller;
 //	ArrayList<Tile> flaggedTiles;
 	
-	public Board(Difficulty d, Game g) {
+	public Board(Difficulty d, Game g, Controller controller) {
 		diff = d;
+		this.controller = controller;
 		xOffset = yOffset = 0;
 		restart();
 		game = g;
@@ -28,7 +30,10 @@ public class Board implements Serializable{
 	public int getCols() {return cols;}
 	public int getBombs() {return bombsNr;}
 	
-	public void resetGame() {game.setStarted(false);}
+	public void resetGame() {
+		game.setStarted(false);
+		game.setRunning(true);
+	}
 	
 	public void end() {
 		game.setFinished(true);
@@ -137,12 +142,12 @@ public class Board implements Serializable{
 	}
 	
 	public void revealTile(int row, int col) {
-		if(row >= 0 && row < rows && col >= 0 && col < cols && tiles[col][row].getBombsAround()!=0 && tiles[col][row].getBombsAround()!=1) tiles[col][row].reveal();
+		if(row >= 0 && row < rows && col >= 0 && col < cols && tiles[col][row].getBombsAround()!=0 && !tiles[col][row].isFlagged && tiles[col][row].getBombsAround()!=1) tiles[col][row].reveal();
 		else findZerosAround(row, col);
 	}
 	
 	public void flagTile(int col, int row) {
-		tiles[col][row].flag();
+		if(row >= 0 && row < rows && col >= 0 && col < cols) tiles[col][row].flag();
 	}
 	public void modFlag(int f) {
 		flagsLeft+=f;
@@ -153,13 +158,13 @@ public class Board implements Serializable{
 		//if(hiddenTiles)
 	}
 	
-	public void paintComponent(Graphics g, int startX) {
+	public void paintComponent(Graphics g, int startX, int startY) {
 		for(int i = 0; i < tiles.length; i++) {
 			for(int j = 0; j < tiles[i].length; j++) {
 				xOffset = startX - cols*Tile.getW()/2 + i*Tile.getW();
-				yOffset = j*Tile.getW();
+				yOffset = startY + j*Tile.getW();
 				tiles[i][j].setCoords(xOffset, yOffset);
-				Controller.passOffset(startX - cols*Tile.getW()/2);
+				controller.passOffset(startX - cols*Tile.getW()/2, startY);
 				tiles[i][j].paintComponent(g);
 			}
 		}

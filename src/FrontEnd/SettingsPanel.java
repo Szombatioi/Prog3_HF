@@ -133,7 +133,9 @@ public class SettingsPanel extends JPanel{
 		});
 		
 		newGameBtn.addActionListener(a -> {
-			if(submit()) controller.setPanel(new GamePanel(controller));
+			Game g = new Game(controller);
+			if(submit()) controller.setPanel(g);
+			controller.setGame(g);
 			
 		});
 		exitBtn.addActionListener(a -> System.exit(0));
