@@ -81,16 +81,12 @@ public class Board implements Serializable{
 			
 			if(c!=startX && r!=startY && !bombs.contains(tiles[c][r]) && !tiles[c][r].isRevealed) {
 				double chance = random.nextDouble();
-//				double chance = 1;
+//				double chance = .46;
 				Bomb result = getCorrespondingBomb(chance);
 				bombs.add(result);
 				tiles[c][r] = result;
 			}
-			else {
-				i--;
-//				System.out.println("test-"+testNum++);
-			}
-			
+			else i--;	
 		}
 	}
 	
@@ -176,8 +172,8 @@ public class Board implements Serializable{
 	
 	public void checkEnd() {
 		if(bombsLeft==0 || hiddenTiles==bombsNr) {
-			controller.setPanel(new VictoryPanel(game.getTime(), diff));
 			game.setFinished(true);
+			controller.setPanel(new VictoryPanel(controller, game.getTime(), diff));
 		}
 	}
 	

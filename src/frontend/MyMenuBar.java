@@ -75,9 +75,11 @@ public class MyMenuBar extends JMenuBar{
 			controller.setGameMenuBar(false);
 		});
 		rankList.addActionListener(a->{
-			
+			controller.setPanel(new RecordPanel(controller));
+			controller.setGameMenuBar(false);
 		});
-		exit.addActionListener(a -> System.exit(0));
+		exit.addActionListener(a -> controller.closeGame());
+		////////////////////////////
 		help.addActionListener(a -> {
 			Desktop desktop = java.awt.Desktop.getDesktop();
 			try {
@@ -87,7 +89,7 @@ public class MyMenuBar extends JMenuBar{
 				e.printStackTrace();
 			}
 		});
-		
+		//////////////////////////////
 		newGame.addActionListener(a->{
 			Game g = new Game(controller);
 			controller.setPanel(g);

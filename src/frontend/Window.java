@@ -2,6 +2,9 @@ package frontend;
 
 import java.awt.Dimension;
 import java.awt.Image;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -15,8 +18,6 @@ public class Window extends JFrame{
 	public Window(String title, Controller controller) {
 		defWidth = 600;
 		defHeight = 500;
-		this.controller = controller;
-		this.controller.setWindow(this);
 		
 		setTitle(title);
 		setMinimumSize(new Dimension(defWidth, defHeight));
@@ -25,14 +26,29 @@ public class Window extends JFrame{
 		requestFocus();
 		setResizable(false);
 		
+		this.controller = controller;
+		this.controller.setWindow(this);
+		
+		controller.loadRecords();
+		
+		this.addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowClosing(WindowEvent e) {
+				controller.saveRecords();
+			}
+		});
+		
+		initComponents();
+		pack();
+		setVisible(true);
+	}
+	
+	//TODO belepakolni
+	public void initComponents() {
 		MyMenuBar menuBar = new MyMenuBar(controller);
 		setJMenuBar(menuBar);
 		controller.setMenuBar(menuBar);
 		add(new MenuPanel(controller));
-//		add(new VictoryPanel(3, 22,false));
-
-		pack();
-		setVisible(true);
 	}
 	
 	public void resetSize() {
@@ -45,9 +61,9 @@ public class Window extends JFrame{
 		setIconImage(img);
 	}
 	
-	public Dimension getDefSize() {
-		return new Dimension(defWidth, defHeight);
-	}
+//	public Dimension getDefSize() {
+//		return new Dimension(defWidth, defHeight);
+//	}
 	
 	public void setPanel(JPanel panel) {
 		setContentPane(panel);

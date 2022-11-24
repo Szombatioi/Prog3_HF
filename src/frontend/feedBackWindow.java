@@ -5,14 +5,14 @@ import java.awt.Dimension;
 import java.awt.event.WindowEvent;
 
 import javax.swing.JButton;
-import javax.swing.JFrame;
+import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import backend.Images;
 
 @SuppressWarnings("serial")
-public class feedBackWindow extends JFrame{
+public class feedBackWindow extends JDialog{
 	
 	JButton btn;
 	

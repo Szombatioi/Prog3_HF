@@ -6,6 +6,7 @@ import javax.swing.JPanel;
 
 import backend.Board;
 import backend.Controller;
+import backend.Images;
 //import backend.Difficulty;
 import backend.Time;
 
@@ -26,23 +27,11 @@ public class Game extends JPanel implements Serializable{
 		init();
 		controller.setGameMenuBar(true);
 	}
-	
-//	public Game(Board b) {
-//		board = b;
-//		init();
-//	}
-	
-//	public Board getBoard() {
-//		return board;
-//	}
-	public Time getTime() {
-		return timer.getTime();
-	}
+	public Time getTime() {	return timer.getTime();	}
 	public void init() {
 		timer = new Timer();
 		yOffset = timer.getHeight();
-		running = true;
-//		running = false;
+		running = false;
 		started = false;
 		finished = false;
 		mml = new MyMouseListener(board, this);
@@ -82,18 +71,24 @@ public class Game extends JPanel implements Serializable{
 	public void start() {
 		running = true;
 		started = true;
+		finished = false;
 		board.generateBombs();
 		board.setBombsAroundNums();
-		if(!timer.running()) timer.start();
-		timer.setRunning(true);
+		if(!timer.running()) {
+			timer.start();
+			timer.setRunning(true);
+		}
 	}
 	
 	@Override
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-//		if(running) board.paintComponent(g, getWidth()/2);
-		board.paintComponent(g, getWidth()/2, yOffset+10);
-		timer.paintComponent(g, getWidth());
+		g.setFont(Images.MineSweeperFont);
+		if(running || !started) { 
+			board.paintComponent(g, getWidth()/2, yOffset+10);
+			timer.paintComponent(g, getWidth());
+		}
+		else g.drawString("Game Paused", getWidth()/4-25, getHeight()/2);
 		repaint();
 	}
 	

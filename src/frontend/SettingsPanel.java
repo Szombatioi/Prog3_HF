@@ -102,7 +102,6 @@ public class SettingsPanel extends JPanel{
 	public boolean submit() {
 		int rr=0, cc=0, bb=0;
 		Difficulty ch = (Difficulty)cb.getSelectedItem();
-		
 		if(ch.equals(Difficulty.CUSTOM)) {
 			try {
 				rr = Integer.parseInt(rowTextField.getText());
@@ -133,10 +132,14 @@ public class SettingsPanel extends JPanel{
 		});
 		
 		newGameBtn.addActionListener(a -> {
-			controller.setGame(new Game(controller));
-			if(submit()) controller.setPanel(new Game(controller));
+			if(submit()) {
+				Game g = new Game(controller);
+				controller.setGame(g);
+				controller.setPanel(controller.getGame());
+			}
+			
 		});
-		exitBtn.addActionListener(a -> System.exit(0));
+		exitBtn.addActionListener(a -> controller.closeGame());
 		
 		cb.addActionListener(a-> {
 			chosen = (Difficulty)cb.getSelectedItem();

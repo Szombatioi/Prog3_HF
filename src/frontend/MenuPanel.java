@@ -32,7 +32,6 @@ public class MenuPanel extends JPanel{
 		settingsBtn = new JButton("Settings");
 		ranksBtn = new JButton("Ranklist");
 		exitBtn = new JButton("Exit");
-		exitBtn.addActionListener(a -> System.exit(0));
 		
 		newGameBtn.setFont(f);
 		loadBtn.setFont(f);
@@ -66,22 +65,27 @@ public class MenuPanel extends JPanel{
 	}
 	
 	public void setActionListeners() {
-		settingsBtn.addActionListener(a -> {
-			controller.setPanel(new SettingsPanel(controller));
-			controller.resetWindowSize();
-			
-		});
 		newGameBtn.addActionListener(a -> {
-			controller.setGame(new Game(controller));
-			controller.setPanel(new Game(controller));
+			Game g = new Game(controller);
+			controller.setGame(g);
+			controller.setPanel(g);
 			
 		});
 		loadBtn.addActionListener(a->{
 			Game g = controller.load();
 			g.setStarted(true);
 			controller.setPanel(g); //ide még lehet kell egy setController
-			controller.setML(g.getListener());
+//			controller.setML(g.getListener());
 //			controller.setMMLBoard(g.getBoard());
 		});
+		settingsBtn.addActionListener(a -> {
+			controller.setPanel(new SettingsPanel(controller));
+			controller.resetWindowSize();
+			
+		});
+		ranksBtn.addActionListener(a->{
+			controller.setPanel(new RecordPanel(controller));
+		});
+		exitBtn.addActionListener(a -> controller.closeGame());
 	}
 }

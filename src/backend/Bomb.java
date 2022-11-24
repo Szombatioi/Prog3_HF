@@ -11,6 +11,7 @@ public class Bomb extends Tile {
 	
 	@Override
 	public void reveal() {
+		first = true;
 		if(!isRevealed) {
 			revealEnd();
 			execute();

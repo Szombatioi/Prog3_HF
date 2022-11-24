@@ -31,9 +31,7 @@ public class MyMouseListener extends MouseAdapter implements Serializable{
     @Override
     public void mouseReleased(MouseEvent e) {
         int r = (e.getY()-yOffset)/Tile.getW();
-        
         int c = (e.getX()-xOffset)/Tile.getW();
-//        System.out.println(r+"-"+c);
         if(SwingUtilities.isLeftMouseButton(e)) {
         	if(!game.started()) {
         		board.setStartPos(c,r);
