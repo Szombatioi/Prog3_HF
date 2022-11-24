@@ -156,7 +156,7 @@ public class Board implements Serializable{
 				tiles[i][j].loadIcon();
 	}
 	public void resetFlags() {
-		flagsLeft = bombsNr;
+		flagsLeft = bombsLeft = bombsNr;
 		for(int i = 0; i < cols; i++) {
 			for(int j = 0; j < rows; j++) {
 				tiles[i][j].setFlagged(false);

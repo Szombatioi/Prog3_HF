@@ -56,4 +56,10 @@ public class Time implements Serializable{
 		return String.format("%02d", min)+":"+String.format("%02d", sec);
 	}
 
+	public int compareTo(Time time) {
+		int secs = min*60+sec;
+		int secs2 = time.getM()*60 + time.getS();
+		return secs-secs2;
+	}
+
 }

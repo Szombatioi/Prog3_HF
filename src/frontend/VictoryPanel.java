@@ -76,6 +76,7 @@ public class VictoryPanel extends JPanel {
 			if(text.length() > 33 || text.length() <= 0) new feedBackWindow("Too many/few characters!", false);
 			else {
 				controller.addRecord(text, time);
+				submit.setEnabled(false);
 //				new feedBackWindow("No one cares bruh. (Yet)", true);
 			}
 		});

@@ -1,6 +1,7 @@
 package frontend;
 
 import java.awt.BorderLayout;
+import java.util.Collections;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;

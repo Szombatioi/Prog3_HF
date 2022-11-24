@@ -17,6 +17,8 @@ public class DifusedBomb extends Bomb {
 		if(!isRevealed) {
 			icon = isFlagged ? Images.flag : Images.difusedBomb;
 			isRevealed = true;
+			master.decHiddenTiles();
+			master.setBombsLeft(master.getBombsLeft()-1);
 		}
 	}
 	

@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
+import java.util.Collections;
 
 import javax.swing.JPanel;
 
@@ -98,7 +99,10 @@ public class Controller {
 		}
 	}
 	
-	public Data getData() {return data;}
+	public Data getData() {
+		Collections.sort(data.list, (a,b)-> a.getTime().compareTo(b.getTime()));
+		return data;
+	}
 	public void clearRecords() {
 		
 	}
