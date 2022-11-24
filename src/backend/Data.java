@@ -17,7 +17,11 @@ public class Data extends AbstractTableModel{
 	public int getColumnCount() {
 		return 2;
 	}
-
+	
+	@Override
+	public String getColumnName(int columnIndex){
+		return columnIndex == 0 ? "Player" : "Time";
+	}
 	@Override
 	public Object getValueAt(int rowIndex, int columnIndex) {
 		Record r = list.get(rowIndex);
