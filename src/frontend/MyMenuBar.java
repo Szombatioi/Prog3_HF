@@ -59,24 +59,25 @@ public class MyMenuBar extends JMenuBar{
 		add(aboutMenu);
 	}
 	
-	public void setGameBar(boolean b) {
-		gameMenu.setEnabled(b);
-	}
+	public void setGameBarEn(boolean b) {gameMenu.setEnabled(b);}
+	public void setSaveBtnEn(boolean b) {save.setEnabled(b);}
+	public void setPauseBtnText(boolean running) {pause.setText(running ? "Pause" : "Continue");}
 	
 	public void setActionListeners() {
 		menu.addActionListener(a -> {
-			controller.setPanel(new MenuPanel(controller));
+			controller.setPanel(new MenuPanel(controller), false);
 			controller.resetWindowSize();
-			controller.setGameMenuBar(false);
+			controller.setGameMenuBarEn(false);
 		});
 		settings.addActionListener(a -> {
-			controller.setPanel(new SettingsPanel(controller));
+			controller.setPanel(new SettingsPanel(controller), false);
 			controller.resetWindowSize();
-			controller.setGameMenuBar(false);
+			controller.setGameMenuBarEn(false);
 		});
 		rankList.addActionListener(a->{
-			controller.setPanel(new RecordPanel(controller));
-			controller.setGameMenuBar(false);
+			controller.setPanel(new RecordPanel(controller), false);
+//			controller.resetWindowSize();
+			controller.setGameMenuBarEn(false);
 		});
 		exit.addActionListener(a -> controller.closeGame());
 		////////////////////////////
@@ -92,13 +93,14 @@ public class MyMenuBar extends JMenuBar{
 		//////////////////////////////
 		newGame.addActionListener(a->{
 			Game g = new Game(controller);
-			controller.setPanel(g);
+			controller.setPanel(g, true);
 			controller.setGame(g);
 			pause.setText("Pause");
 		});
 		pause.addActionListener(a->{
 			pause.setText(controller.pauseGame() ? "Pause" : "Continue"); //pauseGame() azzal tér vissza, hogy MOST meg lesz-e állítva
 		});
+		save.addActionListener(a->controller.saveGame());
 	}
 
 }

@@ -1,9 +1,8 @@
 package frontend;
 
 import java.awt.BorderLayout;
-import java.util.Collections;
-
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -11,6 +10,7 @@ import javax.swing.JTable;
 
 import backend.Controller;
 import backend.Data;
+import backend.Difficulty;
 import backend.Images;
 
 @SuppressWarnings("serial")
@@ -18,6 +18,7 @@ public class RecordPanel extends JPanel{
 	JButton clearBtn, menuBtn;
 	JTable table;
 	JScrollPane tablePane;
+	JComboBox<Difficulty> diffSelector;
 	JLabel title;
 	Controller controller;
 	
@@ -25,7 +26,7 @@ public class RecordPanel extends JPanel{
 	
 	public RecordPanel(Controller controller) {
 		this.controller = controller;
-		data = controller.getData();
+		data = controller.getData(Difficulty.EASY);
 		initComponents();
 		setActionListeners();
 	}
@@ -38,8 +39,13 @@ public class RecordPanel extends JPanel{
 		
 		title = new JLabel("Ranklist");
 		title.setFont(Images.MineSweeperFont);
+		
+		Difficulty arr[] = {Difficulty.EASY,Difficulty.NORMAL,Difficulty.HARD};
+		diffSelector = new JComboBox<Difficulty>(arr);
 		JPanel titlePanel = new JPanel();
+		
 		titlePanel.add(title);
+		titlePanel.add(diffSelector);
 		
 		JPanel tablePanel = new JPanel();
 		table = new JTable();
@@ -59,7 +65,14 @@ public class RecordPanel extends JPanel{
 	}
 	
 	public void setActionListeners() {
-		menuBtn.addActionListener(a-> controller.setPanel(new MenuPanel(controller)));
-		clearBtn.addActionListener(a-> controller.clearRecords());
+		menuBtn.addActionListener(a-> controller.setPanel(new MenuPanel(controller), false));
+		clearBtn.addActionListener(a-> {
+			controller.clearRecords();
+			table.setModel(controller.getData(Difficulty.EASY));
+			repaint();
+		});
+		diffSelector.addActionListener(a->{
+			table.setModel(controller.getData((Difficulty)diffSelector.getSelectedItem()));
+		});
 	}
 }

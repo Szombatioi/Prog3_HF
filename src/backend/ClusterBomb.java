@@ -17,10 +17,7 @@ public class ClusterBomb extends Bomb {
 	@Override
 	protected void execute() {
 		int extra = new Random().nextInt(3)+1; ///1 és 3 között ad hozzá új bombát
-//		int extra = 3;
-//		System.out.println("HiddenTiles: "+master.getHiddenTiles());
-//		System.out.println("Bombs+extra: "+(master.getBombsNr()+extra)+"\n----------------------");
-		if(master.getHiddenTiles() <= master.getBombsNr()+extra) { //TODO ez lehet nem jó
+		if(master.getHiddenTiles() <= master.getBombsNr()+extra) {
 			master.revealEveryTile();
 			master.end();
 			

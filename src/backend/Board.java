@@ -18,7 +18,7 @@ public class Board implements Serializable{
 	private ArrayList<Bomb> bombs;
 	private Difficulty diff;
 	private int xOffset, yOffset, startX, startY;
-	private Controller controller;
+	private transient Controller controller;
 	
 	public Board(Difficulty d, Game g, Controller controller) {
 		diff = d;
@@ -39,6 +39,7 @@ public class Board implements Serializable{
 	
 	public void setFlagsLeft(int i) {flagsLeft = i;}
 	public void setBombsLeft(int i) {bombsLeft = i;}
+	public void setController(Controller c) {controller = c;}
 	
 	public int getHiddenTiles() {return hiddenTiles;}
 	
@@ -91,20 +92,18 @@ public class Board implements Serializable{
 	}
 	
 	public Bomb getCorrespondingBomb(double chance) {
-		Bomb res = null;
 		if(chance<=0.05) 
-			res = new DifusedBomb(this);
+			return new DifusedBomb(this);
 		else if(0.05<chance && chance <= 0.15) 
-			res = new ClusterBomb(this);
+			return new ClusterBomb(this);
 		else if(0.15<chance && chance <= 0.25)
-			res  = new ResetFlagBomb(this);
+			return new ResetFlagBomb(this);
 		else if(0.25<chance && chance <= 0.45)
-			res  = new BigBomb(this);
+			return new BigBomb(this);
 		else if(0.45<chance && chance <= 0.65)
-			res  = new ResetBomb(this);
+			return new ResetBomb(this);
 		else 
-			res = new Bomb(this);
-		return res;
+			return new Bomb(this);
 	}
 	
 	public void setBombsAroundNums() {
@@ -133,6 +132,7 @@ public class Board implements Serializable{
 				}
 			}
 		}
+		controller.setSaveBtnEn(false);
 	}
 	
 	public void findZerosAround(int row, int col) {
@@ -173,7 +173,8 @@ public class Board implements Serializable{
 	public void checkEnd() {
 		if(bombsLeft==0 || hiddenTiles==bombsNr) {
 			game.setFinished(true);
-			controller.setPanel(new VictoryPanel(controller, game.getTime(), diff));
+			controller.setPanel(new VictoryPanel(controller), false);
+			controller.setSaveBtnEn(false);
 		}
 	}
 	

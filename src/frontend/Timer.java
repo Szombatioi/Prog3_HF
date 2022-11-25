@@ -10,7 +10,7 @@ import backend.Time;
 @SuppressWarnings("serial")
 public class Timer extends Thread implements Serializable{
 	private Time time;
-	private boolean finished, running;
+	private boolean finished, running, started;
 	private int w,h;
 	private int delta;
 	
@@ -22,9 +22,14 @@ public class Timer extends Thread implements Serializable{
 		h=32;
 		delta = 10;
 	}
+	
+	public Timer(Time t) {
+		this();
+		time = t;
+	}
 
 	public int getHeight() {return h;}
-	
+	public boolean started() {return started;}
 	public String toString() {
 		return String.format("%02d", time.getM())+":"+String.format("%02d", time.getS());
 	}
@@ -33,6 +38,13 @@ public class Timer extends Thread implements Serializable{
 		return time;
 	}
 	
+	@Override
+	public void start() {
+		super.start();
+		started = true;
+	}
+	
+	@Override
 	public void run() {
 		while(!finished) {
 			if(running) tick();

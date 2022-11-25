@@ -2,7 +2,7 @@ package backend;
 //import java.awt.Toolkitá;
 
 import frontend.Window;
-import frontend.feedBackWindow;
+import frontend.FeedBackWindow;
 
 public class Main {
 	public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class Main {
 			Images.loadImages();
 		}catch(Exception e) {
 			working = false;
-			new feedBackWindow("Error! Couldn't load one or more images!", false);
+			new FeedBackWindow("Error! Couldn't load one or more images!", false);
 		}
 		if(working) {
 			Controller controller = new Controller();

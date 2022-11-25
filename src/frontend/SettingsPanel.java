@@ -108,12 +108,12 @@ public class SettingsPanel extends JPanel{
 				cc = Integer.parseInt(colTextField.getText());
 				bb = Integer.parseInt(bombTextField.getText());
 			}catch (Exception e) {
-				new feedBackWindow("Values should be integers!", false);
+				new FeedBackWindow("Values should be integers!", false);
 				return false;
 			}
 			//game = new Game();
 			if(rr > 32 || cc > 32 || rr <= 0 || cc <= 0 || bb < (int)(cc*rr*10/100) || bb >= (int)(cc*rr*90/100)) {
-				new feedBackWindow("Wrong values given!", false);
+				new FeedBackWindow("Wrong values given!", false);
 				return false;
 			}
 		}
@@ -127,7 +127,7 @@ public class SettingsPanel extends JPanel{
 	
 	public void setActionListeners() {
 		menuBtn.addActionListener(a -> {
-			if(submit()) controller.setPanel(new MenuPanel(controller));
+			if(submit()) controller.setPanel(new MenuPanel(controller), false);
 			controller.resetWindowSize();
 		});
 		
@@ -135,7 +135,7 @@ public class SettingsPanel extends JPanel{
 			if(submit()) {
 				Game g = new Game(controller);
 				controller.setGame(g);
-				controller.setPanel(controller.getGame());
+				controller.setPanel(controller.getGame(), true);
 			}
 			
 		});

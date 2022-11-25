@@ -13,9 +13,11 @@ public class MyMouseListener extends MouseAdapter implements Serializable{
 	private Board board;
 	private Game game;
 	private int xOffset, yOffset;
-	public MyMouseListener(Board b, Game g) {
-		board = b;
+//	public MyMouseListener(Board b, Game g) {
+	public MyMouseListener(Game g) {
+//		board = b;
 		game = g;
+		setBoard(game.getBoard());
 	}
 
 	public void setBoard(Board b) {

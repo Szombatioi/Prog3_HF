@@ -27,13 +27,13 @@ public class VictoryPanel extends JPanel {
 	
 	//lehet a game-t kéne átadni?
 	//a custom átadható controllerrel?
-	public VictoryPanel(Controller controller, Time t, Difficulty diff) {
+	public VictoryPanel(Controller controller/*, Time t, Difficulty diff*/) {
 		this.controller = controller;
 //		mins = t.getM();
 //		secs = t.getS();
 //		timeString = t.toString();
-		time = t;
-		custom = diff == Difficulty.CUSTOM;
+		time = controller.getGame().getTime();
+		custom = controller.getDiff() == Difficulty.CUSTOM;
 		initComponents();
 		setActionListeners();
 	}
@@ -73,7 +73,7 @@ public class VictoryPanel extends JPanel {
 	public void setActionListeners() {
 		submit.addActionListener(a->{
 			String text = nameTextField.getText(); 
-			if(text.length() > 33 || text.length() <= 0) new feedBackWindow("Too many/few characters!", false);
+			if(text.length() > 33 || text.length() <= 0) new FeedBackWindow("Too many/few characters!", false);
 			else {
 				controller.addRecord(text, time);
 				submit.setEnabled(false);

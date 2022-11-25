@@ -18,14 +18,14 @@ public class Game extends JPanel implements Serializable{
 	private boolean started;
 	private boolean finished;
 	private MyMouseListener mml;
-	private Controller controller;
+	private transient Controller controller; //ezt nem sorosítjuk
 	int yOffset; //idő+flags rajzolása miatt
 	
 	public Game(Controller controller) {
 		this.controller = controller;
 		board = new Board(controller.getDiff(), this, controller);
 		init();
-		controller.setGameMenuBar(true);
+		controller.setGameMenuBarEn(true);
 	}
 	public Time getTime() {	return timer.getTime();	}
 	public void init() {
@@ -34,15 +34,27 @@ public class Game extends JPanel implements Serializable{
 		running = false;
 		started = false;
 		finished = false;
-		mml = new MyMouseListener(board, this);
+//		mml = new MyMouseListener(board, this);
+		mml = new MyMouseListener(this);
 		addMouseListener(mml);
 		controller.setML(mml);
+	}
+	
+	public void setController(Controller c) {
+		controller = c;
+		board.setController(c);
+	}
+	public void reload(Time t) {
+		board.loadImages();
+		timer = new Timer(t);
+		timer.start();
 	}
 	public MyMouseListener getListener() {return mml;}
 	public boolean running() {return running;}
 	public boolean finished() {return finished;}
 	public boolean started() {return started;}
 	public void setStarted(boolean b) {started = b;}
+	public Board getBoard() {return board;}
 	
 	public void setFinished(boolean b) {
 		finished = b;
@@ -75,10 +87,11 @@ public class Game extends JPanel implements Serializable{
 		board.generateBombs();
 		board.setBombsAroundNums();
 		if(!timer.running()) {
-			timer.start();
+			if(!timer.started()) timer.start();
 			timer.setRunning(true);
 		}
 	}
+	
 	
 	@Override
 	public void paintComponent(Graphics g) {
