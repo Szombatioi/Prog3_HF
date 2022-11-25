@@ -27,27 +27,27 @@ public class Board implements Serializable{
 		restart();
 		game = g;
 	}
-	public void setStartPos(int x, int y) {
-		startX = x;
-		startY = y;
-	}
+	
 	public int getRows() {return rows;}
 	public int getCols() {return cols;}
 	public int getBombsNr() {return bombsNr;}
 	public int getBombsLeft() {return bombsLeft;}
 	public int getFlagsLeft() {return flagsLeft;}
+	public int getHiddenTiles() {return hiddenTiles;}
 	
+	public void setStartPos(int x, int y) {
+		startX = x;
+		startY = y;
+	}
 	public void setFlagsLeft(int i) {flagsLeft = i;}
 	public void setBombsLeft(int i) {bombsLeft = i;}
 	public void setController(Controller c) {controller = c;}
-	
-	public int getHiddenTiles() {return hiddenTiles;}
+	public void decHiddenTiles() {hiddenTiles--;}
 	
 	public void resetGame() {
 		game.setStarted(false);
 		game.setRunning(true);
 	}
-	
 	public void end() {
 		game.setFinished(true);
 	}
@@ -66,12 +66,6 @@ public class Board implements Serializable{
 			}
 		}
 	}
-	
-	public void generateBombs() {
-		generateBombs(0);
-	}
-	
-	static int testNum = 0;
 	public void generateBombs(int startBombNr) {
 		Random random = new Random();
 		
@@ -89,7 +83,6 @@ public class Board implements Serializable{
 			else i--;	
 		}
 	}
-	
 	public Bomb getCorrespondingBomb(double chance) {
 		if(chance<=0.05) 
 			return new DifusedBomb(this);
@@ -104,7 +97,6 @@ public class Board implements Serializable{
 		else 
 			return new Bomb(this);
 	}
-	
 	public void setBombsAroundNums() {
 		for(int i = 0; i < cols; i++) {
 			for(int j = 0; j < rows; j++) {
@@ -112,7 +104,6 @@ public class Board implements Serializable{
 			}
 		}
 	}
-	
 	public int getBombsAround(int row, int col) {
 		int sum = 0;
 		for(int i = col-1; i <= col+1; i++) {
@@ -133,7 +124,6 @@ public class Board implements Serializable{
 		}
 		controller.setSaveBtnEn(false);
 	}
-	
 	public void findZerosAround(int row, int col) {
 		if(row<0 || row>=rows || col<0 || col>=cols) return;
 		if(tiles[col][row].getValue()!=0) return;
@@ -167,8 +157,7 @@ public class Board implements Serializable{
 		if(row >= 0 && row < rows && col >= 0 && col < cols && tiles[col][row].getBombsAround()!=0 && !tiles[col][row].isFlagged && tiles[col][row].getBombsAround()!=1) tiles[col][row].reveal();
 		else findZerosAround(row, col);
 		checkEnd();
-	}
-	
+	}	
 	public void checkEnd() {
 		if(bombsLeft==0 || hiddenTiles==bombsNr) {
 			game.setFinished(true);
@@ -176,14 +165,10 @@ public class Board implements Serializable{
 			controller.setSaveBtnEn(false);
 		}
 	}
-	
-	public void decHiddenTiles() {hiddenTiles--;}
-	
 	public void flagTile(int col, int row) {
 		if(row >= 0 && row < rows && col >= 0 && col < cols && !tiles[col][row].isRevealed) tiles[col][row].flag();
 		checkEnd();
 	}
-	
 	public void addMoreBombs(int db) {
 		flagsLeft += db;
 		int temp = bombsNr;
@@ -192,8 +177,7 @@ public class Board implements Serializable{
 		generateBombs(temp); 
 		setBombsAroundNums();
 		loadImages();
-	}
-	
+	}	
 	public void paintComponent(Graphics g, int startX, int startY) {
 		for(int i = 0; i < tiles.length; i++) {
 			for(int j = 0; j < tiles[i].length; j++) {

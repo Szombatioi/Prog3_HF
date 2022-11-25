@@ -84,7 +84,7 @@ public class Game extends JPanel implements Serializable{
 		running = true;
 		started = true;
 		finished = false;
-		board.generateBombs();
+		board.generateBombs(0);
 		board.setBombsAroundNums();
 		if(!timer.running()) {
 			if(!timer.started()) timer.start();

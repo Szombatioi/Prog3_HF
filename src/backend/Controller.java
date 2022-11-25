@@ -32,7 +32,6 @@ public class Controller {
 		datas.put(Difficulty.NORMAL, new Data());
 		datas.put(Difficulty.HARD, new Data());
 	}
-	
 	public void setGame(Game g) {game = g;}
 	public Game getGame() {return game;}
 	public void setGameMenuBarEn(boolean b) {menuBar.setGameBarEn(b);}
@@ -120,9 +119,7 @@ public class Controller {
 	}
 	
 	public void loadGame() {
-		
 		Game g = null;
-		
 		try {
 			ObjectInputStream in = new ObjectInputStream(new FileInputStream("save.mswp"));
 			g = (Game)in.readObject();
@@ -136,34 +133,8 @@ public class Controller {
 		setML(g.getListener());
 		setGame(g);
 		g.setController(this);
-		
 		setPanel(g, true);
-//		g.repaint();
 		g.reload(g.getTime());
 		menuBar.setPauseBtnText(g.running() && game.started());
-//		System.out.println("Running: "+g.running());
-//		System.out.println("Finished: "+g.finished());
-//		System.out.println("Started: "+g.started());
-		
-//		setML(g.getMouseListener());
-//		setGame(g);
-		
-//		g.setController(this);
-		
-		
-//		Game res = null;
-//		try {
-//			FileInputStream f = new FileInputStream("save.mswp");
-//			ObjectInputStream in = new ObjectInputStream(f);
-//			res = (Game)in.readObject();
-//			in.close();
-//			
-//		} catch(IOException | ClassNotFoundException c) {
-//			new feedBackWindow("Couldn't load game!", false);
-//		}
-//		
-//		res.getBoard().loadImages();
-//		res.setRunning(false);
-//		return res;
 	}
 }
