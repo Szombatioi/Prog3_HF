@@ -82,7 +82,6 @@ public class Board implements Serializable{
 			
 			if(c!=startX && r!=startY && !bombs.contains(tiles[c][r]) && !tiles[c][r].isRevealed) {
 				double chance = random.nextDouble();
-//				double chance = .46;
 				Bomb result = getCorrespondingBomb(chance);
 				bombs.add(result);
 				tiles[c][r] = result;
