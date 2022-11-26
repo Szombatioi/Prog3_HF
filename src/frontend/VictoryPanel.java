@@ -19,15 +19,24 @@ import backend.Time;
  * A játék megnyerése során megjelenő nézet. Lehetőség nyílik elmenteni az időt, ha nem egyéni nehézségen játszottunk.
  */
 public class VictoryPanel extends JPanel {
+	/**A panel címe.*/
 	private JLabel title;
+	/**A rekord leadásának gombja. Ha nem megfelelő hosszú a beírt név (min 1, max 33 hosszú), akkor hibaüzenetet dob.*/
 	private JButton submit;
+	/**A név beírására szolgáló szövegdoboz.*/
 	private JTextField nameTextField;
+	/**Azt tárolja, hogy egyéni nehézségen játszottunk-e.*/
 	private boolean custom;
+	/**A játékos ideje.*/
 	private Time time;
+	/**Az őt (is) irányító controller.*/
 	private Controller controller;
-	
-	
-	public VictoryPanel(Controller controller/*, Time t, Difficulty diff*/) {
+	/**
+	 * A panel konstruktora. Beállítja a controllert, lekéri a játék idejét, beállítja az egyéni nehézséget ellenőrző változó értékét.
+	 * Ezt követően létrehozza a grafikus elemeket és beállítja azok actionListener-jeit.
+	 * @param controller Az őt (is) irányító controller.
+	 */
+	public VictoryPanel(Controller controller) {
 		this.controller = controller;
 		time = controller.getGame().getTime();
 		custom = controller.getDiff() == Difficulty.CUSTOM;
@@ -35,6 +44,9 @@ public class VictoryPanel extends JPanel {
 		setActionListeners();
 	}
 	
+	/**
+	 * A grafikus elemek létrehozása.
+	 */
 	public void initComponents() {
 		setLayout(new BorderLayout());
 		JPanel titlePanel = new JPanel();
@@ -67,6 +79,9 @@ public class VictoryPanel extends JPanel {
 		add(center, BorderLayout.CENTER);
 	}
 	
+	/**
+	 * Az actionListener-ek beállítása.
+	 */
 	public void setActionListeners() {
 		submit.addActionListener(a->{
 			String text = nameTextField.getText(); 

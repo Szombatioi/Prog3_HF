@@ -13,18 +13,28 @@ import backend.Controller;
 import backend.Images;
 
 @SuppressWarnings("serial")
+/**
+ * A főmenüt megjelenítő panel. Innen át lehet térni a legtöbb nézetbe.
+ */
 public class MenuPanel extends JPanel{
-	
+	/**Gombok új játék kezdésére, betöltésére, beállításokba, és ranglistába való áttérésre, illetve a programból való kilépésre.*/
 	JButton newGameBtn, loadBtn, settingsBtn, ranksBtn, exitBtn;
+	/**A panel címe.*/
 	JLabel title;
+	/**Az őt (is) irányító controller.*/
 	Controller controller;
 	
-	public MenuPanel(Controller c) {
-		controller = c;
+	/**
+	 * A panel konstruktora. Beállítja a controllert, létrehozza a grafikus elemeket és beállítja azok actionListener-jeit.
+	 * @param controller Az őt (is) irányító controller.
+	 */
+	public MenuPanel(Controller controller) {
+		this.controller = controller;
 		initComponents();
 		setActionListeners();
 	}
 	
+	/**A grafikus elemek létrehozása.*/
 	public void initComponents() {
 		Font f = new Font("Arial", Font.PLAIN, 24);
 		newGameBtn = new JButton("New Game");
@@ -64,6 +74,7 @@ public class MenuPanel extends JPanel{
 		add(creditPanel, BorderLayout.SOUTH);
 	}
 	
+	/**Az actionListener-ek beállítása.*/
 	public void setActionListeners() {
 		newGameBtn.addActionListener(a -> {
 			Game g = new Game(controller);
