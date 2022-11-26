@@ -23,7 +23,7 @@ public class Game extends JPanel implements Serializable{
 	
 	public Game(Controller controller) {
 		this.controller = controller;
-		board = new Board(controller.getDiff(), this, controller);
+		board = new Board(this, controller);
 		init();
 		controller.setGameMenuBarEn(true);
 	}

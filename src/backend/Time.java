@@ -7,11 +7,14 @@ import java.io.Serializable;
  * Egyszerű idő osztály, ami a mostani feladat megoldásához elegendő.
  */
 public class Time implements Serializable{
-	int min, sec;
 	/**
 	 * Tárolja az időt percekben és másodpercekben. 
 	 */
+	int min, sec;
 	
+	/**
+	 * Az idő konstruktora, beállítja a percet és a másodpercet 0-ra.
+	 */
 	public Time() {
 		min = sec = 0;
 	}
@@ -32,30 +35,32 @@ public class Time implements Serializable{
 	 * @param num A vizsgált idő másodpercekben
 	 * @return true, ha valóban kisebb.
 	 */
-	public boolean lt(int num) {
-		return (min*60+sec)<num;
-	}
+	public boolean lt(int num) {return (min*60+sec)<num;}
 	
 	/**
 	 * Get függvény a percek lekérésére.
 	 * @return A percek értéke.
 	 */
-	public int getM() {
-		return min;
-	}
+	public int getM() {return min;}
 	
 	/**
 	 * Get függvény a másodpercek lekérésére.
 	 * @return A másodpercek értéke.
 	 */
-	public int getS() {
-		return sec;
-	}
+	public int getS() {return sec;}
 	
+	/**
+	 * Kiíratáshoz használható toString() metódus.
+	 */
 	public String toString() {
 		return String.format("%02d", min)+":"+String.format("%02d", sec);
 	}
 
+	/**
+	 * Sorbarendezéshez használható összehasonlítás
+	 * @param time egy másik idő
+	 * @return negatív érték, ha ez az idő kisebb a paraméterben megadottnál.
+	 */
 	public int compareTo(Time time) {
 		int secs = min*60+sec;
 		int secs2 = time.getM()*60 + time.getS();

@@ -1,21 +1,32 @@
 package backend;
 
 @SuppressWarnings("serial")
+/**
+ * Pályát újrakezdő bomba. Ha felfedik, újragenerálja a pályát, viszont az időzítő halad tovább.
+ */
 public class ResetBomb extends Bomb{
 
-	public ResetBomb(/*int x, int y, Image img, */Board b) {
-//		super(x, y, img, b);
+	/**
+	 * A létrehozása azonos a sima bombáéval.
+	 * @param b, az őt tartalmazó tábla.
+	 */
+	public ResetBomb(Board b) {
 		super(b);
 	}
 	
+	/**
+	 * A felfedéskor megváltozik az ikonja fedett mezőről a neki megfelelőre.
+	 */
 	@Override
 	protected void changeIcon() {
-		icon = Images.resetBomb; //TODO ez lehet nem kell
+		icon = Images.resetBomb;
 	}
 	
+	/**
+	 * Aktiválásakor újraindítja a táblát és a játékot.
+	 */
 	@Override
 	protected void execute() {
-		//thread sleep
 		master.restart();
 		master.resetGame();
 	}

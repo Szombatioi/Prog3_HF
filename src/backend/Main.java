@@ -4,7 +4,13 @@ package backend;
 import frontend.Window;
 import frontend.FeedBackWindow;
 
+/**
+ * A main osztály. Innen indul a program.
+ */
 public class Main {
+	/**
+	 * Ha sikeresen beöltötte a képeket, akkor megjelenik a program ablaka. Ha nem, akkor hibaüzenetet kapunk.
+	 */
 	public static void main(String[] args) {
 		boolean working = true;
 		try {

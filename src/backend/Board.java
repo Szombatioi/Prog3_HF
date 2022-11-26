@@ -9,50 +9,72 @@ import frontend.Game;
 import frontend.VictoryPanel;
 
 @SuppressWarnings("serial")
+/**
+ * A cellákat tartalmazó tábla osztálya.
+ */
 public class Board implements Serializable{
-	
+	/** A játék, ami tartalmazza őt.*/
 	Game game;
+	/**A rajta lévő cellák mátrixa*/
 	private Tile[][] tiles;
+	/** Értékek a fedett cellákról, az elhelyezhető zászlókról, a hátralévő bombákról és az össz bombaszámról.*/
 	private int hiddenTiles, flagsLeft, bombsLeft, bombsNr;
+	/** A tábla sorainak és oszlopainak száma*/
 	private int rows, cols;
+	/** A bombák listája. Generálásnál hasznos.*/
 	private ArrayList<Bomb> bombs;
-	private Difficulty diff;
+	/** A tábla eltolásának értékei, illetve az első felfedett cella oszlopa és sora*/
 	private int xOffset, yOffset, startX, startY;
+	/** A táblát (is) kezelő controller.*/
 	private transient Controller controller;
 	
-	public Board(Difficulty d, Game g, Controller controller) {
-		diff = d;
+	/**
+	 * A tábla konstruktora. Beállítja a megfelelő értékeket és generál egy (még bombák nélküli) táblát.
+	 * @param g Az őt tartalmazó játék.
+	 * @param controller Az őt (is) irányító controller.
+	 */
+	public Board(Game g, Controller controller) {
 		this.controller = controller;
 		xOffset = yOffset = 0;
 		restart();
 		game = g;
 	}
 	
+	/**Visszaadja a tábla sorainak számát.*/
 	public int getRows() {return rows;}
+	/**Visszaadja a tábla oszlopainak számát.*/
 	public int getCols() {return cols;}
+	/**Visszaadja a tábla bombáinak számát.*/
 	public int getBombsNr() {return bombsNr;}
+	/**Visszaadja a még hátralévő bombák számát.*/
 	public int getBombsLeft() {return bombsLeft;}
+	/**Visszaadja a még elhelyezhető zászlók számát.*/
 	public int getFlagsLeft() {return flagsLeft;}
+	/**Visszaadja a még fedett cellák számát.*/
 	public int getHiddenTiles() {return hiddenTiles;}
-	
+	/**Beállítja az elsőként felfedett cella oszlopát és sorát*/
 	public void setStartPos(int x, int y) {
 		startX = x;
 		startY = y;
 	}
+	/**Beállítja a még elhelyezhető zászlók számát*/
 	public void setFlagsLeft(int i) {flagsLeft = i;}
+	/**Beállítja a még hátralévő bombák számát*/
 	public void setBombsLeft(int i) {bombsLeft = i;}
+	/**Beállítja a táblát kezelő controllert*/
 	public void setController(Controller c) {controller = c;}
+	/**Eggyel csökkenti a még fedett cellák számát.*/
 	public void decHiddenTiles() {hiddenTiles--;}
-	
+	/**Visszaállítja a játék kezdeti állapotát (nem generálja újra)*/
 	public void resetGame() {
 		game.setStarted(false);
 		game.setRunning(true);
 	}
-	public void end() {
-		game.setFinished(true);
-	}
+	/**
+	 * Újragenerálja a táblát. Beállítja a megfelelő értékeket majd csinál egy oszlop*sor nagyságú táblát csupa sima cellával. 
+	 */
 	public void restart() {
-		int b = diff.bombs(), c = diff.cols(), r = diff.rows();
+		int b = controller.getDiff().bombs(), c = controller.getDiff().cols(), r = controller.getDiff().rows();
 		bombs = new ArrayList<Bomb>();
 		hiddenTiles = c*r;
 		flagsLeft = bombsLeft = bombsNr = b;
@@ -66,6 +88,11 @@ public class Board implements Serializable{
 			}
 		}
 	}
+	/**
+	 * Bombák generálása. Annyiszor fut le, ahány bombát el kell helyezzen. Kiválaszt egy véletlenszerű sort és oszlopot, és ha az a
+	 * cella nincs felfedve, nem bomba (még) és nem a kezdőkattintás helyén van, akkor egy véletlenszerű bombává teszi azt.
+	 * @param startBombNr A kezdeti bombaszám. Játék kezdetekor 0, pálya újrakezdésénél a régi bombaszám értéke.
+	 */
 	public void generateBombs(int startBombNr) {
 		Random random = new Random();
 		
@@ -83,6 +110,12 @@ public class Board implements Serializable{
 			else i--;	
 		}
 	}
+	/**
+	 * Egy véletlen szám alapján visszaad egy bombát. 
+	 * Hatástalanított bombára 5%, ClusterBombra 10%, zászló eltűntető bombára 10%, nagy bombára 20%, pálya újrakezdő bombára 20% és sima bombára 35% az esély.
+	 * @param chance A valószínűség.
+	 * @return A megfelelő bomba.
+	 */
 	public Bomb getCorrespondingBomb(double chance) {
 		if(chance<=0.05) 
 			return new DifusedBomb(this);
@@ -97,6 +130,10 @@ public class Board implements Serializable{
 		else 
 			return new Bomb(this);
 	}
+	/**
+	 * A cellák körüli bombaszámok beállítása.
+	 * Végigmegy az összes cellán és lekérdezi a körülöttük lévő bombák számát (getBombsAround), ezt állítja be. 
+	 */
 	public void setBombsAroundNums() {
 		for(int i = 0; i < cols; i++) {
 			for(int j = 0; j < rows; j++) {
@@ -104,6 +141,12 @@ public class Board implements Serializable{
 			}
 		}
 	}
+	/**
+	 * Egy cella körüli bombák számát számolja meg. Végigmegy a cella körül és összeszámolja a bombákat.
+	 * @param row A cella sorszáma
+	 * @param col A cella oszlopszáma
+	 * @return A megadott cella körüli bombák száma
+	 */
 	public int getBombsAround(int row, int col) {
 		int sum = 0;
 		for(int i = col-1; i <= col+1; i++) {
@@ -114,6 +157,9 @@ public class Board implements Serializable{
 		return sum;
 	}
 	
+	/**
+	 * Minden cellát felfed. A játék elvesztésekor használt.
+	 */
 	public void revealEveryTile() {
 		for(int i = 0; i < cols; i++) {
 			for(int j = 0; j < rows; j++) {
@@ -122,8 +168,14 @@ public class Board implements Serializable{
 				}
 			}
 		}
+		game.setFinished(true);
 		controller.setSaveBtnEn(false);
 	}
+	/**
+	 * Flood-fill algoritmus cellák körüli üres vagy 1 értékű cellák felfedésére.
+	 * @param row A cella sorszáma
+	 * @param col A cella oszlopszáma
+	 */
 	public void findZerosAround(int row, int col) {
 		if(row<0 || row>=rows || col<0 || col>=cols) return;
 		if(tiles[col][row].getValue()!=0) return;
@@ -139,11 +191,17 @@ public class Board implements Serializable{
 		
 	}
 	
+	/**
+	 * A cellák ikonját tölti be. Játék betöltésekor illetve extra bombák hozzáadásakor használt.
+	 */
 	public void loadImages() {
 		for(int i = 0; i < tiles.length; i++) 
 			for(int j = 0; j < tiles[i].length; j++) 
 				tiles[i][j].loadIcon();
 	}
+	/**
+	 * Leszedi az összes elhelyezett zászlót a pályáról.
+	 */
 	public void resetFlags() {
 		flagsLeft = bombsLeft = bombsNr;
 		for(int i = 0; i < cols; i++) {
@@ -153,11 +211,29 @@ public class Board implements Serializable{
 			}
 		}
 	}
+	/**
+	 * Felfedi a megadott cellát. Ha bomba vagy 2-nél több értékű cella, akkor simán felfedi, egyéb esetben meghívja a findZerosAround függvényt.
+	 * Bármely felfedés esetén ellenőrzi, hogy nyert-e a játékos.
+	 * @param row A felfedésre szánt cella sorszáma.
+	 * @param col A felfedésre szánt cella oszlopszáma.
+	 */
 	public void revealTile(int row, int col) {
 		if(row >= 0 && row < rows && col >= 0 && col < cols && tiles[col][row].getBombsAround()!=0 && !tiles[col][row].isFlagged && tiles[col][row].getBombsAround()!=1) tiles[col][row].reveal();
 		else findZerosAround(row, col);
 		checkEnd();
 	}	
+	/**
+	 * Megjelöl zászlóval egy mezőt. Itt is ellenőrzi, hogy nyert-e a játékos.
+	 * @param col A megjelölésre szánt cella oszlopszáma.
+	 * @param row A megjelölésre szánt cella sorszáma.
+	 */
+	public void flagTile(int col, int row) {
+		if(row >= 0 && row < rows && col >= 0 && col < cols && !tiles[col][row].isRevealed) tiles[col][row].flag();
+		checkEnd();
+	}
+	/**
+	 * Ellenőrzi, hogy nyert-e a játékos. Ez akkor van, ha már nincs jelöletlen (fedett) bomba vagy ha már csak annyi fedett cella van, ahány bomba maradt.
+	 */
 	public void checkEnd() {
 		if(bombsLeft==0 || hiddenTiles==bombsNr) {
 			game.setFinished(true);
@@ -165,10 +241,11 @@ public class Board implements Serializable{
 			controller.setSaveBtnEn(false);
 		}
 	}
-	public void flagTile(int col, int row) {
-		if(row >= 0 && row < rows && col >= 0 && col < cols && !tiles[col][row].isRevealed) tiles[col][row].flag();
-		checkEnd();
-	}
+	/**
+	 * Extra bombák elhelyezése a pályán. Növeli az elhelyezhető zászlók és a hátralévő bombák számát. Az össz bombaszámot átállítja.
+	 * Az ikonokat újratölti és a sima cellák körüli bombák számát újraszámolja.
+	 * @param db Ennyi db új bombát kell elhelyezni.
+	 */
 	public void addMoreBombs(int db) {
 		flagsLeft += db;
 		int temp = bombsNr;
@@ -177,7 +254,13 @@ public class Board implements Serializable{
 		generateBombs(temp); 
 		setBombsAroundNums();
 		loadImages();
-	}	
+	}
+	/**
+	 * A tábla és celláinak kirajzolása.
+	 * @param g A grafikáért felelős paraméter.
+	 * @param startX A tábla kezdeti x koordinátája. A Game adja át.
+	 * @param startY A tábla kezdeti y koordinátája. A Game adja át.
+	 */
 	public void paintComponent(Graphics g, int startX, int startY) {
 		for(int i = 0; i < tiles.length; i++) {
 			for(int j = 0; j < tiles[i].length; j++) {

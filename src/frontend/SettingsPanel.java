@@ -117,7 +117,7 @@ public class SettingsPanel extends JPanel{
 				return false;
 			}
 		}
-		Difficulty.CUSTOM.set(rr, cc, bb);
+		Difficulty.CUSTOM.setCustom(rr, cc, bb);
 		chosen = ch;
 		controller.setDiff(chosen);
 		return true;
