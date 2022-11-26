@@ -40,6 +40,10 @@ public class Board implements Serializable{
 		game = g;
 	}
 	
+	/**Visszaadja a tábla vertikális eltolását.*/
+	public int getYOffset() {return yOffset;}
+	/**Visszaadja a tábla függőleges eltolását.*/
+	public int getXOffset() {return xOffset;}
 	/**Visszaadja a tábla sorainak számát.*/
 	public int getRows() {return rows;}
 	/**Visszaadja a tábla oszlopainak számát.*/
@@ -264,10 +268,9 @@ public class Board implements Serializable{
 	public void paintComponent(Graphics g, int startX, int startY) {
 		for(int i = 0; i < tiles.length; i++) {
 			for(int j = 0; j < tiles[i].length; j++) {
-				xOffset = startX - cols*Tile.getW()/2 + i*Tile.getW();
-				yOffset = startY + j*Tile.getW();
-				tiles[i][j].setCoords(xOffset, yOffset);
-				controller.passOffset(startX - cols*Tile.getW()/2, startY);
+				xOffset = startX-cols*Tile.getW()/2;
+				yOffset = startY;
+				tiles[i][j].setCoords(xOffset + i*Tile.getW(), yOffset+ j*Tile.getW());
 				tiles[i][j].paintComponent(g);
 			}
 		}

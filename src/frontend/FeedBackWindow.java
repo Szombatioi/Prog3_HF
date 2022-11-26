@@ -12,10 +12,18 @@ import javax.swing.JPanel;
 import backend.Images;
 
 @SuppressWarnings("serial")
+/**
+ * Visszajelzésért felelős ablak osztály. Üzenetet ad egy művelet sikerességéről.
+ */
 public class FeedBackWindow extends JDialog{
 	
+	/** A bezárás gombja.*/
 	JButton btn;
-	
+	/**
+	 * Az osztály konstruktora. Létrehozza a gombot és a hibaüzenet feliratát, illetve beállítja a grafikai részeket.
+	 * @param text A hibaüzenet. Ez jelenik meg középen.
+	 * @param success Jelzi, hogy a művelet sikerességét vagy hibáját jelzi-e az ablak.
+	 */
 	public FeedBackWindow(String text, boolean success) {
 		setTitle(success ? "Success" : "Error");
 		requestFocus();

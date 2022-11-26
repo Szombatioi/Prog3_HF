@@ -18,11 +18,9 @@ public class Game extends JPanel implements Serializable{
 	private boolean started;
 	private boolean finished;
 	private MyMouseListener mml;
-	private transient Controller controller; //ezt nem sorosítjuk
 	int yOffset; //idő+flags rajzolása miatt
 	
 	public Game(Controller controller) {
-		this.controller = controller;
 		board = new Board(this, controller);
 		init();
 		controller.setGameMenuBarEn(true);
@@ -34,15 +32,8 @@ public class Game extends JPanel implements Serializable{
 		running = false;
 		started = false;
 		finished = false;
-//		mml = new MyMouseListener(board, this);
 		mml = new MyMouseListener(this);
 		addMouseListener(mml);
-		controller.setML(mml);
-	}
-	
-	public void setController(Controller c) {
-		controller = c;
-		board.setController(c);
 	}
 	public void reload(Time t) {
 		board.loadImages();

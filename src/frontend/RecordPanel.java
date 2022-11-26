@@ -14,26 +14,37 @@ import backend.Difficulty;
 import backend.Images;
 
 @SuppressWarnings("serial")
+/**
+ * A rekordok megtekintésére szolgáló JPanel. 3 nehézség között lehet váltani, mindegyiket egy táblázatban jeleníti meg.
+ */
 public class RecordPanel extends JPanel{
+	/**A panel alján lévő törlés és menü gombok.*/
 	JButton clearBtn, menuBtn;
+	/**A rekordokat megjelenítő táblázat.*/
 	JTable table;
+	/**Gördítősáv a táblázat többi sorának megtekintéséhez.*/
 	JScrollPane tablePane;
+	/**Nehézség kiválasztására szolgáló legördülő lista.*/
 	JComboBox<Difficulty> diffSelector;
+	/**A panel felirata.*/
 	JLabel title;
+	/**A panelt (is) irányító controller.*/
 	Controller controller;
-	
+	/**A jelenleg megjelenítendő adat a táblázatban. (Alapból a könnyű nehézség rekordjai)*/
 	private Data data;
-	
+	/**
+	 * A panel konstruktora. Beállítja a controllert, a megjelenítendő (alap) adatot, létrehozza a grafikus elemeket, majd beállítja azok actionListener-jeit.
+	 * @param controller Az őt (is) irányító controller.
+	 */
 	public RecordPanel(Controller controller) {
 		this.controller = controller;
 		data = controller.getData(Difficulty.EASY);
 		initComponents();
 		setActionListeners();
 	}
-	
-//	public void setData(Data d) {data = d;}
-//	public Data getData() {return data;}
-	
+	/**
+	 * A grafikus elemek létrehozása.
+	 */
 	public void initComponents() {
 		setLayout(new BorderLayout());
 		
@@ -64,6 +75,9 @@ public class RecordPanel extends JPanel{
 		add(bottomPanel, BorderLayout.SOUTH);
 	}
 	
+	/**
+	 * Az actionListener-ek beállítása.
+	 */
 	public void setActionListeners() {
 		menuBtn.addActionListener(a-> controller.setPanel(new MenuPanel(controller), false));
 		clearBtn.addActionListener(a-> {

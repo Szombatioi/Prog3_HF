@@ -9,31 +9,33 @@ import backend.Board;
 import backend.Tile;
 
 @SuppressWarnings("serial")
+/**
+ * Egérkezelő osztály. Ez felel a mezők felfedésének, megjelölésének detektálásáért.
+ */
 public class MyMouseListener extends MouseAdapter implements Serializable{
+	/**	A játék táblája. Hasznosabb eltárolni mint sokszor lekérdezgetni a játéktól.*/
 	private Board board;
+	/** Az éppen futó játék. */
 	private Game game;
-	private int xOffset, yOffset;
-//	public MyMouseListener(Board b, Game g) {
+	/**Az egérkezelő konstruktora. Beállítja a játékot és a táblát.*/
 	public MyMouseListener(Game g) {
-//		board = b;
 		game = g;
 		setBoard(game.getBoard());
 	}
 
-	public void setBoard(Board b) {
-		board = b;
-	}
-	
-	public void setOffset(int x, int y) {
-		xOffset = x;
-		yOffset = y;
-	}
-	
-
+	/**
+	 * Beállítja a táblát, amit figyel.
+	 * @param b A beállítandó tábla.
+	 */
+	public void setBoard(Board b) {board = b;}
+	/**
+	 * Az egér felengedése. Ha felengedi a játékos az egér egy gombját, akkor kiszámolja a koordinátákra eső sor- és oszlopszámot,
+	 * majd bal kattintás esetén felfedi a cellát (és esetleg elindítja a játék futását), jobb kattintás esetén megjelöli a cellát (ha fut a játék).
+	 */
     @Override
     public void mouseReleased(MouseEvent e) {
-        int r = (e.getY()-yOffset)/Tile.getW();
-        int c = (e.getX()-xOffset)/Tile.getW();
+        int r = (e.getY()-board.getYOffset())/Tile.getW();
+        int c = (e.getX()-board.getXOffset())/Tile.getW();
         if(SwingUtilities.isLeftMouseButton(e)) {
         	if(!game.started()) {
         		board.setStartPos(c,r);

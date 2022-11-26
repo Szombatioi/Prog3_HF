@@ -13,7 +13,6 @@ import javax.swing.JPanel;
 
 import frontend.Game;
 import frontend.MyMenuBar;
-import frontend.MyMouseListener;
 import frontend.Window;
 import frontend.FeedBackWindow;
 
@@ -25,8 +24,6 @@ public class Controller {
 	private Window window;
 	/** A játék nehézsége*/
 	private Difficulty diff;
-	/** A játék egérkezelője*/
-	private MyMouseListener mml;
 	/** A program fejléce*/
 	private MyMenuBar menuBar;
 	/** Az aktív játék*/
@@ -90,10 +87,6 @@ public class Controller {
 	public void setWindowSize(int w, int h) {window.setMinimumSize(new Dimension(w, h));}
 	/** Visszaállítja az ablak méretét az alapértelmezett értékére */
 	public void resetWindowSize() {window.resetSize();}
-	/** Beállítja a controller által kezelt egérkezelőt*/ 
-	public void setML(MyMouseListener m) {mml = m;}
-	/** Átadja a tábla eltolását az egérkezelőnek */
-	public void passOffset(int x, int y) {mml.setOffset(x, y);}
 	/** Bezárja a játékot. A sima System.exit(0) nem jó mentésekhez*/
 	public void closeGame() {window.dispatchEvent(new WindowEvent(window, WindowEvent.WINDOW_CLOSING));}
 	/**
@@ -195,9 +188,8 @@ public class Controller {
 			e.printStackTrace();
 			return;
 		}
-		setML(g.getListener());
 		setGame(g);
-		g.setController(this);
+		g.getBoard().setController(this);
 		setPanel(g, true);
 		g.reload(g.getTime());
 		menuBar.setPauseBtnText(g.running() && game.started());

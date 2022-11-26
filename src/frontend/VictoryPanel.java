@@ -15,8 +15,10 @@ import backend.Images;
 import backend.Time;
 
 @SuppressWarnings("serial")
+/**
+ * A játék megnyerése során megjelenő nézet. Lehetőség nyílik elmenteni az időt, ha nem egyéni nehézségen játszottunk.
+ */
 public class VictoryPanel extends JPanel {
-//	int mins, secs;
 	private JLabel title;
 	private JButton submit;
 	private JTextField nameTextField;
@@ -25,13 +27,8 @@ public class VictoryPanel extends JPanel {
 	private Controller controller;
 	
 	
-	//lehet a game-t kéne átadni?
-	//a custom átadható controllerrel?
 	public VictoryPanel(Controller controller/*, Time t, Difficulty diff*/) {
 		this.controller = controller;
-//		mins = t.getM();
-//		secs = t.getS();
-//		timeString = t.toString();
 		time = controller.getGame().getTime();
 		custom = controller.getDiff() == Difficulty.CUSTOM;
 		initComponents();
@@ -77,7 +74,6 @@ public class VictoryPanel extends JPanel {
 			else {
 				controller.addRecord(text, time);
 				submit.setEnabled(false);
-//				new feedBackWindow("No one cares bruh. (Yet)", true);
 			}
 		});
 	}
