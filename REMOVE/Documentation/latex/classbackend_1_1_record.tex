@@ -1,0 +1,76 @@
+\hypertarget{classbackend_1_1_record}{}\doxysection{backend.\+Record osztályreferencia}
+\label{classbackend_1_1_record}\index{backend.Record@{backend.Record}}
+
+
+A backend.\+Record osztály származási diagramja\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classbackend_1_1_record__inherit__graph}
+\end{center}
+\end{figure}
+
+
+A backend.\+Record osztály együttműködési diagramja\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classbackend_1_1_record__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbackend_1_1_record_a5f8659b010efdff94f14b8f51efa64f6}{Record}} (String name, \mbox{\hyperlink{classbackend_1_1_time}{Time}} t)
+\item 
+String \mbox{\hyperlink{classbackend_1_1_record_a46833bc677283711ac201a6a97175cb3}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{classbackend_1_1_time}{Time}} \mbox{\hyperlink{classbackend_1_1_record_a41e461e1711f81b422af63e81cf057c5}{get\+Time}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Részletes leírás}
+Egy adatrekordot reprezentáló osztály. Tartalmazza a játékos nevét és idejét. 
+
+\doxysubsection{Konstruktorok és destruktorok dokumentációja}
+\mbox{\Hypertarget{classbackend_1_1_record_a5f8659b010efdff94f14b8f51efa64f6}\label{classbackend_1_1_record_a5f8659b010efdff94f14b8f51efa64f6}} 
+\index{backend.Record@{backend.Record}!Record@{Record}}
+\index{Record@{Record}!backend.Record@{backend.Record}}
+\doxysubsubsection{\texorpdfstring{Record()}{Record()}}
+{\footnotesize\ttfamily backend.\+Record.\+Record (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{\mbox{\hyperlink{classbackend_1_1_time}{Time}}}]{t }\end{DoxyParamCaption})}
+
+A rekord konstruktora. Beállítja a nevet és az időt. 
+\begin{DoxyParams}{Paraméterek}
+{\em name} & a játékos neve \\
+\hline
+{\em t} & a játékos ideje \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Tagfüggvények dokumentációja}
+\mbox{\Hypertarget{classbackend_1_1_record_a46833bc677283711ac201a6a97175cb3}\label{classbackend_1_1_record_a46833bc677283711ac201a6a97175cb3}} 
+\index{backend.Record@{backend.Record}!getName@{getName}}
+\index{getName@{getName}!backend.Record@{backend.Record}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily String backend.\+Record.\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get függvény a játékos nevének lekérdezésére. \begin{DoxyReturn}{Visszatérési érték}
+a játékos neve 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbackend_1_1_record_a41e461e1711f81b422af63e81cf057c5}\label{classbackend_1_1_record_a41e461e1711f81b422af63e81cf057c5}} 
+\index{backend.Record@{backend.Record}!getTime@{getTime}}
+\index{getTime@{getTime}!backend.Record@{backend.Record}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbackend_1_1_time}{Time}} backend.\+Record.\+get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get függvény a játékos idejének lekérdezésére. \begin{DoxyReturn}{Visszatérési érték}
+a játékos ideje 
+\end{DoxyReturn}
+
+
+Ez a dokumentáció az osztályról a következő fájl alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+src/backend/Record.\+java\end{DoxyCompactItemize}

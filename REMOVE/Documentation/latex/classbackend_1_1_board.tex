@@ -1,0 +1,336 @@
+\hypertarget{classbackend_1_1_board}{}\doxysection{backend.\+Board osztályreferencia}
+\label{classbackend_1_1_board}\index{backend.Board@{backend.Board}}
+
+
+A backend.\+Board osztály származási diagramja\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classbackend_1_1_board__inherit__graph}
+\end{center}
+\end{figure}
+
+
+A backend.\+Board osztály együttműködési diagramja\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{classbackend_1_1_board__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbackend_1_1_board_a0376a182c81bc33c44fc0eb51505b91a}{Board}} (\mbox{\hyperlink{classfrontend_1_1_game}{Game}} g, \mbox{\hyperlink{classbackend_1_1_controller}{Controller}} controller)
+\item 
+int \mbox{\hyperlink{classbackend_1_1_board_aeb38bee4b768fb2d07ab77e2dd464484}{get\+YOffset}} ()
+\item 
+int \mbox{\hyperlink{classbackend_1_1_board_a9c0445034a80e2442bf552c37166ea34}{get\+XOffset}} ()
+\item 
+int \mbox{\hyperlink{classbackend_1_1_board_a32bbdbcae86a041432f74049eda4d0ad}{get\+Rows}} ()
+\item 
+int \mbox{\hyperlink{classbackend_1_1_board_ab480bee5c3df59af31dc0584fd91c353}{get\+Cols}} ()
+\item 
+int \mbox{\hyperlink{classbackend_1_1_board_a8191ce88b8b66949826a82dd5fc504a5}{get\+Bombs\+Nr}} ()
+\item 
+int \mbox{\hyperlink{classbackend_1_1_board_a97bb104e000455524ae6b2436df7be06}{get\+Bombs\+Left}} ()
+\item 
+int \mbox{\hyperlink{classbackend_1_1_board_a334ef068a4e2ccaedb2cba16d23d6d2d}{get\+Flags\+Left}} ()
+\item 
+int \mbox{\hyperlink{classbackend_1_1_board_ac35feab29f41bdda1a444914b40e932b}{get\+Hidden\+Tiles}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_board_a5a769beca1fc004fb79bc041f1ca27a6}{set\+Start\+Pos}} (int x, int y)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_board_acd062bbaac7e4c14e1c7385cfdc0e20e}{set\+Flags\+Left}} (int i)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_board_a1d87ddc0c4b93ea2c439bff43c48f2a5}{set\+Bombs\+Left}} (int i)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_board_aaf581c846a53ee93a22cbbf3a1d59a93}{set\+Controller}} (\mbox{\hyperlink{classbackend_1_1_controller}{Controller}} c)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_board_a0dc055000eda46714dee63634894aa49}{dec\+Hidden\+Tiles}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_board_a984374c7696450a7350abefd36fceb4b}{reset\+Game}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_board_a6fbc1e02e6c8033fecf2386901a6b822}{restart}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_board_ab35ed2988d12b194b6d6a07c706acb0d}{generate\+Bombs}} (int start\+Bomb\+Nr)
+\item 
+\mbox{\hyperlink{classbackend_1_1_bomb}{Bomb}} \mbox{\hyperlink{classbackend_1_1_board_a2e229455e85a9e0e18f858cb15caa1d7}{get\+Corresponding\+Bomb}} (double chance)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_board_a1d099cce8d0f1af3e6328dac179ba422}{set\+Bombs\+Around\+Nums}} ()
+\item 
+int \mbox{\hyperlink{classbackend_1_1_board_a50adcb69903c7e6fda09eb31f398f266}{get\+Bombs\+Around}} (int row, int col)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_board_a540125aec07c5fca1d1565451d373349}{reveal\+Every\+Tile}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_board_a65835623f5c56facf4958065179311aa}{find\+Zeros\+Around}} (int row, int col)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_board_a701429ed974b0c185606960331d6f2db}{load\+Images}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_board_aeabed6b8e161eeab9f9e3e2d08c1dbc0}{reset\+Flags}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_board_a8eaa7adfaa9cf1cb07529ee7ea57c084}{reveal\+Tile}} (int row, int col)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_board_a87bb04bc56adb1910d3681447cb980f1}{flag\+Tile}} (int col, int row)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_board_a59f18d2f7879a4ef899b0d91d9a2e5ef}{check\+End}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_board_a50f26f04b51e7edccc7bb229ef23f0d7}{add\+More\+Bombs}} (int db)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_board_a5b9b6bb90401bd6aa5e3107f9bedf6d1}{paint\+Component}} (Graphics g, int startX, int startY)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Részletes leírás}
+A cellákat tartalmazó tábla osztálya. 
+
+\doxysubsection{Konstruktorok és destruktorok dokumentációja}
+\mbox{\Hypertarget{classbackend_1_1_board_a0376a182c81bc33c44fc0eb51505b91a}\label{classbackend_1_1_board_a0376a182c81bc33c44fc0eb51505b91a}} 
+\index{backend.Board@{backend.Board}!Board@{Board}}
+\index{Board@{Board}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}}
+{\footnotesize\ttfamily backend.\+Board.\+Board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfrontend_1_1_game}{Game}}}]{g,  }\item[{\mbox{\hyperlink{classbackend_1_1_controller}{Controller}}}]{controller }\end{DoxyParamCaption})}
+
+A tábla konstruktora. Beállítja a megfelelő értékeket és generál egy (még bombák nélküli) táblát. 
+\begin{DoxyParams}{Paraméterek}
+{\em g} & Az őt tartalmazó játék. \\
+\hline
+{\em controller} & Az őt (is) irányító controller. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Tagfüggvények dokumentációja}
+\mbox{\Hypertarget{classbackend_1_1_board_a50f26f04b51e7edccc7bb229ef23f0d7}\label{classbackend_1_1_board_a50f26f04b51e7edccc7bb229ef23f0d7}} 
+\index{backend.Board@{backend.Board}!addMoreBombs@{addMoreBombs}}
+\index{addMoreBombs@{addMoreBombs}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{addMoreBombs()}{addMoreBombs()}}
+{\footnotesize\ttfamily void backend.\+Board.\+add\+More\+Bombs (\begin{DoxyParamCaption}\item[{int}]{db }\end{DoxyParamCaption})}
+
+Extra bombák elhelyezése a pályán. Növeli az elhelyezhető zászlók és a hátralévő bombák számát. Az össz bombaszámot átállítja. Az ikonokat újratölti és a sima cellák körüli bombák számát újraszámolja. 
+\begin{DoxyParams}{Paraméterek}
+{\em db} & Ennyi db új bombát kell elhelyezni. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbackend_1_1_board_a59f18d2f7879a4ef899b0d91d9a2e5ef}\label{classbackend_1_1_board_a59f18d2f7879a4ef899b0d91d9a2e5ef}} 
+\index{backend.Board@{backend.Board}!checkEnd@{checkEnd}}
+\index{checkEnd@{checkEnd}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{checkEnd()}{checkEnd()}}
+{\footnotesize\ttfamily void backend.\+Board.\+check\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Ellenőrzi, hogy nyert-\/e a játékos. Ez akkor van, ha már nincs jelöletlen (fedett) bomba vagy ha már csak annyi fedett cella van, ahány bomba maradt. \mbox{\Hypertarget{classbackend_1_1_board_a0dc055000eda46714dee63634894aa49}\label{classbackend_1_1_board_a0dc055000eda46714dee63634894aa49}} 
+\index{backend.Board@{backend.Board}!decHiddenTiles@{decHiddenTiles}}
+\index{decHiddenTiles@{decHiddenTiles}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{decHiddenTiles()}{decHiddenTiles()}}
+{\footnotesize\ttfamily void backend.\+Board.\+dec\+Hidden\+Tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Eggyel csökkenti a még fedett cellák számát. \mbox{\Hypertarget{classbackend_1_1_board_a65835623f5c56facf4958065179311aa}\label{classbackend_1_1_board_a65835623f5c56facf4958065179311aa}} 
+\index{backend.Board@{backend.Board}!findZerosAround@{findZerosAround}}
+\index{findZerosAround@{findZerosAround}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{findZerosAround()}{findZerosAround()}}
+{\footnotesize\ttfamily void backend.\+Board.\+find\+Zeros\+Around (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})}
+
+Flood-\/fill algoritmus cellák körüli üres vagy 1 értékű cellák felfedésére. 
+\begin{DoxyParams}{Paraméterek}
+{\em row} & A cella sorszáma \\
+\hline
+{\em col} & A cella oszlopszáma \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbackend_1_1_board_a87bb04bc56adb1910d3681447cb980f1}\label{classbackend_1_1_board_a87bb04bc56adb1910d3681447cb980f1}} 
+\index{backend.Board@{backend.Board}!flagTile@{flagTile}}
+\index{flagTile@{flagTile}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{flagTile()}{flagTile()}}
+{\footnotesize\ttfamily void backend.\+Board.\+flag\+Tile (\begin{DoxyParamCaption}\item[{int}]{col,  }\item[{int}]{row }\end{DoxyParamCaption})}
+
+Megjelöl zászlóval egy mezőt. Itt is ellenőrzi, hogy nyert-\/e a játékos. 
+\begin{DoxyParams}{Paraméterek}
+{\em col} & A megjelölésre szánt cella oszlopszáma. \\
+\hline
+{\em row} & A megjelölésre szánt cella sorszáma. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbackend_1_1_board_ab35ed2988d12b194b6d6a07c706acb0d}\label{classbackend_1_1_board_ab35ed2988d12b194b6d6a07c706acb0d}} 
+\index{backend.Board@{backend.Board}!generateBombs@{generateBombs}}
+\index{generateBombs@{generateBombs}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{generateBombs()}{generateBombs()}}
+{\footnotesize\ttfamily void backend.\+Board.\+generate\+Bombs (\begin{DoxyParamCaption}\item[{int}]{start\+Bomb\+Nr }\end{DoxyParamCaption})}
+
+Bombák generálása. Annyiszor fut le, ahány bombát el kell helyezzen. Kiválaszt egy véletlenszerű sort és oszlopot, és ha az a cella nincs felfedve, nem bomba (még) és nem a kezdőkattintás helyén van, akkor egy véletlenszerű bombává teszi azt. 
+\begin{DoxyParams}{Paraméterek}
+{\em start\+Bomb\+Nr} & A kezdeti bombaszám. Játék kezdetekor 0, pálya újrakezdésénél a régi bombaszám értéke. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbackend_1_1_board_a50adcb69903c7e6fda09eb31f398f266}\label{classbackend_1_1_board_a50adcb69903c7e6fda09eb31f398f266}} 
+\index{backend.Board@{backend.Board}!getBombsAround@{getBombsAround}}
+\index{getBombsAround@{getBombsAround}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{getBombsAround()}{getBombsAround()}}
+{\footnotesize\ttfamily int backend.\+Board.\+get\+Bombs\+Around (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})}
+
+Egy cella körüli bombák számát számolja meg. Végigmegy a cella körül és összeszámolja a bombákat. 
+\begin{DoxyParams}{Paraméterek}
+{\em row} & A cella sorszáma \\
+\hline
+{\em col} & A cella oszlopszáma \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+A megadott cella körüli bombák száma 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbackend_1_1_board_a97bb104e000455524ae6b2436df7be06}\label{classbackend_1_1_board_a97bb104e000455524ae6b2436df7be06}} 
+\index{backend.Board@{backend.Board}!getBombsLeft@{getBombsLeft}}
+\index{getBombsLeft@{getBombsLeft}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{getBombsLeft()}{getBombsLeft()}}
+{\footnotesize\ttfamily int backend.\+Board.\+get\+Bombs\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Visszaadja a még hátralévő bombák számát. \mbox{\Hypertarget{classbackend_1_1_board_a8191ce88b8b66949826a82dd5fc504a5}\label{classbackend_1_1_board_a8191ce88b8b66949826a82dd5fc504a5}} 
+\index{backend.Board@{backend.Board}!getBombsNr@{getBombsNr}}
+\index{getBombsNr@{getBombsNr}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{getBombsNr()}{getBombsNr()}}
+{\footnotesize\ttfamily int backend.\+Board.\+get\+Bombs\+Nr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Visszaadja a tábla bombáinak számát. \mbox{\Hypertarget{classbackend_1_1_board_ab480bee5c3df59af31dc0584fd91c353}\label{classbackend_1_1_board_ab480bee5c3df59af31dc0584fd91c353}} 
+\index{backend.Board@{backend.Board}!getCols@{getCols}}
+\index{getCols@{getCols}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{getCols()}{getCols()}}
+{\footnotesize\ttfamily int backend.\+Board.\+get\+Cols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Visszaadja a tábla oszlopainak számát. \mbox{\Hypertarget{classbackend_1_1_board_a2e229455e85a9e0e18f858cb15caa1d7}\label{classbackend_1_1_board_a2e229455e85a9e0e18f858cb15caa1d7}} 
+\index{backend.Board@{backend.Board}!getCorrespondingBomb@{getCorrespondingBomb}}
+\index{getCorrespondingBomb@{getCorrespondingBomb}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{getCorrespondingBomb()}{getCorrespondingBomb()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbackend_1_1_bomb}{Bomb}} backend.\+Board.\+get\+Corresponding\+Bomb (\begin{DoxyParamCaption}\item[{double}]{chance }\end{DoxyParamCaption})}
+
+Egy véletlen szám alapján visszaad egy bombát. Hatástalanított bombára 5\%, Cluster\+Bombra 10\%, zászló eltűntető bombára 10\%, nagy bombára 20\%, pálya újrakezdő bombára 20\% és sima bombára 35\% az esély. 
+\begin{DoxyParams}{Paraméterek}
+{\em chance} & A valószínűség. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+A megfelelő bomba. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbackend_1_1_board_a334ef068a4e2ccaedb2cba16d23d6d2d}\label{classbackend_1_1_board_a334ef068a4e2ccaedb2cba16d23d6d2d}} 
+\index{backend.Board@{backend.Board}!getFlagsLeft@{getFlagsLeft}}
+\index{getFlagsLeft@{getFlagsLeft}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{getFlagsLeft()}{getFlagsLeft()}}
+{\footnotesize\ttfamily int backend.\+Board.\+get\+Flags\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Visszaadja a még elhelyezhető zászlók számát. \mbox{\Hypertarget{classbackend_1_1_board_ac35feab29f41bdda1a444914b40e932b}\label{classbackend_1_1_board_ac35feab29f41bdda1a444914b40e932b}} 
+\index{backend.Board@{backend.Board}!getHiddenTiles@{getHiddenTiles}}
+\index{getHiddenTiles@{getHiddenTiles}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{getHiddenTiles()}{getHiddenTiles()}}
+{\footnotesize\ttfamily int backend.\+Board.\+get\+Hidden\+Tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Visszaadja a még fedett cellák számát. \mbox{\Hypertarget{classbackend_1_1_board_a32bbdbcae86a041432f74049eda4d0ad}\label{classbackend_1_1_board_a32bbdbcae86a041432f74049eda4d0ad}} 
+\index{backend.Board@{backend.Board}!getRows@{getRows}}
+\index{getRows@{getRows}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{getRows()}{getRows()}}
+{\footnotesize\ttfamily int backend.\+Board.\+get\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Visszaadja a tábla sorainak számát. \mbox{\Hypertarget{classbackend_1_1_board_a9c0445034a80e2442bf552c37166ea34}\label{classbackend_1_1_board_a9c0445034a80e2442bf552c37166ea34}} 
+\index{backend.Board@{backend.Board}!getXOffset@{getXOffset}}
+\index{getXOffset@{getXOffset}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{getXOffset()}{getXOffset()}}
+{\footnotesize\ttfamily int backend.\+Board.\+get\+XOffset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Visszaadja a tábla függőleges eltolását. \mbox{\Hypertarget{classbackend_1_1_board_aeb38bee4b768fb2d07ab77e2dd464484}\label{classbackend_1_1_board_aeb38bee4b768fb2d07ab77e2dd464484}} 
+\index{backend.Board@{backend.Board}!getYOffset@{getYOffset}}
+\index{getYOffset@{getYOffset}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{getYOffset()}{getYOffset()}}
+{\footnotesize\ttfamily int backend.\+Board.\+get\+YOffset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Visszaadja a tábla vertikális eltolását. \mbox{\Hypertarget{classbackend_1_1_board_a701429ed974b0c185606960331d6f2db}\label{classbackend_1_1_board_a701429ed974b0c185606960331d6f2db}} 
+\index{backend.Board@{backend.Board}!loadImages@{loadImages}}
+\index{loadImages@{loadImages}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{loadImages()}{loadImages()}}
+{\footnotesize\ttfamily void backend.\+Board.\+load\+Images (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A cellák ikonját tölti be. Játék betöltésekor illetve extra bombák hozzáadásakor használt. \mbox{\Hypertarget{classbackend_1_1_board_a5b9b6bb90401bd6aa5e3107f9bedf6d1}\label{classbackend_1_1_board_a5b9b6bb90401bd6aa5e3107f9bedf6d1}} 
+\index{backend.Board@{backend.Board}!paintComponent@{paintComponent}}
+\index{paintComponent@{paintComponent}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{paintComponent()}{paintComponent()}}
+{\footnotesize\ttfamily void backend.\+Board.\+paint\+Component (\begin{DoxyParamCaption}\item[{Graphics}]{g,  }\item[{int}]{startX,  }\item[{int}]{startY }\end{DoxyParamCaption})}
+
+A tábla és celláinak kirajzolása. 
+\begin{DoxyParams}{Paraméterek}
+{\em g} & A grafikáért felelős paraméter. \\
+\hline
+{\em startX} & A tábla kezdeti x koordinátája. A Game adja át. \\
+\hline
+{\em startY} & A tábla kezdeti y koordinátája. A Game adja át. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbackend_1_1_board_aeabed6b8e161eeab9f9e3e2d08c1dbc0}\label{classbackend_1_1_board_aeabed6b8e161eeab9f9e3e2d08c1dbc0}} 
+\index{backend.Board@{backend.Board}!resetFlags@{resetFlags}}
+\index{resetFlags@{resetFlags}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{resetFlags()}{resetFlags()}}
+{\footnotesize\ttfamily void backend.\+Board.\+reset\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Leszedi az összes elhelyezett zászlót a pályáról. \mbox{\Hypertarget{classbackend_1_1_board_a984374c7696450a7350abefd36fceb4b}\label{classbackend_1_1_board_a984374c7696450a7350abefd36fceb4b}} 
+\index{backend.Board@{backend.Board}!resetGame@{resetGame}}
+\index{resetGame@{resetGame}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{resetGame()}{resetGame()}}
+{\footnotesize\ttfamily void backend.\+Board.\+reset\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Visszaállítja a játék kezdeti állapotát (nem generálja újra) \mbox{\Hypertarget{classbackend_1_1_board_a6fbc1e02e6c8033fecf2386901a6b822}\label{classbackend_1_1_board_a6fbc1e02e6c8033fecf2386901a6b822}} 
+\index{backend.Board@{backend.Board}!restart@{restart}}
+\index{restart@{restart}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily void backend.\+Board.\+restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Újragenerálja a táblát. Beállítja a megfelelő értékeket majd csinál egy oszlop$\ast$sor nagyságú táblát csupa sima cellával. \mbox{\Hypertarget{classbackend_1_1_board_a540125aec07c5fca1d1565451d373349}\label{classbackend_1_1_board_a540125aec07c5fca1d1565451d373349}} 
+\index{backend.Board@{backend.Board}!revealEveryTile@{revealEveryTile}}
+\index{revealEveryTile@{revealEveryTile}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{revealEveryTile()}{revealEveryTile()}}
+{\footnotesize\ttfamily void backend.\+Board.\+reveal\+Every\+Tile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Minden cellát felfed. A játék elvesztésekor használt. \mbox{\Hypertarget{classbackend_1_1_board_a8eaa7adfaa9cf1cb07529ee7ea57c084}\label{classbackend_1_1_board_a8eaa7adfaa9cf1cb07529ee7ea57c084}} 
+\index{backend.Board@{backend.Board}!revealTile@{revealTile}}
+\index{revealTile@{revealTile}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{revealTile()}{revealTile()}}
+{\footnotesize\ttfamily void backend.\+Board.\+reveal\+Tile (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})}
+
+Felfedi a megadott cellát. Ha bomba vagy 2-\/nél több értékű cella, akkor simán felfedi, egyéb esetben meghívja a find\+Zeros\+Around függvényt. Bármely felfedés esetén ellenőrzi, hogy nyert-\/e a játékos. 
+\begin{DoxyParams}{Paraméterek}
+{\em row} & A felfedésre szánt cella sorszáma. \\
+\hline
+{\em col} & A felfedésre szánt cella oszlopszáma. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbackend_1_1_board_a1d099cce8d0f1af3e6328dac179ba422}\label{classbackend_1_1_board_a1d099cce8d0f1af3e6328dac179ba422}} 
+\index{backend.Board@{backend.Board}!setBombsAroundNums@{setBombsAroundNums}}
+\index{setBombsAroundNums@{setBombsAroundNums}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{setBombsAroundNums()}{setBombsAroundNums()}}
+{\footnotesize\ttfamily void backend.\+Board.\+set\+Bombs\+Around\+Nums (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A cellák körüli bombaszámok beállítása. Végigmegy az összes cellán és lekérdezi a körülöttük lévő bombák számát (get\+Bombs\+Around), ezt állítja be. \mbox{\Hypertarget{classbackend_1_1_board_a1d87ddc0c4b93ea2c439bff43c48f2a5}\label{classbackend_1_1_board_a1d87ddc0c4b93ea2c439bff43c48f2a5}} 
+\index{backend.Board@{backend.Board}!setBombsLeft@{setBombsLeft}}
+\index{setBombsLeft@{setBombsLeft}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{setBombsLeft()}{setBombsLeft()}}
+{\footnotesize\ttfamily void backend.\+Board.\+set\+Bombs\+Left (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+Beállítja a még hátralévő bombák számát \mbox{\Hypertarget{classbackend_1_1_board_aaf581c846a53ee93a22cbbf3a1d59a93}\label{classbackend_1_1_board_aaf581c846a53ee93a22cbbf3a1d59a93}} 
+\index{backend.Board@{backend.Board}!setController@{setController}}
+\index{setController@{setController}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{setController()}{setController()}}
+{\footnotesize\ttfamily void backend.\+Board.\+set\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbackend_1_1_controller}{Controller}}}]{c }\end{DoxyParamCaption})}
+
+Beállítja a táblát kezelő controllert \mbox{\Hypertarget{classbackend_1_1_board_acd062bbaac7e4c14e1c7385cfdc0e20e}\label{classbackend_1_1_board_acd062bbaac7e4c14e1c7385cfdc0e20e}} 
+\index{backend.Board@{backend.Board}!setFlagsLeft@{setFlagsLeft}}
+\index{setFlagsLeft@{setFlagsLeft}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{setFlagsLeft()}{setFlagsLeft()}}
+{\footnotesize\ttfamily void backend.\+Board.\+set\+Flags\+Left (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+Beállítja a még elhelyezhető zászlók számát \mbox{\Hypertarget{classbackend_1_1_board_a5a769beca1fc004fb79bc041f1ca27a6}\label{classbackend_1_1_board_a5a769beca1fc004fb79bc041f1ca27a6}} 
+\index{backend.Board@{backend.Board}!setStartPos@{setStartPos}}
+\index{setStartPos@{setStartPos}!backend.Board@{backend.Board}}
+\doxysubsubsection{\texorpdfstring{setStartPos()}{setStartPos()}}
+{\footnotesize\ttfamily void backend.\+Board.\+set\+Start\+Pos (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Beállítja az elsőként felfedett cella oszlopát és sorát 
+
+Ez a dokumentáció az osztályról a következő fájl alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+src/backend/Board.\+java\end{DoxyCompactItemize}

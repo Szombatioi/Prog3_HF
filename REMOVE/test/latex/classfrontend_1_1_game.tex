@@ -1,0 +1,183 @@
+\hypertarget{classfrontend_1_1_game}{}\doxysection{frontend.\+Game Class Reference}
+\label{classfrontend_1_1_game}\index{frontend.Game@{frontend.Game}}
+
+
+Inheritance diagram for frontend.\+Game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classfrontend_1_1_game__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for frontend.\+Game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classfrontend_1_1_game__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfrontend_1_1_game_a1bbe118f75b96e0e15a6d93ec268e1a8}{Game}} (\mbox{\hyperlink{classbackend_1_1_controller}{Controller}} controller)
+\item 
+\mbox{\hyperlink{classbackend_1_1_time}{Time}} \mbox{\hyperlink{classfrontend_1_1_game_a01a03f3985b6f2340aec03e2f4470a9f}{get\+Time}} ()
+\item 
+void \mbox{\hyperlink{classfrontend_1_1_game_ab9bfcce5e1e76f8c4844fa2359c95329}{init}} ()
+\item 
+void \mbox{\hyperlink{classfrontend_1_1_game_ad860856c1f7a293bf1bd97307d63d6fc}{reload}} (\mbox{\hyperlink{classbackend_1_1_time}{Time}} t)
+\item 
+boolean \mbox{\hyperlink{classfrontend_1_1_game_ab0fb752d0af566d1bb5430605c6d4b9e}{running}} ()
+\item 
+boolean \mbox{\hyperlink{classfrontend_1_1_game_af9f8a170e4cbb3756ef6fb4729f031df}{finished}} ()
+\item 
+boolean \mbox{\hyperlink{classfrontend_1_1_game_acfa7ce114665f66b376e868ee51c56c2}{started}} ()
+\item 
+void \mbox{\hyperlink{classfrontend_1_1_game_aeaf20159c47db1f08ef03a2cbcab3141}{set\+Started}} (boolean b)
+\item 
+\mbox{\hyperlink{classbackend_1_1_board}{Board}} \mbox{\hyperlink{classfrontend_1_1_game_a129da15c9d71a53b1730f0f3b989fb7c}{get\+Board}} ()
+\item 
+void \mbox{\hyperlink{classfrontend_1_1_game_aec0c1c00f8c9d2b56b244d935d34eaa4}{set\+Finished}} (boolean b)
+\item 
+void \mbox{\hyperlink{classfrontend_1_1_game_af3fd5d3ca730a100ad4631af8ec67d3e}{set\+Running}} (boolean b)
+\item 
+void \mbox{\hyperlink{classfrontend_1_1_game_a912c140167d548a65059b0d4995046e0}{restart}} ()
+\item 
+void \mbox{\hyperlink{classfrontend_1_1_game_a1cb9709996990ebd4cc637c336595c6f}{start}} ()
+\item 
+void \mbox{\hyperlink{classfrontend_1_1_game_aafc6189ca628b332827832fa77d9fba4}{paint\+Component}} (Graphics g)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Az aktuálisan futó játék osztálya. Méri a játékos idejét, illetve tárolja a játéktáblát. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfrontend_1_1_game_a1bbe118f75b96e0e15a6d93ec268e1a8}\label{classfrontend_1_1_game_a1bbe118f75b96e0e15a6d93ec268e1a8}} 
+\index{frontend.Game@{frontend.Game}!Game@{Game}}
+\index{Game@{Game}!frontend.Game@{frontend.Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily frontend.\+Game.\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbackend_1_1_controller}{Controller}}}]{controller }\end{DoxyParamCaption})}
+
+A játék konstruktora. Létrehozza a táblát az azt irányító controllerrel, beállítja a kezdeti értékeket és aktiválja a fejléc \mbox{\hyperlink{classfrontend_1_1_game}{Game}} opcióját. 
+\begin{DoxyParams}{Parameters}
+{\em controller} & A táblát (is) irányító controller. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfrontend_1_1_game_af9f8a170e4cbb3756ef6fb4729f031df}\label{classfrontend_1_1_game_af9f8a170e4cbb3756ef6fb4729f031df}} 
+\index{frontend.Game@{frontend.Game}!finished@{finished}}
+\index{finished@{finished}!frontend.Game@{frontend.Game}}
+\doxysubsubsection{\texorpdfstring{finished()}{finished()}}
+{\footnotesize\ttfamily boolean frontend.\+Game.\+finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Visszaadja, hogy befejeződött-\/e a játék. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfrontend_1_1_game_a129da15c9d71a53b1730f0f3b989fb7c}\label{classfrontend_1_1_game_a129da15c9d71a53b1730f0f3b989fb7c}} 
+\index{frontend.Game@{frontend.Game}!getBoard@{getBoard}}
+\index{getBoard@{getBoard}!frontend.Game@{frontend.Game}}
+\doxysubsubsection{\texorpdfstring{getBoard()}{getBoard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbackend_1_1_board}{Board}} frontend.\+Game.\+get\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+visszaadja a játéktáblát 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfrontend_1_1_game_a01a03f3985b6f2340aec03e2f4470a9f}\label{classfrontend_1_1_game_a01a03f3985b6f2340aec03e2f4470a9f}} 
+\index{frontend.Game@{frontend.Game}!getTime@{getTime}}
+\index{getTime@{getTime}!frontend.Game@{frontend.Game}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbackend_1_1_time}{Time}} frontend.\+Game.\+get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Visszaadja a játékos idejét. \mbox{\Hypertarget{classfrontend_1_1_game_ab9bfcce5e1e76f8c4844fa2359c95329}\label{classfrontend_1_1_game_ab9bfcce5e1e76f8c4844fa2359c95329}} 
+\index{frontend.Game@{frontend.Game}!init@{init}}
+\index{init@{init}!frontend.Game@{frontend.Game}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void frontend.\+Game.\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A kezdeti értékek beállítása. alapból a játék nem fut, nem fejeződött be és nem is kezdődött el. \mbox{\Hypertarget{classfrontend_1_1_game_aafc6189ca628b332827832fa77d9fba4}\label{classfrontend_1_1_game_aafc6189ca628b332827832fa77d9fba4}} 
+\index{frontend.Game@{frontend.Game}!paintComponent@{paintComponent}}
+\index{paintComponent@{paintComponent}!frontend.Game@{frontend.Game}}
+\doxysubsubsection{\texorpdfstring{paintComponent()}{paintComponent()}}
+{\footnotesize\ttfamily void frontend.\+Game.\+paint\+Component (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+A grafikus elemek kirajzolása \mbox{\Hypertarget{classfrontend_1_1_game_ad860856c1f7a293bf1bd97307d63d6fc}\label{classfrontend_1_1_game_ad860856c1f7a293bf1bd97307d63d6fc}} 
+\index{frontend.Game@{frontend.Game}!reload@{reload}}
+\index{reload@{reload}!frontend.Game@{frontend.Game}}
+\doxysubsubsection{\texorpdfstring{reload()}{reload()}}
+{\footnotesize\ttfamily void frontend.\+Game.\+reload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbackend_1_1_time}{Time}}}]{t }\end{DoxyParamCaption})}
+
+A játék betöltésekor újratölti a képeket, beállítja az időzítőt a mentett játék idejére és elindítja az időmérő szált. \mbox{\Hypertarget{classfrontend_1_1_game_a912c140167d548a65059b0d4995046e0}\label{classfrontend_1_1_game_a912c140167d548a65059b0d4995046e0}} 
+\index{frontend.Game@{frontend.Game}!restart@{restart}}
+\index{restart@{restart}!frontend.Game@{frontend.Game}}
+\doxysubsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily void frontend.\+Game.\+restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Újrakezdi a játékot. Új játék indításakor használt. \mbox{\Hypertarget{classfrontend_1_1_game_ab0fb752d0af566d1bb5430605c6d4b9e}\label{classfrontend_1_1_game_ab0fb752d0af566d1bb5430605c6d4b9e}} 
+\index{frontend.Game@{frontend.Game}!running@{running}}
+\index{running@{running}!frontend.Game@{frontend.Game}}
+\doxysubsubsection{\texorpdfstring{running()}{running()}}
+{\footnotesize\ttfamily boolean frontend.\+Game.\+running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Visszaadja, hogy fut-\/e a játék. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfrontend_1_1_game_aec0c1c00f8c9d2b56b244d935d34eaa4}\label{classfrontend_1_1_game_aec0c1c00f8c9d2b56b244d935d34eaa4}} 
+\index{frontend.Game@{frontend.Game}!setFinished@{setFinished}}
+\index{setFinished@{setFinished}!frontend.Game@{frontend.Game}}
+\doxysubsubsection{\texorpdfstring{setFinished()}{setFinished()}}
+{\footnotesize\ttfamily void frontend.\+Game.\+set\+Finished (\begin{DoxyParamCaption}\item[{boolean}]{b }\end{DoxyParamCaption})}
+
+Beállítja, hogy befejeződött-\/e a játék 
+\begin{DoxyParams}{Parameters}
+{\em A} & beállítandó érték. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfrontend_1_1_game_af3fd5d3ca730a100ad4631af8ec67d3e}\label{classfrontend_1_1_game_af3fd5d3ca730a100ad4631af8ec67d3e}} 
+\index{frontend.Game@{frontend.Game}!setRunning@{setRunning}}
+\index{setRunning@{setRunning}!frontend.Game@{frontend.Game}}
+\doxysubsubsection{\texorpdfstring{setRunning()}{setRunning()}}
+{\footnotesize\ttfamily void frontend.\+Game.\+set\+Running (\begin{DoxyParamCaption}\item[{boolean}]{b }\end{DoxyParamCaption})}
+
+Beállítja, hogy fut-\/e a játék 
+\begin{DoxyParams}{Parameters}
+{\em A} & beállítandó érték. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfrontend_1_1_game_aeaf20159c47db1f08ef03a2cbcab3141}\label{classfrontend_1_1_game_aeaf20159c47db1f08ef03a2cbcab3141}} 
+\index{frontend.Game@{frontend.Game}!setStarted@{setStarted}}
+\index{setStarted@{setStarted}!frontend.Game@{frontend.Game}}
+\doxysubsubsection{\texorpdfstring{setStarted()}{setStarted()}}
+{\footnotesize\ttfamily void frontend.\+Game.\+set\+Started (\begin{DoxyParamCaption}\item[{boolean}]{b }\end{DoxyParamCaption})}
+
+Beállítja, hogy elkezdődött-\/e a játék. 
+\begin{DoxyParams}{Parameters}
+{\em b} & A beállítandó érték. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfrontend_1_1_game_a1cb9709996990ebd4cc637c336595c6f}\label{classfrontend_1_1_game_a1cb9709996990ebd4cc637c336595c6f}} 
+\index{frontend.Game@{frontend.Game}!start@{start}}
+\index{start@{start}!frontend.Game@{frontend.Game}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void frontend.\+Game.\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Elindítja a játékot és a stoppert az első kattintás után. Ekkor generálódnak a bombák és számítódnak ki a cellák körüli bombák számai. \mbox{\Hypertarget{classfrontend_1_1_game_acfa7ce114665f66b376e868ee51c56c2}\label{classfrontend_1_1_game_acfa7ce114665f66b376e868ee51c56c2}} 
+\index{frontend.Game@{frontend.Game}!started@{started}}
+\index{started@{started}!frontend.Game@{frontend.Game}}
+\doxysubsubsection{\texorpdfstring{started()}{started()}}
+{\footnotesize\ttfamily boolean frontend.\+Game.\+started (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Visszaadja, hogy elkezdődött-\/e a játék. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/szoliver/eclipse-\/workspace/\+Prog3\+\_\+\+HF/\+Prog3\+\_\+\+HF/src/frontend/Game.\+java\end{DoxyCompactItemize}

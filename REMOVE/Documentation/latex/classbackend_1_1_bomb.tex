@@ -1,0 +1,155 @@
+\hypertarget{classbackend_1_1_bomb}{}\doxysection{backend.\+Bomb osztályreferencia}
+\label{classbackend_1_1_bomb}\index{backend.Bomb@{backend.Bomb}}
+
+
+A backend.\+Bomb osztály származási diagramja\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbackend_1_1_bomb__inherit__graph}
+\end{center}
+\end{figure}
+
+
+A backend.\+Bomb osztály együttműködési diagramja\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbackend_1_1_bomb__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbackend_1_1_bomb_af36941ae100b32f17c5d11cc5f186141}{Bomb}} (\mbox{\hyperlink{classbackend_1_1_board}{Board}} b)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_bomb_a27df2a1a4b14d45029b72641356982ca}{reveal}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_bomb_aeede4132c394386cd1dce310dde70519}{reveal\+End}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_bomb_adb0a023df3e3f13ae4fafed698f06e71}{flag}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_bomb_a57153317e31ddef9323538eadc2c8e7f}{set\+Bombs\+Around}} (int b)
+\item 
+int \mbox{\hyperlink{classbackend_1_1_bomb_a6a1e771d96da9cdf3697a0ea8d60b093}{get\+Value}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Védett tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classbackend_1_1_bomb_ad999689884d27e5a218c03ecf14344b6}{change\+Icon}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_bomb_a38b49cbf9c52d90e5c54c52f69100e0d}{execute}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{További örökölt tagok}
+
+
+\doxysubsection{Részletes leírás}
+Bomba ősosztály. Sima mezőből származik, viszont ezt ha felfedik, akkor felrobban a pálya és a játéknak vége. 
+
+\doxysubsection{Konstruktorok és destruktorok dokumentációja}
+\mbox{\Hypertarget{classbackend_1_1_bomb_af36941ae100b32f17c5d11cc5f186141}\label{classbackend_1_1_bomb_af36941ae100b32f17c5d11cc5f186141}} 
+\index{backend.Bomb@{backend.Bomb}!Bomb@{Bomb}}
+\index{Bomb@{Bomb}!backend.Bomb@{backend.Bomb}}
+\doxysubsubsection{\texorpdfstring{Bomb()}{Bomb()}}
+{\footnotesize\ttfamily backend.\+Bomb.\+Bomb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbackend_1_1_board}{Board}}}]{b }\end{DoxyParamCaption})}
+
+A létrehozása azonos a sima mezőével. 
+\begin{DoxyParams}{Paraméterek}
+{\em b,az} & őt tartalmazó tábla. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Tagfüggvények dokumentációja}
+\mbox{\Hypertarget{classbackend_1_1_bomb_ad999689884d27e5a218c03ecf14344b6}\label{classbackend_1_1_bomb_ad999689884d27e5a218c03ecf14344b6}} 
+\index{backend.Bomb@{backend.Bomb}!changeIcon@{changeIcon}}
+\index{changeIcon@{changeIcon}!backend.Bomb@{backend.Bomb}}
+\doxysubsubsection{\texorpdfstring{changeIcon()}{changeIcon()}}
+{\footnotesize\ttfamily void backend.\+Bomb.\+change\+Icon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+A felfedéskor megváltozik az ikonja fedett mezőről a neki megfelelőre. 
+
+Újraimplementált ősök\+: \mbox{\hyperlink{classbackend_1_1_tile_ab3fbc4b6a11af9d742d3919ac485204a}{backend.\+Tile}}.
+
+
+
+Újraimplementáló leszármazottak\+: \mbox{\hyperlink{classbackend_1_1_reset_flag_bomb_a7b23c1797b4ef29e09eb21f0b8b54134}{backend.\+Reset\+Flag\+Bomb}}, \mbox{\hyperlink{classbackend_1_1_reset_bomb_a527bf835d7b08fe7673aee522c766ba6}{backend.\+Reset\+Bomb}}, \mbox{\hyperlink{classbackend_1_1_difused_bomb_ab422ec1892c32ab778c019112949f68a}{backend.\+Difused\+Bomb}}, \mbox{\hyperlink{classbackend_1_1_cluster_bomb_a1255449d7e4c4a0e75fae0111aedf0ad}{backend.\+Cluster\+Bomb}} és \mbox{\hyperlink{classbackend_1_1_big_bomb_a138a21aa2244c11c2786734896e4db5f}{backend.\+Big\+Bomb}}.
+
+\mbox{\Hypertarget{classbackend_1_1_bomb_a38b49cbf9c52d90e5c54c52f69100e0d}\label{classbackend_1_1_bomb_a38b49cbf9c52d90e5c54c52f69100e0d}} 
+\index{backend.Bomb@{backend.Bomb}!execute@{execute}}
+\index{execute@{execute}!backend.Bomb@{backend.Bomb}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void backend.\+Bomb.\+execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Bomba aktiválása. Alapvetően felfedi az összes cellát és ezáltal véget ér a játék. 
+
+Újraimplementáló leszármazottak\+: \mbox{\hyperlink{classbackend_1_1_reset_flag_bomb_a0a34844e0bdc01b7e8872d3138568520}{backend.\+Reset\+Flag\+Bomb}}, \mbox{\hyperlink{classbackend_1_1_reset_bomb_a288c862a5814bcaa3cd0a88a2ade7e2c}{backend.\+Reset\+Bomb}} és \mbox{\hyperlink{classbackend_1_1_cluster_bomb_ac89b9c3595a217aca39a18c828c27c7b}{backend.\+Cluster\+Bomb}}.
+
+\mbox{\Hypertarget{classbackend_1_1_bomb_adb0a023df3e3f13ae4fafed698f06e71}\label{classbackend_1_1_bomb_adb0a023df3e3f13ae4fafed698f06e71}} 
+\index{backend.Bomb@{backend.Bomb}!flag@{flag}}
+\index{flag@{flag}!backend.Bomb@{backend.Bomb}}
+\doxysubsubsection{\texorpdfstring{flag()}{flag()}}
+{\footnotesize\ttfamily void backend.\+Bomb.\+flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Mező megjelölése. A hagyományos megjelöléssel ellentétben ha bombát jelölünk meg, akkor az a hátralévő bombák számát is csökkenti. 
+
+Újraimplementált ősök\+: \mbox{\hyperlink{classbackend_1_1_tile_aaa19752e3f03f7d183c594e227d9e82a}{backend.\+Tile}}.
+
+\mbox{\Hypertarget{classbackend_1_1_bomb_a6a1e771d96da9cdf3697a0ea8d60b093}\label{classbackend_1_1_bomb_a6a1e771d96da9cdf3697a0ea8d60b093}} 
+\index{backend.Bomb@{backend.Bomb}!getValue@{getValue}}
+\index{getValue@{getValue}!backend.Bomb@{backend.Bomb}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily int backend.\+Bomb.\+get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A get\+Bombs\+Around függvénynél használatos. \begin{DoxyReturn}{Visszatérési érték}
+1 bombának megfelelő az értéke. 
+\end{DoxyReturn}
+
+
+Újraimplementált ősök\+: \mbox{\hyperlink{classbackend_1_1_tile_a488e6ff848fd612c13474b6f1fb35f58}{backend.\+Tile}}.
+
+
+
+Újraimplementáló leszármazottak\+: \mbox{\hyperlink{classbackend_1_1_big_bomb_ab8f36d92c29ded72a62fcc9f72d15ddf}{backend.\+Big\+Bomb}}.
+
+\mbox{\Hypertarget{classbackend_1_1_bomb_a27df2a1a4b14d45029b72641356982ca}\label{classbackend_1_1_bomb_a27df2a1a4b14d45029b72641356982ca}} 
+\index{backend.Bomb@{backend.Bomb}!reveal@{reveal}}
+\index{reveal@{reveal}!backend.Bomb@{backend.Bomb}}
+\doxysubsubsection{\texorpdfstring{reveal()}{reveal()}}
+{\footnotesize\ttfamily void backend.\+Bomb.\+reveal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sima felfedéskor beállítja, hogy ő az első bomba, ami a robbanást okozta (ezáltal piros hátterű lesz) és ha még nincs felfedve (ez a végtelen ciklus elkerüléséhez kell) akkor megjeleníti (reveal\+End) és aktiválja (execute). 
+
+Újraimplementált ősök\+: \mbox{\hyperlink{classbackend_1_1_tile_a13953870b057b478805b584d92c2ef0d}{backend.\+Tile}}.
+
+
+
+Újraimplementáló leszármazottak\+: \mbox{\hyperlink{classbackend_1_1_difused_bomb_ac134a81e6bc3989d3237836ab774d901}{backend.\+Difused\+Bomb}}.
+
+\mbox{\Hypertarget{classbackend_1_1_bomb_aeede4132c394386cd1dce310dde70519}\label{classbackend_1_1_bomb_aeede4132c394386cd1dce310dde70519}} 
+\index{backend.Bomb@{backend.Bomb}!revealEnd@{revealEnd}}
+\index{revealEnd@{revealEnd}!backend.Bomb@{backend.Bomb}}
+\doxysubsubsection{\texorpdfstring{revealEnd()}{revealEnd()}}
+{\footnotesize\ttfamily void backend.\+Bomb.\+reveal\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Végső felfedés. Ez a felfedés általában a játék végét jelzi. Ha nincs megjelölve zászlóval, akkor megváltoztatja az ikonját, beállítja, hogy már fel van fedve és csökkenti a tábla fedett mezőinek számát. 
+
+Újraimplementált ősök\+: \mbox{\hyperlink{classbackend_1_1_tile_a0707fc91d3a8afbeb5a5cafc4dc0c0ef}{backend.\+Tile}}.
+
+\mbox{\Hypertarget{classbackend_1_1_bomb_a57153317e31ddef9323538eadc2c8e7f}\label{classbackend_1_1_bomb_a57153317e31ddef9323538eadc2c8e7f}} 
+\index{backend.Bomb@{backend.Bomb}!setBombsAround@{setBombsAround}}
+\index{setBombsAround@{setBombsAround}!backend.Bomb@{backend.Bomb}}
+\doxysubsubsection{\texorpdfstring{setBombsAround()}{setBombsAround()}}
+{\footnotesize\ttfamily void backend.\+Bomb.\+set\+Bombs\+Around (\begin{DoxyParamCaption}\item[{int}]{b }\end{DoxyParamCaption})}
+
+A bombáknál a set\+Bombs\+Around függvény minden esetben -\/1-\/et állít be, mivel bombáknál nem számít, hogy hány bomba van körülöttük. 
+
+Újraimplementált ősök\+: \mbox{\hyperlink{classbackend_1_1_tile_a2c5bb5a284ef876dd16c59f0c50c27c6}{backend.\+Tile}}.
+
+
+
+Ez a dokumentáció az osztályról a következő fájl alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+src/backend/Bomb.\+java\end{DoxyCompactItemize}

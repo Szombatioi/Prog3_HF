@@ -1,0 +1,117 @@
+\hypertarget{classbackend_1_1_time}{}\doxysection{backend.\+Time Class Reference}
+\label{classbackend_1_1_time}\index{backend.Time@{backend.Time}}
+
+
+Inheritance diagram for backend.\+Time\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classbackend_1_1_time__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for backend.\+Time\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classbackend_1_1_time__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbackend_1_1_time_ad2c12ec3dcd29e094eaa0d650a15b773}{Time}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_time_a8b0dc6a6dab95911efb932b503da2399}{increase}} ()
+\item 
+boolean \mbox{\hyperlink{classbackend_1_1_time_a3109d0b75a2b4c48c7e3757c46ee601f}{lt}} (int num)
+\item 
+int \mbox{\hyperlink{classbackend_1_1_time_a6fde47ac1635778642f1db32f13fc4e6}{getM}} ()
+\item 
+int \mbox{\hyperlink{classbackend_1_1_time_a7f9c547ed220979a1ce046f32ac7b2f6}{getS}} ()
+\item 
+String \mbox{\hyperlink{classbackend_1_1_time_ab393796e892a5799e48c03b4a3e58352}{to\+String}} ()
+\item 
+int \mbox{\hyperlink{classbackend_1_1_time_a29971c5599ec4807d1fc21902f70e013}{compare\+To}} (\mbox{\hyperlink{classbackend_1_1_time}{Time}} time)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Egyszerű idő osztály, ami a mostani feladat megoldásához elegendő. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbackend_1_1_time_ad2c12ec3dcd29e094eaa0d650a15b773}\label{classbackend_1_1_time_ad2c12ec3dcd29e094eaa0d650a15b773}} 
+\index{backend.Time@{backend.Time}!Time@{Time}}
+\index{Time@{Time}!backend.Time@{backend.Time}}
+\doxysubsubsection{\texorpdfstring{Time()}{Time()}}
+{\footnotesize\ttfamily backend.\+Time.\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Az idő konstruktora, beállítja a percet és a másodpercet 0-\/ra. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbackend_1_1_time_a29971c5599ec4807d1fc21902f70e013}\label{classbackend_1_1_time_a29971c5599ec4807d1fc21902f70e013}} 
+\index{backend.Time@{backend.Time}!compareTo@{compareTo}}
+\index{compareTo@{compareTo}!backend.Time@{backend.Time}}
+\doxysubsubsection{\texorpdfstring{compareTo()}{compareTo()}}
+{\footnotesize\ttfamily int backend.\+Time.\+compare\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbackend_1_1_time}{Time}}}]{time }\end{DoxyParamCaption})}
+
+Sorbarendezéshez használható összehasonlítás 
+\begin{DoxyParams}{Parameters}
+{\em time} & egy másik idő \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+negatív érték, ha ez az idő kisebb a paraméterben megadottnál. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbackend_1_1_time_a6fde47ac1635778642f1db32f13fc4e6}\label{classbackend_1_1_time_a6fde47ac1635778642f1db32f13fc4e6}} 
+\index{backend.Time@{backend.Time}!getM@{getM}}
+\index{getM@{getM}!backend.Time@{backend.Time}}
+\doxysubsubsection{\texorpdfstring{getM()}{getM()}}
+{\footnotesize\ttfamily int backend.\+Time.\+getM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get függvény a percek lekérésére. \begin{DoxyReturn}{Returns}
+A percek értéke. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbackend_1_1_time_a7f9c547ed220979a1ce046f32ac7b2f6}\label{classbackend_1_1_time_a7f9c547ed220979a1ce046f32ac7b2f6}} 
+\index{backend.Time@{backend.Time}!getS@{getS}}
+\index{getS@{getS}!backend.Time@{backend.Time}}
+\doxysubsubsection{\texorpdfstring{getS()}{getS()}}
+{\footnotesize\ttfamily int backend.\+Time.\+getS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get függvény a másodpercek lekérésére. \begin{DoxyReturn}{Returns}
+A másodpercek értéke. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbackend_1_1_time_a8b0dc6a6dab95911efb932b503da2399}\label{classbackend_1_1_time_a8b0dc6a6dab95911efb932b503da2399}} 
+\index{backend.Time@{backend.Time}!increase@{increase}}
+\index{increase@{increase}!backend.Time@{backend.Time}}
+\doxysubsubsection{\texorpdfstring{increase()}{increase()}}
+{\footnotesize\ttfamily void backend.\+Time.\+increase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Megnöveli eggyel az idő értékét. Ha a másodperc elér a 60-\/at, akkor a percet növeli eggyel, azt meg lenullázza. \mbox{\Hypertarget{classbackend_1_1_time_a3109d0b75a2b4c48c7e3757c46ee601f}\label{classbackend_1_1_time_a3109d0b75a2b4c48c7e3757c46ee601f}} 
+\index{backend.Time@{backend.Time}!lt@{lt}}
+\index{lt@{lt}!backend.Time@{backend.Time}}
+\doxysubsubsection{\texorpdfstring{lt()}{lt()}}
+{\footnotesize\ttfamily boolean backend.\+Time.\+lt (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+Függvény annak eldöntésére, hogy az idő kisebb-\/e, mint a megadott érték. 
+\begin{DoxyParams}{Parameters}
+{\em num} & A vizsgált idő másodpercekben \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, ha valóban kisebb. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbackend_1_1_time_ab393796e892a5799e48c03b4a3e58352}\label{classbackend_1_1_time_ab393796e892a5799e48c03b4a3e58352}} 
+\index{backend.Time@{backend.Time}!toString@{toString}}
+\index{toString@{toString}!backend.Time@{backend.Time}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String backend.\+Time.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Kiíratáshoz használható \mbox{\hyperlink{classbackend_1_1_time_ab393796e892a5799e48c03b4a3e58352}{to\+String()}} metódus. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/szoliver/eclipse-\/workspace/\+Prog3\+\_\+\+HF/\+Prog3\+\_\+\+HF/src/backend/Time.\+java\end{DoxyCompactItemize}

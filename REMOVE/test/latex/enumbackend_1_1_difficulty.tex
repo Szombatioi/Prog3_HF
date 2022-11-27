@@ -1,0 +1,86 @@
+\hypertarget{enumbackend_1_1_difficulty}{}\doxysection{backend.\+Difficulty Enum Reference}
+\label{enumbackend_1_1_difficulty}\index{backend.Difficulty@{backend.Difficulty}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{enumbackend_1_1_difficulty_a31c2cea08fceeac54ed1e9f7435115b8}{set\+Custom}} (int r, int c, int b)
+\item 
+int \mbox{\hyperlink{enumbackend_1_1_difficulty_a7030ff811202d1f0fe2b63a3ee404ed0}{rows}} ()
+\item 
+int \mbox{\hyperlink{enumbackend_1_1_difficulty_a042dd185be20f85552c23b060edcbbb2}{cols}} ()
+\item 
+int \mbox{\hyperlink{enumbackend_1_1_difficulty_aea3052b7d37f5dc29f89a058973d52e4}{bombs}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{enumbackend_1_1_difficulty_a6e22d92062eb4604bb8f983cbfd7c9aa}{EASY}} =(8,8,10)
+\item 
+\mbox{\Hypertarget{enumbackend_1_1_difficulty_ad547cb2376fdb5d07d94187eba3f95a2}\label{enumbackend_1_1_difficulty_ad547cb2376fdb5d07d94187eba3f95a2}} 
+{\bfseries NORMAL} =(16,16,40)
+\item 
+\mbox{\Hypertarget{enumbackend_1_1_difficulty_ace43be96045761bb2b42e8827e35a505}\label{enumbackend_1_1_difficulty_ace43be96045761bb2b42e8827e35a505}} 
+{\bfseries HARD} =(16,30,99)
+\item 
+\mbox{\Hypertarget{enumbackend_1_1_difficulty_aa5a03e6539f46be1127469e48c78cbea}\label{enumbackend_1_1_difficulty_aa5a03e6539f46be1127469e48c78cbea}} 
+{\bfseries CUSTOM} =(0,0,0)
+\item 
+\mbox{\Hypertarget{enumbackend_1_1_difficulty_affe107f3f060028dec998ce139a61f0f}\label{enumbackend_1_1_difficulty_affe107f3f060028dec998ce139a61f0f}} 
+int {\bfseries cols}
+\item 
+\mbox{\Hypertarget{enumbackend_1_1_difficulty_a4726dcaa084fb08b717b8fdfbea91795}\label{enumbackend_1_1_difficulty_a4726dcaa084fb08b717b8fdfbea91795}} 
+int {\bfseries bombs}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A játék nehézségeit felsorakoztató enumeráció. Minden nehézségnek van egy adott sor-\/ és oszlopszáma, illetve bombaszáma, ami legalább a 10\%-\/a a tábla méretének. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{enumbackend_1_1_difficulty_aea3052b7d37f5dc29f89a058973d52e4}\label{enumbackend_1_1_difficulty_aea3052b7d37f5dc29f89a058973d52e4}} 
+\index{backend.Difficulty@{backend.Difficulty}!bombs@{bombs}}
+\index{bombs@{bombs}!backend.Difficulty@{backend.Difficulty}}
+\doxysubsubsection{\texorpdfstring{bombs()}{bombs()}}
+{\footnotesize\ttfamily int backend.\+Difficulty.\+bombs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get függvény a bombák lekérdezésére. \mbox{\Hypertarget{enumbackend_1_1_difficulty_a042dd185be20f85552c23b060edcbbb2}\label{enumbackend_1_1_difficulty_a042dd185be20f85552c23b060edcbbb2}} 
+\index{backend.Difficulty@{backend.Difficulty}!cols@{cols}}
+\index{cols@{cols}!backend.Difficulty@{backend.Difficulty}}
+\doxysubsubsection{\texorpdfstring{cols()}{cols()}}
+{\footnotesize\ttfamily int backend.\+Difficulty.\+cols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get függvény az oszlopok lekérdezésére. \mbox{\Hypertarget{enumbackend_1_1_difficulty_a7030ff811202d1f0fe2b63a3ee404ed0}\label{enumbackend_1_1_difficulty_a7030ff811202d1f0fe2b63a3ee404ed0}} 
+\index{backend.Difficulty@{backend.Difficulty}!rows@{rows}}
+\index{rows@{rows}!backend.Difficulty@{backend.Difficulty}}
+\doxysubsubsection{\texorpdfstring{rows()}{rows()}}
+{\footnotesize\ttfamily int backend.\+Difficulty.\+rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get függvény a sorok lekérdezésére. \mbox{\Hypertarget{enumbackend_1_1_difficulty_a31c2cea08fceeac54ed1e9f7435115b8}\label{enumbackend_1_1_difficulty_a31c2cea08fceeac54ed1e9f7435115b8}} 
+\index{backend.Difficulty@{backend.Difficulty}!setCustom@{setCustom}}
+\index{setCustom@{setCustom}!backend.Difficulty@{backend.Difficulty}}
+\doxysubsubsection{\texorpdfstring{setCustom()}{setCustom()}}
+{\footnotesize\ttfamily void backend.\+Difficulty.\+set\+Custom (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+Az egyéni nehézség beállítása. 
+\begin{DoxyParams}{Parameters}
+{\em r} & a nehézség sorainak száma. \\
+\hline
+{\em c} & a nehézség oszlopainak száma. \\
+\hline
+{\em b} & a nehézség bombáinak száma. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{enumbackend_1_1_difficulty_a6e22d92062eb4604bb8f983cbfd7c9aa}\label{enumbackend_1_1_difficulty_a6e22d92062eb4604bb8f983cbfd7c9aa}} 
+\index{backend.Difficulty@{backend.Difficulty}!EASY@{EASY}}
+\index{EASY@{EASY}!backend.Difficulty@{backend.Difficulty}}
+\doxysubsubsection{\texorpdfstring{EASY}{EASY}}
+{\footnotesize\ttfamily backend.\+Difficulty.\+EASY =(8,8,10)}
+
+3 alapnehézség és egy egyedi nehézség van. 
+
+The documentation for this enum was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/szoliver/eclipse-\/workspace/\+Prog3\+\_\+\+HF/\+Prog3\+\_\+\+HF/src/backend/Difficulty.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,80 @@
+\hypertarget{classbackend_1_1_reset_bomb}{}\doxysection{backend.\+Reset\+Bomb osztályreferencia}
+\label{classbackend_1_1_reset_bomb}\index{backend.ResetBomb@{backend.ResetBomb}}
+
+
+A backend.\+Reset\+Bomb osztály származási diagramja\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classbackend_1_1_reset_bomb__inherit__graph}
+\end{center}
+\end{figure}
+
+
+A backend.\+Reset\+Bomb osztály együttműködési diagramja\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbackend_1_1_reset_bomb__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbackend_1_1_reset_bomb_a5564d0730a7d550cce5fa87f7174658c}{Reset\+Bomb}} (\mbox{\hyperlink{classbackend_1_1_board}{Board}} b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Védett tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classbackend_1_1_reset_bomb_a527bf835d7b08fe7673aee522c766ba6}{change\+Icon}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_reset_bomb_a288c862a5814bcaa3cd0a88a2ade7e2c}{execute}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{További örökölt tagok}
+
+
+\doxysubsection{Részletes leírás}
+Pályát újrakezdő bomba. Ha felfedik, újragenerálja a pályát, viszont az időzítő halad tovább. 
+
+\doxysubsection{Konstruktorok és destruktorok dokumentációja}
+\mbox{\Hypertarget{classbackend_1_1_reset_bomb_a5564d0730a7d550cce5fa87f7174658c}\label{classbackend_1_1_reset_bomb_a5564d0730a7d550cce5fa87f7174658c}} 
+\index{backend.ResetBomb@{backend.ResetBomb}!ResetBomb@{ResetBomb}}
+\index{ResetBomb@{ResetBomb}!backend.ResetBomb@{backend.ResetBomb}}
+\doxysubsubsection{\texorpdfstring{ResetBomb()}{ResetBomb()}}
+{\footnotesize\ttfamily backend.\+Reset\+Bomb.\+Reset\+Bomb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbackend_1_1_board}{Board}}}]{b }\end{DoxyParamCaption})}
+
+A létrehozása azonos a sima bombáéval. 
+\begin{DoxyParams}{Paraméterek}
+{\em b,az} & őt tartalmazó tábla. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Tagfüggvények dokumentációja}
+\mbox{\Hypertarget{classbackend_1_1_reset_bomb_a527bf835d7b08fe7673aee522c766ba6}\label{classbackend_1_1_reset_bomb_a527bf835d7b08fe7673aee522c766ba6}} 
+\index{backend.ResetBomb@{backend.ResetBomb}!changeIcon@{changeIcon}}
+\index{changeIcon@{changeIcon}!backend.ResetBomb@{backend.ResetBomb}}
+\doxysubsubsection{\texorpdfstring{changeIcon()}{changeIcon()}}
+{\footnotesize\ttfamily void backend.\+Reset\+Bomb.\+change\+Icon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+A felfedéskor megváltozik az ikonja fedett mezőről a neki megfelelőre. 
+
+Újraimplementált ősök\+: \mbox{\hyperlink{classbackend_1_1_bomb_ad999689884d27e5a218c03ecf14344b6}{backend.\+Bomb}}.
+
+\mbox{\Hypertarget{classbackend_1_1_reset_bomb_a288c862a5814bcaa3cd0a88a2ade7e2c}\label{classbackend_1_1_reset_bomb_a288c862a5814bcaa3cd0a88a2ade7e2c}} 
+\index{backend.ResetBomb@{backend.ResetBomb}!execute@{execute}}
+\index{execute@{execute}!backend.ResetBomb@{backend.ResetBomb}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void backend.\+Reset\+Bomb.\+execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Aktiválásakor újraindítja a táblát és a játékot. 
+
+Újraimplementált ősök\+: \mbox{\hyperlink{classbackend_1_1_bomb_a38b49cbf9c52d90e5c54c52f69100e0d}{backend.\+Bomb}}.
+
+
+
+Ez a dokumentáció az osztályról a következő fájl alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+src/backend/Reset\+Bomb.\+java\end{DoxyCompactItemize}

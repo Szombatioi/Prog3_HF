@@ -1,0 +1,68 @@
+\hypertarget{classfrontend_1_1_my_mouse_listener}{}\doxysection{frontend.\+My\+Mouse\+Listener osztályreferencia}
+\label{classfrontend_1_1_my_mouse_listener}\index{frontend.MyMouseListener@{frontend.MyMouseListener}}
+
+
+A frontend.\+My\+Mouse\+Listener osztály származási diagramja\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classfrontend_1_1_my_mouse_listener__inherit__graph}
+\end{center}
+\end{figure}
+
+
+A frontend.\+My\+Mouse\+Listener osztály együttműködési diagramja\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classfrontend_1_1_my_mouse_listener__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfrontend_1_1_my_mouse_listener_a472a6248ae2e27fa6231b3a32bd5f53a}{My\+Mouse\+Listener}} (\mbox{\hyperlink{classfrontend_1_1_game}{Game}} g)
+\item 
+void \mbox{\hyperlink{classfrontend_1_1_my_mouse_listener_a0ec094aaef9bc94ea5074d92e9f713cf}{set\+Board}} (\mbox{\hyperlink{classbackend_1_1_board}{Board}} b)
+\item 
+void \mbox{\hyperlink{classfrontend_1_1_my_mouse_listener_a0d7191223be002536bd0f3c9949f6db2}{mouse\+Released}} (Mouse\+Event e)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Részletes leírás}
+Egérkezelő osztály. Ez felel a mezők felfedésének, megjelölésének detektálásáért. 
+
+\doxysubsection{Konstruktorok és destruktorok dokumentációja}
+\mbox{\Hypertarget{classfrontend_1_1_my_mouse_listener_a472a6248ae2e27fa6231b3a32bd5f53a}\label{classfrontend_1_1_my_mouse_listener_a472a6248ae2e27fa6231b3a32bd5f53a}} 
+\index{frontend.MyMouseListener@{frontend.MyMouseListener}!MyMouseListener@{MyMouseListener}}
+\index{MyMouseListener@{MyMouseListener}!frontend.MyMouseListener@{frontend.MyMouseListener}}
+\doxysubsubsection{\texorpdfstring{MyMouseListener()}{MyMouseListener()}}
+{\footnotesize\ttfamily frontend.\+My\+Mouse\+Listener.\+My\+Mouse\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfrontend_1_1_game}{Game}}}]{g }\end{DoxyParamCaption})}
+
+Az egérkezelő konstruktora. Beállítja a játékot és a táblát. 
+
+\doxysubsection{Tagfüggvények dokumentációja}
+\mbox{\Hypertarget{classfrontend_1_1_my_mouse_listener_a0d7191223be002536bd0f3c9949f6db2}\label{classfrontend_1_1_my_mouse_listener_a0d7191223be002536bd0f3c9949f6db2}} 
+\index{frontend.MyMouseListener@{frontend.MyMouseListener}!mouseReleased@{mouseReleased}}
+\index{mouseReleased@{mouseReleased}!frontend.MyMouseListener@{frontend.MyMouseListener}}
+\doxysubsubsection{\texorpdfstring{mouseReleased()}{mouseReleased()}}
+{\footnotesize\ttfamily void frontend.\+My\+Mouse\+Listener.\+mouse\+Released (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+Az egér felengedése. Ha felengedi a játékos az egér egy gombját, akkor kiszámolja a koordinátákra eső sor-\/ és oszlopszámot, majd bal kattintás esetén felfedi a cellát (és esetleg elindítja a játék futását), jobb kattintás esetén megjelöli a cellát (ha fut a játék). \mbox{\Hypertarget{classfrontend_1_1_my_mouse_listener_a0ec094aaef9bc94ea5074d92e9f713cf}\label{classfrontend_1_1_my_mouse_listener_a0ec094aaef9bc94ea5074d92e9f713cf}} 
+\index{frontend.MyMouseListener@{frontend.MyMouseListener}!setBoard@{setBoard}}
+\index{setBoard@{setBoard}!frontend.MyMouseListener@{frontend.MyMouseListener}}
+\doxysubsubsection{\texorpdfstring{setBoard()}{setBoard()}}
+{\footnotesize\ttfamily void frontend.\+My\+Mouse\+Listener.\+set\+Board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbackend_1_1_board}{Board}}}]{b }\end{DoxyParamCaption})}
+
+Beállítja a táblát, amit figyel. 
+\begin{DoxyParams}{Paraméterek}
+{\em b} & A beállítandó tábla. \\
+\hline
+\end{DoxyParams}
+
+
+Ez a dokumentáció az osztályról a következő fájl alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+src/frontend/My\+Mouse\+Listener.\+java\end{DoxyCompactItemize}

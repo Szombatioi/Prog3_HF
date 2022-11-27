@@ -1,0 +1,102 @@
+\hypertarget{classbackend_1_1_data}{}\doxysection{backend.\+Data osztályreferencia}
+\label{classbackend_1_1_data}\index{backend.Data@{backend.Data}}
+
+
+A backend.\+Data osztály származási diagramja\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classbackend_1_1_data__inherit__graph}
+\end{center}
+\end{figure}
+
+
+A backend.\+Data osztály együttműködési diagramja\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classbackend_1_1_data__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classbackend_1_1_data_a94a96e34f5359859647fdeaa35186a1b}{get\+Row\+Count}} ()
+\item 
+int \mbox{\hyperlink{classbackend_1_1_data_a7c655aded7d2058378025a56d0e5960f}{get\+Column\+Count}} ()
+\item 
+String \mbox{\hyperlink{classbackend_1_1_data_a6504f87431344046cf154df84cfdd106}{get\+Column\+Name}} (int column\+Index)
+\item 
+Object \mbox{\hyperlink{classbackend_1_1_data_afcbafe247674546aaeb637746cad61c8}{get\+Value\+At}} (int row\+Index, int column\+Index)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_data_a5c5b6c9e050667a592d9bc5d31aba7e8}{add\+Record}} (String player\+Name, \mbox{\hyperlink{classbackend_1_1_time}{Time}} time)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Részletes leírás}
+Adat osztály rekordok eltárolására és táblában való megjelenítésére. 
+
+\doxysubsection{Tagfüggvények dokumentációja}
+\mbox{\Hypertarget{classbackend_1_1_data_a5c5b6c9e050667a592d9bc5d31aba7e8}\label{classbackend_1_1_data_a5c5b6c9e050667a592d9bc5d31aba7e8}} 
+\index{backend.Data@{backend.Data}!addRecord@{addRecord}}
+\index{addRecord@{addRecord}!backend.Data@{backend.Data}}
+\doxysubsubsection{\texorpdfstring{addRecord()}{addRecord()}}
+{\footnotesize\ttfamily void backend.\+Data.\+add\+Record (\begin{DoxyParamCaption}\item[{String}]{player\+Name,  }\item[{\mbox{\hyperlink{classbackend_1_1_time}{Time}}}]{time }\end{DoxyParamCaption})}
+
+Rekord felvétele a táblába 
+\begin{DoxyParams}{Paraméterek}
+{\em player\+Name} & a játékos neve \\
+\hline
+{\em time} & a játékos ideje \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbackend_1_1_data_a7c655aded7d2058378025a56d0e5960f}\label{classbackend_1_1_data_a7c655aded7d2058378025a56d0e5960f}} 
+\index{backend.Data@{backend.Data}!getColumnCount@{getColumnCount}}
+\index{getColumnCount@{getColumnCount}!backend.Data@{backend.Data}}
+\doxysubsubsection{\texorpdfstring{getColumnCount()}{getColumnCount()}}
+{\footnotesize\ttfamily int backend.\+Data.\+get\+Column\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Visszatérési érték}
+Tábla oszlopainak számát adja vissza. (Név, idő) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbackend_1_1_data_a6504f87431344046cf154df84cfdd106}\label{classbackend_1_1_data_a6504f87431344046cf154df84cfdd106}} 
+\index{backend.Data@{backend.Data}!getColumnName@{getColumnName}}
+\index{getColumnName@{getColumnName}!backend.Data@{backend.Data}}
+\doxysubsubsection{\texorpdfstring{getColumnName()}{getColumnName()}}
+{\footnotesize\ttfamily String backend.\+Data.\+get\+Column\+Name (\begin{DoxyParamCaption}\item[{int}]{column\+Index }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Visszatérési érték}
+Tábla megfelelő oszlopának nevét adja vissza. Az első oszlop mindig a játékosok nevét, a második meg az idejüket tárolja. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbackend_1_1_data_a94a96e34f5359859647fdeaa35186a1b}\label{classbackend_1_1_data_a94a96e34f5359859647fdeaa35186a1b}} 
+\index{backend.Data@{backend.Data}!getRowCount@{getRowCount}}
+\index{getRowCount@{getRowCount}!backend.Data@{backend.Data}}
+\doxysubsubsection{\texorpdfstring{getRowCount()}{getRowCount()}}
+{\footnotesize\ttfamily int backend.\+Data.\+get\+Row\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Visszatérési érték}
+Tábla sorainak számát adja vissza. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbackend_1_1_data_afcbafe247674546aaeb637746cad61c8}\label{classbackend_1_1_data_afcbafe247674546aaeb637746cad61c8}} 
+\index{backend.Data@{backend.Data}!getValueAt@{getValueAt}}
+\index{getValueAt@{getValueAt}!backend.Data@{backend.Data}}
+\doxysubsubsection{\texorpdfstring{getValueAt()}{getValueAt()}}
+{\footnotesize\ttfamily Object backend.\+Data.\+get\+Value\+At (\begin{DoxyParamCaption}\item[{int}]{row\+Index,  }\item[{int}]{column\+Index }\end{DoxyParamCaption})}
+
+Érték megszerzése a tábla megfelelő sorából és oszlopából 
+\begin{DoxyParams}{Paraméterek}
+{\em row\+Index} & \+: A sor sorszáma \\
+\hline
+{\em column\+Index} & \+: Az oszlop sorszáma \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+A tábla megfelelő cellájának értékét adja vissza. 
+\end{DoxyReturn}
+
+
+Ez a dokumentáció az osztályról a következő fájl alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+src/backend/Data.\+java\end{DoxyCompactItemize}

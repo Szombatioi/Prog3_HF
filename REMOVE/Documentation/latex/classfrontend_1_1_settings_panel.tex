@@ -1,0 +1,79 @@
+\hypertarget{classfrontend_1_1_settings_panel}{}\doxysection{frontend.\+Settings\+Panel osztályreferencia}
+\label{classfrontend_1_1_settings_panel}\index{frontend.SettingsPanel@{frontend.SettingsPanel}}
+
+
+A frontend.\+Settings\+Panel osztály származási diagramja\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classfrontend_1_1_settings_panel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+A frontend.\+Settings\+Panel osztály együttműködési diagramja\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classfrontend_1_1_settings_panel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfrontend_1_1_settings_panel_ad15e4cf55607e207799db0dbd2277d49}{Settings\+Panel}} (\mbox{\hyperlink{classbackend_1_1_controller}{Controller}} controller)
+\item 
+boolean \mbox{\hyperlink{classfrontend_1_1_settings_panel_aae67fb627fcd12db03e442b1bb34b4fc}{submit}} ()
+\item 
+void \mbox{\hyperlink{classfrontend_1_1_settings_panel_a755f3ac06d1d6fc1a5ba8b6ffd419522}{init\+Components}} ()
+\item 
+void \mbox{\hyperlink{classfrontend_1_1_settings_panel_af4fe53c3f989fa4433b607b0b43f52c2}{set\+Action\+Listeners}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Részletes leírás}
+A beállítások panel. Itt lehet a játék nehézségét beállítani. 
+
+\doxysubsection{Konstruktorok és destruktorok dokumentációja}
+\mbox{\Hypertarget{classfrontend_1_1_settings_panel_ad15e4cf55607e207799db0dbd2277d49}\label{classfrontend_1_1_settings_panel_ad15e4cf55607e207799db0dbd2277d49}} 
+\index{frontend.SettingsPanel@{frontend.SettingsPanel}!SettingsPanel@{SettingsPanel}}
+\index{SettingsPanel@{SettingsPanel}!frontend.SettingsPanel@{frontend.SettingsPanel}}
+\doxysubsubsection{\texorpdfstring{SettingsPanel()}{SettingsPanel()}}
+{\footnotesize\ttfamily frontend.\+Settings\+Panel.\+Settings\+Panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbackend_1_1_controller}{Controller}}}]{controller }\end{DoxyParamCaption})}
+
+A panel konstruktora. Beállítja a controllert, majd beállítja a grafikus elemeket és beállítja azok action\+Listener-\/jeit. 
+\begin{DoxyParams}{Paraméterek}
+{\em controller} & Az őt (is) irányító controller. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Tagfüggvények dokumentációja}
+\mbox{\Hypertarget{classfrontend_1_1_settings_panel_a755f3ac06d1d6fc1a5ba8b6ffd419522}\label{classfrontend_1_1_settings_panel_a755f3ac06d1d6fc1a5ba8b6ffd419522}} 
+\index{frontend.SettingsPanel@{frontend.SettingsPanel}!initComponents@{initComponents}}
+\index{initComponents@{initComponents}!frontend.SettingsPanel@{frontend.SettingsPanel}}
+\doxysubsubsection{\texorpdfstring{initComponents()}{initComponents()}}
+{\footnotesize\ttfamily void frontend.\+Settings\+Panel.\+init\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A grafikus elemek létrehozása. \mbox{\Hypertarget{classfrontend_1_1_settings_panel_af4fe53c3f989fa4433b607b0b43f52c2}\label{classfrontend_1_1_settings_panel_af4fe53c3f989fa4433b607b0b43f52c2}} 
+\index{frontend.SettingsPanel@{frontend.SettingsPanel}!setActionListeners@{setActionListeners}}
+\index{setActionListeners@{setActionListeners}!frontend.SettingsPanel@{frontend.SettingsPanel}}
+\doxysubsubsection{\texorpdfstring{setActionListeners()}{setActionListeners()}}
+{\footnotesize\ttfamily void frontend.\+Settings\+Panel.\+set\+Action\+Listeners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Action\+Listener-\/ek beállítása. \mbox{\Hypertarget{classfrontend_1_1_settings_panel_aae67fb627fcd12db03e442b1bb34b4fc}\label{classfrontend_1_1_settings_panel_aae67fb627fcd12db03e442b1bb34b4fc}} 
+\index{frontend.SettingsPanel@{frontend.SettingsPanel}!submit@{submit}}
+\index{submit@{submit}!frontend.SettingsPanel@{frontend.SettingsPanel}}
+\doxysubsubsection{\texorpdfstring{submit()}{submit()}}
+{\footnotesize\ttfamily boolean frontend.\+Settings\+Panel.\+submit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A beállítások elmentése. Ha egyéni nehézséget állítunk be és rosszak az értékei, akkor hibaüzenetet ad és nem hajtja végre a mentést. \begin{DoxyReturn}{Visszatérési érték}
+A mentés sikeressége. 
+\end{DoxyReturn}
+
+
+Ez a dokumentáció az osztályról a következő fájl alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+src/frontend/Settings\+Panel.\+java\end{DoxyCompactItemize}

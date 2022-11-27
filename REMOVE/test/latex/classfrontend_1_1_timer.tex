@@ -1,0 +1,166 @@
+\hypertarget{classfrontend_1_1_timer}{}\doxysection{frontend.\+Timer Class Reference}
+\label{classfrontend_1_1_timer}\index{frontend.Timer@{frontend.Timer}}
+
+
+Inheritance diagram for frontend.\+Timer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classfrontend_1_1_timer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for frontend.\+Timer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classfrontend_1_1_timer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfrontend_1_1_timer_a90aa085db459c9a03320557bebb549a3}{Timer}} ()
+\item 
+\mbox{\hyperlink{classfrontend_1_1_timer_a6c60f1c6ee41e8756ab1a2311bcb0434}{Timer}} (\mbox{\hyperlink{classbackend_1_1_time}{Time}} t)
+\item 
+int \mbox{\hyperlink{classfrontend_1_1_timer_a01dc6f29ebcb8b7edca18f3b699519bc}{get\+Height}} ()
+\item 
+boolean \mbox{\hyperlink{classfrontend_1_1_timer_ae5ad334f116f4eaef4efa70b863e6542}{started}} ()
+\item 
+String \mbox{\hyperlink{classfrontend_1_1_timer_a4cc692028088e86c18d0757a86c57e16}{to\+String}} ()
+\item 
+\mbox{\hyperlink{classbackend_1_1_time}{Time}} \mbox{\hyperlink{classfrontend_1_1_timer_a47326713953b194d355d3f2969957f8e}{get\+Time}} ()
+\item 
+void \mbox{\hyperlink{classfrontend_1_1_timer_a6a00c7e76c60cdc78daf47db51c0f59f}{start}} ()
+\item 
+void \mbox{\hyperlink{classfrontend_1_1_timer_a0232c6498234cf2ac30c37544ea995e7}{run}} ()
+\item 
+void \mbox{\hyperlink{classfrontend_1_1_timer_af8a8b911224e34036c07f3e404abff44}{set\+Finished}} (boolean b)
+\item 
+void \mbox{\hyperlink{classfrontend_1_1_timer_a43daa68aeed94bcac11978370c252612}{set\+Running}} (boolean b)
+\item 
+boolean \mbox{\hyperlink{classfrontend_1_1_timer_a363cb541b1d26cb70ee493c6d31be8f3}{running}} ()
+\item 
+void \mbox{\hyperlink{classfrontend_1_1_timer_a805f43b5101cc4f81a62b1743254c5a2}{paint\+Component}} (Graphics g, int width)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Idő számlálására alkalmas osztály. 00\+:00-\/tól elkezdve számolja a játékos idejét. Külön szálként működik. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfrontend_1_1_timer_a90aa085db459c9a03320557bebb549a3}\label{classfrontend_1_1_timer_a90aa085db459c9a03320557bebb549a3}} 
+\index{frontend.Timer@{frontend.Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!frontend.Timer@{frontend.Timer}}
+\doxysubsubsection{\texorpdfstring{Timer()}{Timer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily frontend.\+Timer.\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Az időszámláló osztály konstruktora. Létrehozza az időt, illetve beállítja a kezdeti értékeket. \mbox{\Hypertarget{classfrontend_1_1_timer_a6c60f1c6ee41e8756ab1a2311bcb0434}\label{classfrontend_1_1_timer_a6c60f1c6ee41e8756ab1a2311bcb0434}} 
+\index{frontend.Timer@{frontend.Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!frontend.Timer@{frontend.Timer}}
+\doxysubsubsection{\texorpdfstring{Timer()}{Timer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily frontend.\+Timer.\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbackend_1_1_time}{Time}}}]{t }\end{DoxyParamCaption})}
+
+Egy másik konstruktor, ami játék betöltésekor használt. 
+\begin{DoxyParams}{Parameters}
+{\em t} & A már meglévő játék ideje. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfrontend_1_1_timer_a01dc6f29ebcb8b7edca18f3b699519bc}\label{classfrontend_1_1_timer_a01dc6f29ebcb8b7edca18f3b699519bc}} 
+\index{frontend.Timer@{frontend.Timer}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!frontend.Timer@{frontend.Timer}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily int frontend.\+Timer.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Visszaadja az időzítő kirajzolásának magasságát. (A még elhelyezhető zászlók kirajzolásához kell.) \begin{DoxyReturn}{Returns}
+A kirajzolás magassága. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfrontend_1_1_timer_a47326713953b194d355d3f2969957f8e}\label{classfrontend_1_1_timer_a47326713953b194d355d3f2969957f8e}} 
+\index{frontend.Timer@{frontend.Timer}!getTime@{getTime}}
+\index{getTime@{getTime}!frontend.Timer@{frontend.Timer}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbackend_1_1_time}{Time}} frontend.\+Timer.\+get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Visszaadja a mért időt. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfrontend_1_1_timer_a805f43b5101cc4f81a62b1743254c5a2}\label{classfrontend_1_1_timer_a805f43b5101cc4f81a62b1743254c5a2}} 
+\index{frontend.Timer@{frontend.Timer}!paintComponent@{paintComponent}}
+\index{paintComponent@{paintComponent}!frontend.Timer@{frontend.Timer}}
+\doxysubsubsection{\texorpdfstring{paintComponent()}{paintComponent()}}
+{\footnotesize\ttfamily void frontend.\+Timer.\+paint\+Component (\begin{DoxyParamCaption}\item[{Graphics}]{g,  }\item[{int}]{width }\end{DoxyParamCaption})}
+
+Kirajzolja az időzítőt az ablak szélességének megfelelően bal oldalra. 
+\begin{DoxyParams}{Parameters}
+{\em g} & A grafikáért felelős paraméter. \\
+\hline
+{\em width} & Az ablak szélessége. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfrontend_1_1_timer_a0232c6498234cf2ac30c37544ea995e7}\label{classfrontend_1_1_timer_a0232c6498234cf2ac30c37544ea995e7}} 
+\index{frontend.Timer@{frontend.Timer}!run@{run}}
+\index{run@{run}!frontend.Timer@{frontend.Timer}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void frontend.\+Timer.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A szál futása. Amíg nem fejeződött be, addig másodpercenként számol egyet. \mbox{\Hypertarget{classfrontend_1_1_timer_a363cb541b1d26cb70ee493c6d31be8f3}\label{classfrontend_1_1_timer_a363cb541b1d26cb70ee493c6d31be8f3}} 
+\index{frontend.Timer@{frontend.Timer}!running@{running}}
+\index{running@{running}!frontend.Timer@{frontend.Timer}}
+\doxysubsubsection{\texorpdfstring{running()}{running()}}
+{\footnotesize\ttfamily boolean frontend.\+Timer.\+running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Visszaadja, hogy fut-\/e az időzítő. \mbox{\Hypertarget{classfrontend_1_1_timer_af8a8b911224e34036c07f3e404abff44}\label{classfrontend_1_1_timer_af8a8b911224e34036c07f3e404abff44}} 
+\index{frontend.Timer@{frontend.Timer}!setFinished@{setFinished}}
+\index{setFinished@{setFinished}!frontend.Timer@{frontend.Timer}}
+\doxysubsubsection{\texorpdfstring{setFinished()}{setFinished()}}
+{\footnotesize\ttfamily void frontend.\+Timer.\+set\+Finished (\begin{DoxyParamCaption}\item[{boolean}]{b }\end{DoxyParamCaption})}
+
+Beállítja a finished mező értékét 
+\begin{DoxyParams}{Parameters}
+{\em b} & A beállítandó érték. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfrontend_1_1_timer_a43daa68aeed94bcac11978370c252612}\label{classfrontend_1_1_timer_a43daa68aeed94bcac11978370c252612}} 
+\index{frontend.Timer@{frontend.Timer}!setRunning@{setRunning}}
+\index{setRunning@{setRunning}!frontend.Timer@{frontend.Timer}}
+\doxysubsubsection{\texorpdfstring{setRunning()}{setRunning()}}
+{\footnotesize\ttfamily void frontend.\+Timer.\+set\+Running (\begin{DoxyParamCaption}\item[{boolean}]{b }\end{DoxyParamCaption})}
+
+Beállítja a running mező értékét. 
+\begin{DoxyParams}{Parameters}
+{\em b} & A beállítandó érték. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfrontend_1_1_timer_a6a00c7e76c60cdc78daf47db51c0f59f}\label{classfrontend_1_1_timer_a6a00c7e76c60cdc78daf47db51c0f59f}} 
+\index{frontend.Timer@{frontend.Timer}!start@{start}}
+\index{start@{start}!frontend.Timer@{frontend.Timer}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void frontend.\+Timer.\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A szál elindítása. A started mező értékét igazra állítja. \mbox{\Hypertarget{classfrontend_1_1_timer_ae5ad334f116f4eaef4efa70b863e6542}\label{classfrontend_1_1_timer_ae5ad334f116f4eaef4efa70b863e6542}} 
+\index{frontend.Timer@{frontend.Timer}!started@{started}}
+\index{started@{started}!frontend.Timer@{frontend.Timer}}
+\doxysubsubsection{\texorpdfstring{started()}{started()}}
+{\footnotesize\ttfamily boolean frontend.\+Timer.\+started (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Elkezdődött-\/e már a számláló. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfrontend_1_1_timer_a4cc692028088e86c18d0757a86c57e16}\label{classfrontend_1_1_timer_a4cc692028088e86c18d0757a86c57e16}} 
+\index{frontend.Timer@{frontend.Timer}!toString@{toString}}
+\index{toString@{toString}!frontend.Timer@{frontend.Timer}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String frontend.\+Timer.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Kirajzoláshoz használt \mbox{\hyperlink{classfrontend_1_1_timer_a4cc692028088e86c18d0757a86c57e16}{to\+String()}} metódus. 2db 0-\/ra kerekíti az értékeket. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/szoliver/eclipse-\/workspace/\+Prog3\+\_\+\+HF/\+Prog3\+\_\+\+HF/src/frontend/Timer.\+java\end{DoxyCompactItemize}

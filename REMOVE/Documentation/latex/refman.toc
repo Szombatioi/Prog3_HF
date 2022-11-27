@@ -1,0 +1,293 @@
+\select@language {magyar} \@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\select@language {magyar} \contentsline {chapter}{\numberline {1}Hierarchikus mutató}{1}{chapter.1}%
+\select@language {magyar} \contentsline {section}{\numberline {1.1}Osztályhierarchia}{1}{section.1.1}%
+\select@language {magyar} \contentsline {chapter}{\numberline {2}Osztálymutató}{3}{chapter.2}%
+\select@language {magyar} \contentsline {section}{\numberline {2.1}Osztálylista}{3}{section.2.1}%
+\select@language {magyar} \contentsline {chapter}{\numberline {3}Osztályok dokumentációja}{5}{chapter.3}%
+\select@language {magyar} \contentsline {section}{\numberline {3.1}backend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Big\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bomb osztályreferencia}{5}{section.3.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.1.1}Részletes leírás}{6}{subsection.3.1.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.1.2}Konstruktorok és destruktorok dokumentációja}{6}{subsection.3.1.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.1.2.1}BigBomb()}{6}{subsubsection.3.1.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.1.3}Tagfüggvények dokumentációja}{7}{subsection.3.1.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.1.3.1}changeIcon()}{7}{subsubsection.3.1.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.1.3.2}getValue()}{7}{subsubsection.3.1.3.2}%
+\select@language {magyar} \contentsline {section}{\numberline {3.2}backend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Board osztályreferencia}{8}{section.3.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.1}Részletes leírás}{9}{subsection.3.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.2}Konstruktorok és destruktorok dokumentációja}{9}{subsection.3.2.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.2.1}Board()}{9}{subsubsection.3.2.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.2.3}Tagfüggvények dokumentációja}{10}{subsection.3.2.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.1}addMoreBombs()}{10}{subsubsection.3.2.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.2}checkEnd()}{10}{subsubsection.3.2.3.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.3}decHiddenTiles()}{10}{subsubsection.3.2.3.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.4}findZerosAround()}{10}{subsubsection.3.2.3.4}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.5}flagTile()}{11}{subsubsection.3.2.3.5}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.6}generateBombs()}{11}{subsubsection.3.2.3.6}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.7}getBombsAround()}{11}{subsubsection.3.2.3.7}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.8}getBombsLeft()}{12}{subsubsection.3.2.3.8}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.9}getBombsNr()}{12}{subsubsection.3.2.3.9}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.10}getCols()}{12}{subsubsection.3.2.3.10}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.11}getCorrespondingBomb()}{12}{subsubsection.3.2.3.11}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.12}getFlagsLeft()}{12}{subsubsection.3.2.3.12}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.13}getHiddenTiles()}{12}{subsubsection.3.2.3.13}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.14}getRows()}{13}{subsubsection.3.2.3.14}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.15}getXOffset()}{13}{subsubsection.3.2.3.15}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.16}getYOffset()}{13}{subsubsection.3.2.3.16}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.17}loadImages()}{13}{subsubsection.3.2.3.17}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.18}paintComponent()}{13}{subsubsection.3.2.3.18}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.19}resetFlags()}{13}{subsubsection.3.2.3.19}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.20}resetGame()}{14}{subsubsection.3.2.3.20}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.21}restart()}{14}{subsubsection.3.2.3.21}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.22}revealEveryTile()}{14}{subsubsection.3.2.3.22}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.23}revealTile()}{14}{subsubsection.3.2.3.23}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.24}setBombsAroundNums()}{14}{subsubsection.3.2.3.24}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.25}setBombsLeft()}{14}{subsubsection.3.2.3.25}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.26}setController()}{15}{subsubsection.3.2.3.26}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.27}setFlagsLeft()}{15}{subsubsection.3.2.3.27}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.2.3.28}setStartPos()}{15}{subsubsection.3.2.3.28}%
+\select@language {magyar} \contentsline {section}{\numberline {3.3}backend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bomb osztályreferencia}{15}{section.3.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.1}Részletes leírás}{16}{subsection.3.3.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.2}Konstruktorok és destruktorok dokumentációja}{16}{subsection.3.3.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.3.2.1}Bomb()}{16}{subsubsection.3.3.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.3.3}Tagfüggvények dokumentációja}{17}{subsection.3.3.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.3.3.1}changeIcon()}{17}{subsubsection.3.3.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.3.3.2}execute()}{17}{subsubsection.3.3.3.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.3.3.3}flag()}{17}{subsubsection.3.3.3.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.3.3.4}getValue()}{18}{subsubsection.3.3.3.4}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.3.3.5}reveal()}{18}{subsubsection.3.3.3.5}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.3.3.6}revealEnd()}{18}{subsubsection.3.3.3.6}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.3.3.7}setBombsAround()}{18}{subsubsection.3.3.3.7}%
+\select@language {magyar} \contentsline {section}{\numberline {3.4}backend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cluster\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bomb osztályreferencia}{19}{section.3.4}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.4.1}Részletes leírás}{20}{subsection.3.4.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.4.2}Konstruktorok és destruktorok dokumentációja}{20}{subsection.3.4.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.4.2.1}ClusterBomb()}{20}{subsubsection.3.4.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.4.3}Tagfüggvények dokumentációja}{20}{subsection.3.4.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.4.3.1}changeIcon()}{20}{subsubsection.3.4.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.4.3.2}execute()}{21}{subsubsection.3.4.3.2}%
+\select@language {magyar} \contentsline {section}{\numberline {3.5}backend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller osztályreferencia}{21}{section.3.5}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.5.1}Részletes leírás}{21}{subsection.3.5.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.5.2}Konstruktorok és destruktorok dokumentációja}{21}{subsection.3.5.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.2.1}Controller()}{22}{subsubsection.3.5.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.5.3}Tagfüggvények dokumentációja}{22}{subsection.3.5.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.1}addRecord()}{22}{subsubsection.3.5.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.2}clearRecords()}{22}{subsubsection.3.5.3.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.3}closeGame()}{22}{subsubsection.3.5.3.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.4}getData()}{22}{subsubsection.3.5.3.4}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.5}getDiff()}{23}{subsubsection.3.5.3.5}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.6}getGame()}{23}{subsubsection.3.5.3.6}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.7}loadGame()}{23}{subsubsection.3.5.3.7}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.8}loadRecords()}{23}{subsubsection.3.5.3.8}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.9}pauseGame()}{23}{subsubsection.3.5.3.9}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.10}resetWindowSize()}{24}{subsubsection.3.5.3.10}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.11}saveGame()}{24}{subsubsection.3.5.3.11}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.12}saveRecords()}{24}{subsubsection.3.5.3.12}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.13}setDiff()}{24}{subsubsection.3.5.3.13}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.14}setGame()}{24}{subsubsection.3.5.3.14}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.15}setGameMenuBarEn()}{24}{subsubsection.3.5.3.15}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.16}setMenuBar()}{24}{subsubsection.3.5.3.16}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.17}setPanel()}{24}{subsubsection.3.5.3.17}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.18}setSaveBtnEn()}{25}{subsubsection.3.5.3.18}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.19}setWindow()}{25}{subsubsection.3.5.3.19}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.5.3.20}setWindowSize()}{25}{subsubsection.3.5.3.20}%
+\select@language {magyar} \contentsline {section}{\numberline {3.6}backend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data osztályreferencia}{26}{section.3.6}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.6.1}Részletes leírás}{26}{subsection.3.6.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.6.2}Tagfüggvények dokumentációja}{26}{subsection.3.6.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.6.2.1}addRecord()}{27}{subsubsection.3.6.2.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.6.2.2}getColumnCount()}{27}{subsubsection.3.6.2.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.6.2.3}getColumnName()}{27}{subsubsection.3.6.2.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.6.2.4}getRowCount()}{27}{subsubsection.3.6.2.4}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.6.2.5}getValueAt()}{27}{subsubsection.3.6.2.5}%
+\select@language {magyar} \contentsline {section}{\numberline {3.7}backend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Difficulty felsoroló referencia}{28}{section.3.7}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.7.1}Részletes leírás}{28}{subsection.3.7.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.7.2}Tagfüggvények dokumentációja}{28}{subsection.3.7.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.7.2.1}bombs()}{28}{subsubsection.3.7.2.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.7.2.2}cols()}{29}{subsubsection.3.7.2.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.7.2.3}rows()}{29}{subsubsection.3.7.2.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.7.2.4}setCustom()}{29}{subsubsection.3.7.2.4}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.7.3}Adattagok dokumentációja}{29}{subsection.3.7.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.7.3.1}EASY}{29}{subsubsection.3.7.3.1}%
+\select@language {magyar} \contentsline {section}{\numberline {3.8}backend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Difused\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bomb osztályreferencia}{30}{section.3.8}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.8.1}Részletes leírás}{31}{subsection.3.8.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.8.2}Konstruktorok és destruktorok dokumentációja}{31}{subsection.3.8.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.8.2.1}DifusedBomb()}{31}{subsubsection.3.8.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.8.3}Tagfüggvények dokumentációja}{31}{subsection.3.8.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.8.3.1}changeIcon()}{31}{subsubsection.3.8.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.8.3.2}reveal()}{32}{subsubsection.3.8.3.2}%
+\select@language {magyar} \contentsline {section}{\numberline {3.9}frontend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Feed\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Back\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window osztályreferencia}{32}{section.3.9}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.9.1}Részletes leírás}{33}{subsection.3.9.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.9.2}Konstruktorok és destruktorok dokumentációja}{33}{subsection.3.9.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.9.2.1}FeedBackWindow()}{33}{subsubsection.3.9.2.1}%
+\select@language {magyar} \contentsline {section}{\numberline {3.10}frontend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Game osztályreferencia}{33}{section.3.10}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.10.1}Részletes leírás}{34}{subsection.3.10.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.10.2}Konstruktorok és destruktorok dokumentációja}{34}{subsection.3.10.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.10.2.1}Game()}{34}{subsubsection.3.10.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.10.3}Tagfüggvények dokumentációja}{35}{subsection.3.10.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.10.3.1}finished()}{35}{subsubsection.3.10.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.10.3.2}getBoard()}{35}{subsubsection.3.10.3.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.10.3.3}getTime()}{35}{subsubsection.3.10.3.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.10.3.4}init()}{35}{subsubsection.3.10.3.4}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.10.3.5}paintComponent()}{35}{subsubsection.3.10.3.5}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.10.3.6}reload()}{36}{subsubsection.3.10.3.6}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.10.3.7}restart()}{36}{subsubsection.3.10.3.7}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.10.3.8}running()}{36}{subsubsection.3.10.3.8}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.10.3.9}setFinished()}{36}{subsubsection.3.10.3.9}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.10.3.10}setRunning()}{36}{subsubsection.3.10.3.10}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.10.3.11}setStarted()}{37}{subsubsection.3.10.3.11}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.10.3.12}start()}{37}{subsubsection.3.10.3.12}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.10.3.13}started()}{37}{subsubsection.3.10.3.13}%
+\select@language {magyar} \contentsline {section}{\numberline {3.11}backend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Images osztályreferencia}{38}{section.3.11}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.11.1}Részletes leírás}{39}{subsection.3.11.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.11.2}Tagfüggvények dokumentációja}{39}{subsection.3.11.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.11.2.1}loadImages()}{39}{subsubsection.3.11.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.11.3}Adattagok dokumentációja}{39}{subsection.3.11.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.11.3.1}bigBomb}{39}{subsubsection.3.11.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.11.3.2}bomb}{39}{subsubsection.3.11.3.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.11.3.3}clusterBomb}{39}{subsubsection.3.11.3.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.11.3.4}difusedBomb}{39}{subsubsection.3.11.3.4}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.11.3.5}error}{40}{subsubsection.3.11.3.5}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.11.3.6}flag}{40}{subsubsection.3.11.3.6}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.11.3.7}flag2}{40}{subsubsection.3.11.3.7}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.11.3.8}hTile}{40}{subsubsection.3.11.3.8}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.11.3.9}icon}{40}{subsubsection.3.11.3.9}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.11.3.10}MineSweeperFont}{40}{subsubsection.3.11.3.10}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.11.3.11}numbers}{40}{subsubsection.3.11.3.11}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.11.3.12}redBomb}{40}{subsubsection.3.11.3.12}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.11.3.13}resetBomb}{41}{subsubsection.3.11.3.13}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.11.3.14}resetFlagBomb}{41}{subsubsection.3.11.3.14}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.11.3.15}success}{41}{subsubsection.3.11.3.15}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.11.3.16}timerFont}{41}{subsubsection.3.11.3.16}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.11.3.17}unknown}{41}{subsubsection.3.11.3.17}%
+\select@language {magyar} \contentsline {section}{\numberline {3.12}backend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main osztályreferencia}{41}{section.3.12}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.12.1}Részletes leírás}{41}{subsection.3.12.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.12.2}Tagfüggvények dokumentációja}{42}{subsection.3.12.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.12.2.1}main()}{42}{subsubsection.3.12.2.1}%
+\select@language {magyar} \contentsline {section}{\numberline {3.13}frontend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Panel osztályreferencia}{42}{section.3.13}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.13.1}Részletes leírás}{43}{subsection.3.13.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.13.2}Konstruktorok és destruktorok dokumentációja}{43}{subsection.3.13.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.13.2.1}MenuPanel()}{43}{subsubsection.3.13.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.13.3}Tagfüggvények dokumentációja}{43}{subsection.3.13.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.13.3.1}initComponents()}{43}{subsubsection.3.13.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.13.3.2}setActionListeners()}{43}{subsubsection.3.13.3.2}%
+\select@language {magyar} \contentsline {section}{\numberline {3.14}frontend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bar osztályreferencia}{44}{section.3.14}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.14.1}Részletes leírás}{44}{subsection.3.14.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.14.2}Konstruktorok és destruktorok dokumentációja}{45}{subsection.3.14.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.14.2.1}MyMenuBar()}{45}{subsubsection.3.14.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.14.3}Tagfüggvények dokumentációja}{45}{subsection.3.14.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.14.3.1}initComponents()}{45}{subsubsection.3.14.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.14.3.2}setActionListeners()}{45}{subsubsection.3.14.3.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.14.3.3}setGameBarEn()}{45}{subsubsection.3.14.3.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.14.3.4}setPauseBtnText()}{46}{subsubsection.3.14.3.4}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.14.3.5}setSaveBtnEn()}{46}{subsubsection.3.14.3.5}%
+\select@language {magyar} \contentsline {section}{\numberline {3.15}frontend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mouse\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Listener osztályreferencia}{46}{section.3.15}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.15.1}Részletes leírás}{47}{subsection.3.15.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.15.2}Konstruktorok és destruktorok dokumentációja}{47}{subsection.3.15.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.15.2.1}MyMouseListener()}{47}{subsubsection.3.15.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.15.3}Tagfüggvények dokumentációja}{47}{subsection.3.15.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.15.3.1}mouseReleased()}{47}{subsubsection.3.15.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.15.3.2}setBoard()}{48}{subsubsection.3.15.3.2}%
+\select@language {magyar} \contentsline {section}{\numberline {3.16}backend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Record osztályreferencia}{49}{section.3.16}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.16.1}Részletes leírás}{50}{subsection.3.16.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.16.2}Konstruktorok és destruktorok dokumentációja}{50}{subsection.3.16.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.16.2.1}Record()}{50}{subsubsection.3.16.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.16.3}Tagfüggvények dokumentációja}{50}{subsection.3.16.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.16.3.1}getName()}{50}{subsubsection.3.16.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.16.3.2}getTime()}{50}{subsubsection.3.16.3.2}%
+\select@language {magyar} \contentsline {section}{\numberline {3.17}frontend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Record\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Panel osztályreferencia}{51}{section.3.17}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.17.1}Részletes leírás}{51}{subsection.3.17.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.17.2}Konstruktorok és destruktorok dokumentációja}{52}{subsection.3.17.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.17.2.1}RecordPanel()}{52}{subsubsection.3.17.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.17.3}Tagfüggvények dokumentációja}{52}{subsection.3.17.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.17.3.1}initComponents()}{52}{subsubsection.3.17.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.17.3.2}setActionListeners()}{52}{subsubsection.3.17.3.2}%
+\select@language {magyar} \contentsline {section}{\numberline {3.18}backend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reset\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bomb osztályreferencia}{53}{section.3.18}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.18.1}Részletes leírás}{54}{subsection.3.18.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.18.2}Konstruktorok és destruktorok dokumentációja}{54}{subsection.3.18.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.18.2.1}ResetBomb()}{54}{subsubsection.3.18.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.18.3}Tagfüggvények dokumentációja}{54}{subsection.3.18.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.18.3.1}changeIcon()}{54}{subsubsection.3.18.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.18.3.2}execute()}{54}{subsubsection.3.18.3.2}%
+\select@language {magyar} \contentsline {section}{\numberline {3.19}backend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reset\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Flag\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bomb osztályreferencia}{55}{section.3.19}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.19.1}Részletes leírás}{56}{subsection.3.19.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.19.2}Konstruktorok és destruktorok dokumentációja}{56}{subsection.3.19.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.19.2.1}ResetFlagBomb()}{56}{subsubsection.3.19.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.19.3}Tagfüggvények dokumentációja}{56}{subsection.3.19.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.19.3.1}changeIcon()}{56}{subsubsection.3.19.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.19.3.2}execute()}{56}{subsubsection.3.19.3.2}%
+\select@language {magyar} \contentsline {section}{\numberline {3.20}frontend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Settings\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Panel osztályreferencia}{57}{section.3.20}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.20.1}Részletes leírás}{57}{subsection.3.20.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.20.2}Konstruktorok és destruktorok dokumentációja}{57}{subsection.3.20.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.20.2.1}SettingsPanel()}{57}{subsubsection.3.20.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.20.3}Tagfüggvények dokumentációja}{58}{subsection.3.20.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.20.3.1}initComponents()}{58}{subsubsection.3.20.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.20.3.2}setActionListeners()}{58}{subsubsection.3.20.3.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.20.3.3}submit()}{58}{subsubsection.3.20.3.3}%
+\select@language {magyar} \contentsline {section}{\numberline {3.21}backend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tile osztályreferencia}{59}{section.3.21}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.21.1}Részletes leírás}{60}{subsection.3.21.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.21.2}Konstruktorok és destruktorok dokumentációja}{60}{subsection.3.21.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.2.1}Tile()}{60}{subsubsection.3.21.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.21.3}Tagfüggvények dokumentációja}{61}{subsection.3.21.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.3.1}changeIcon()}{61}{subsubsection.3.21.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.3.2}flag()}{61}{subsubsection.3.21.3.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.3.3}getBombsAround()}{61}{subsubsection.3.21.3.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.3.4}getCorrespondingIcon()}{61}{subsubsection.3.21.3.4}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.3.5}getValue()}{62}{subsubsection.3.21.3.5}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.3.6}getW()}{62}{subsubsection.3.21.3.6}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.3.7}isFlagged()}{62}{subsubsection.3.21.3.7}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.3.8}loadIcon()}{62}{subsubsection.3.21.3.8}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.3.9}paintComponent()}{62}{subsubsection.3.21.3.9}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.3.10}reveal()}{63}{subsubsection.3.21.3.10}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.3.11}revealEnd()}{63}{subsubsection.3.21.3.11}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.3.12}setBombsAround()}{63}{subsubsection.3.21.3.12}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.3.13}setCoords()}{63}{subsubsection.3.21.3.13}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.3.14}setFlagged()}{64}{subsubsection.3.21.3.14}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.3.15}setRevealed()}{64}{subsubsection.3.21.3.15}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.21.4}Adattagok dokumentációja}{64}{subsection.3.21.4}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.4.1}bombsAround}{64}{subsubsection.3.21.4.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.4.2}icon}{64}{subsubsection.3.21.4.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.4.3}isFlagged}{64}{subsubsection.3.21.4.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.4.4}isRevealed}{64}{subsubsection.3.21.4.4}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.4.5}master}{65}{subsubsection.3.21.4.5}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.4.6}w}{65}{subsubsection.3.21.4.6}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.21.4.7}x}{65}{subsubsection.3.21.4.7}%
+\select@language {magyar} \contentsline {section}{\numberline {3.22}backend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Time osztályreferencia}{65}{section.3.22}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.22.1}Részletes leírás}{66}{subsection.3.22.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.22.2}Konstruktorok és destruktorok dokumentációja}{66}{subsection.3.22.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.22.2.1}Time()}{66}{subsubsection.3.22.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.22.3}Tagfüggvények dokumentációja}{66}{subsection.3.22.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.22.3.1}compareTo()}{66}{subsubsection.3.22.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.22.3.2}getM()}{67}{subsubsection.3.22.3.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.22.3.3}getS()}{67}{subsubsection.3.22.3.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.22.3.4}increase()}{67}{subsubsection.3.22.3.4}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.22.3.5}lt()}{67}{subsubsection.3.22.3.5}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.22.3.6}toString()}{68}{subsubsection.3.22.3.6}%
+\select@language {magyar} \contentsline {section}{\numberline {3.23}frontend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Timer osztályreferencia}{68}{section.3.23}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.23.1}Részletes leírás}{69}{subsection.3.23.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.23.2}Konstruktorok és destruktorok dokumentációja}{69}{subsection.3.23.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.23.2.1}Timer()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{69}{subsubsection.3.23.2.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.23.2.2}Timer()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{69}{subsubsection.3.23.2.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.23.3}Tagfüggvények dokumentációja}{69}{subsection.3.23.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.23.3.1}getHeight()}{70}{subsubsection.3.23.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.23.3.2}getTime()}{70}{subsubsection.3.23.3.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.23.3.3}paintComponent()}{70}{subsubsection.3.23.3.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.23.3.4}run()}{70}{subsubsection.3.23.3.4}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.23.3.5}running()}{70}{subsubsection.3.23.3.5}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.23.3.6}setFinished()}{71}{subsubsection.3.23.3.6}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.23.3.7}setRunning()}{71}{subsubsection.3.23.3.7}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.23.3.8}start()}{71}{subsubsection.3.23.3.8}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.23.3.9}started()}{71}{subsubsection.3.23.3.9}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.23.3.10}toString()}{71}{subsubsection.3.23.3.10}%
+\select@language {magyar} \contentsline {section}{\numberline {3.24}frontend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Victory\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Panel osztályreferencia}{72}{section.3.24}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.24.1}Részletes leírás}{72}{subsection.3.24.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.24.2}Konstruktorok és destruktorok dokumentációja}{72}{subsection.3.24.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.24.2.1}VictoryPanel()}{73}{subsubsection.3.24.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.24.3}Tagfüggvények dokumentációja}{73}{subsection.3.24.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.24.3.1}initComponents()}{73}{subsubsection.3.24.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.24.3.2}setActionListeners()}{73}{subsubsection.3.24.3.2}%
+\select@language {magyar} \contentsline {section}{\numberline {3.25}frontend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window osztályreferencia}{73}{section.3.25}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.25.1}Részletes leírás}{74}{subsection.3.25.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.25.2}Konstruktorok és destruktorok dokumentációja}{74}{subsection.3.25.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.25.2.1}Window()}{74}{subsubsection.3.25.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {3.25.3}Tagfüggvények dokumentációja}{75}{subsection.3.25.3}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.25.3.1}initComponents()}{75}{subsubsection.3.25.3.1}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.25.3.2}resetSize()}{75}{subsubsection.3.25.3.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.25.3.3}setPanel()}{75}{subsubsection.3.25.3.3}%
+\select@language {magyar} \contentsline {chapter}{T\'argymutat\'o}{77}{section*.87}%

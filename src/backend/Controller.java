@@ -185,7 +185,6 @@ public class Controller {
 			in.close();
 		} catch(IOException | ClassNotFoundException e) {
 			new FeedBackWindow("Couldn't load game", false);
-			e.printStackTrace();
 			return;
 		}
 		setGame(g);

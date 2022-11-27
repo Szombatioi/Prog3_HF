@@ -1,0 +1,219 @@
+\hypertarget{classbackend_1_1_controller}{}\doxysection{backend.\+Controller osztályreferencia}
+\label{classbackend_1_1_controller}\index{backend.Controller@{backend.Controller}}
+\doxysubsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbackend_1_1_controller_a386ad50bcd24323c3563ebc36f53a7c6}{Controller}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_controller_a1bdd458132cfcd051cb2d09e92ca4558}{set\+Game}} (\mbox{\hyperlink{classfrontend_1_1_game}{Game}} g)
+\item 
+\mbox{\hyperlink{classfrontend_1_1_game}{Game}} \mbox{\hyperlink{classbackend_1_1_controller_a058d35197de75264891eaa9e63f92a60}{get\+Game}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_controller_a3f8a0bd1a9260f313195fb195a48985d}{set\+Game\+Menu\+Bar\+En}} (boolean b)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_controller_aa586f2d757777a3beeb42ee302dcd767}{set\+Save\+Btn\+En}} (boolean b)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_controller_ad3eb0fa7bcffd9e1b439651b94ff3c82}{set\+Menu\+Bar}} (\mbox{\hyperlink{classfrontend_1_1_my_menu_bar}{My\+Menu\+Bar}} m)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_controller_a28d137bc91ecc6fa7e8c37ffaf3401ee}{set\+Window}} (\mbox{\hyperlink{classfrontend_1_1_window}{Window}} w)
+\item 
+\mbox{\hyperlink{enumbackend_1_1_difficulty}{Difficulty}} \mbox{\hyperlink{classbackend_1_1_controller_ab37a8dc914bf48413c221f157e38f249}{get\+Diff}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_controller_a53de878c447997628bf8eaed8378eff6}{set\+Diff}} (\mbox{\hyperlink{enumbackend_1_1_difficulty}{Difficulty}} d)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_controller_a484eaba99147033216e7d0d9cfc39574}{set\+Panel}} (JPanel panel, boolean needs\+Resize)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_controller_abddb4739a00f0e52c9a41bff0b14de12}{set\+Window\+Size}} (int w, int h)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_controller_ae1c3cd6bcb7159e8b75766452725471a}{reset\+Window\+Size}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_controller_aa43c21e1640304b6a7b8feb774fc1671}{close\+Game}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_controller_aaf51cd887f11723053c78ce9ceccffaf}{add\+Record}} (String player\+Name, \mbox{\hyperlink{classbackend_1_1_time}{Time}} time)
+\item 
+boolean \mbox{\hyperlink{classbackend_1_1_controller_a3d288bed2c6f58de68501e8adf44fb0d}{pause\+Game}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_controller_a1954607e9b50e8c5d825149bdfa61f61}{load\+Records}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_controller_a3dd801a1a6bc87c22933ed9b3ba8c5d3}{save\+Records}} ()
+\item 
+\mbox{\hyperlink{classbackend_1_1_data}{Data}} \mbox{\hyperlink{classbackend_1_1_controller_af3f8ce251304e4eb40520378d8e4265a}{get\+Data}} (\mbox{\hyperlink{enumbackend_1_1_difficulty}{Difficulty}} d)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_controller_a970c73f647d3a55547edecfacfc663db}{clear\+Records}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_controller_aaf38f6934579949ff774ff08185aa3ad}{save\+Game}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_controller_a75c37b5348e6d440378b8b9cf8180e2d}{load\+Game}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Részletes leírás}
+\mbox{\hyperlink{classbackend_1_1_controller}{Controller}} osztály, ami összeköttetést teremt a megjelenítés és a logika között. A legtöbb osztály vele van kapcsolatban, ő álltja az értékeiket. 
+
+\doxysubsection{Konstruktorok és destruktorok dokumentációja}
+\mbox{\Hypertarget{classbackend_1_1_controller_a386ad50bcd24323c3563ebc36f53a7c6}\label{classbackend_1_1_controller_a386ad50bcd24323c3563ebc36f53a7c6}} 
+\index{backend.Controller@{backend.Controller}!Controller@{Controller}}
+\index{Controller@{Controller}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{Controller()}{Controller()}}
+{\footnotesize\ttfamily backend.\+Controller.\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A controller konstruktora. Alapból könnyű nehézséget állítunk be rá, ezt a későbbiekben lehet módosítani. Ezt követően a rekordok Hash\+Mapjét állítja be alapértékre. (Ha esetleg nem sikerülne betölteni) 
+
+\doxysubsection{Tagfüggvények dokumentációja}
+\mbox{\Hypertarget{classbackend_1_1_controller_aaf51cd887f11723053c78ce9ceccffaf}\label{classbackend_1_1_controller_aaf51cd887f11723053c78ce9ceccffaf}} 
+\index{backend.Controller@{backend.Controller}!addRecord@{addRecord}}
+\index{addRecord@{addRecord}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{addRecord()}{addRecord()}}
+{\footnotesize\ttfamily void backend.\+Controller.\+add\+Record (\begin{DoxyParamCaption}\item[{String}]{player\+Name,  }\item[{\mbox{\hyperlink{classbackend_1_1_time}{Time}}}]{time }\end{DoxyParamCaption})}
+
+Rekord felvétele. A megfelelő nehézséghez adja hozzá. 
+\begin{DoxyParams}{Paraméterek}
+{\em player\+Name} & A játékos neve. \\
+\hline
+{\em time} & A játékos ideje. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbackend_1_1_controller_a970c73f647d3a55547edecfacfc663db}\label{classbackend_1_1_controller_a970c73f647d3a55547edecfacfc663db}} 
+\index{backend.Controller@{backend.Controller}!clearRecords@{clearRecords}}
+\index{clearRecords@{clearRecords}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{clearRecords()}{clearRecords()}}
+{\footnotesize\ttfamily void backend.\+Controller.\+clear\+Records (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Törli a rekordokat az adatbázisából. \mbox{\Hypertarget{classbackend_1_1_controller_aa43c21e1640304b6a7b8feb774fc1671}\label{classbackend_1_1_controller_aa43c21e1640304b6a7b8feb774fc1671}} 
+\index{backend.Controller@{backend.Controller}!closeGame@{closeGame}}
+\index{closeGame@{closeGame}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{closeGame()}{closeGame()}}
+{\footnotesize\ttfamily void backend.\+Controller.\+close\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Bezárja a játékot. A sima System.\+exit(0) nem jó mentésekhez \mbox{\Hypertarget{classbackend_1_1_controller_af3f8ce251304e4eb40520378d8e4265a}\label{classbackend_1_1_controller_af3f8ce251304e4eb40520378d8e4265a}} 
+\index{backend.Controller@{backend.Controller}!getData@{getData}}
+\index{getData@{getData}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbackend_1_1_data}{Data}} backend.\+Controller.\+get\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumbackend_1_1_difficulty}{Difficulty}}}]{d }\end{DoxyParamCaption})}
+
+A megfelelő nehézség adatának lekérdezése. 
+\begin{DoxyParams}{Paraméterek}
+{\em d} & A kért nehézség. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+A nehézség adata. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbackend_1_1_controller_ab37a8dc914bf48413c221f157e38f249}\label{classbackend_1_1_controller_ab37a8dc914bf48413c221f157e38f249}} 
+\index{backend.Controller@{backend.Controller}!getDiff@{getDiff}}
+\index{getDiff@{getDiff}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{getDiff()}{getDiff()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumbackend_1_1_difficulty}{Difficulty}} backend.\+Controller.\+get\+Diff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Visszaadja a kontroller által kezelt nehézséget. (A Settings\+Panel és a Victory\+Panelnél használt főként) \mbox{\Hypertarget{classbackend_1_1_controller_a058d35197de75264891eaa9e63f92a60}\label{classbackend_1_1_controller_a058d35197de75264891eaa9e63f92a60}} 
+\index{backend.Controller@{backend.Controller}!getGame@{getGame}}
+\index{getGame@{getGame}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{getGame()}{getGame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfrontend_1_1_game}{Game}} backend.\+Controller.\+get\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Visszaadja a controller által kezelt játékot. (Victory\+Panelnél használt.) \mbox{\Hypertarget{classbackend_1_1_controller_a75c37b5348e6d440378b8b9cf8180e2d}\label{classbackend_1_1_controller_a75c37b5348e6d440378b8b9cf8180e2d}} 
+\index{backend.Controller@{backend.Controller}!loadGame@{loadGame}}
+\index{loadGame@{loadGame}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{loadGame()}{loadGame()}}
+{\footnotesize\ttfamily void backend.\+Controller.\+load\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Betölti az elmentett játékot. Ha nincs korábbi mentés vagy sérült a fájl, akkor hibaüzenetet dob. Egyébként visszatölti a játékot a megállított állapotába. \mbox{\Hypertarget{classbackend_1_1_controller_a1954607e9b50e8c5d825149bdfa61f61}\label{classbackend_1_1_controller_a1954607e9b50e8c5d825149bdfa61f61}} 
+\index{backend.Controller@{backend.Controller}!loadRecords@{loadRecords}}
+\index{loadRecords@{loadRecords}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{loadRecords()}{loadRecords()}}
+{\footnotesize\ttfamily void backend.\+Controller.\+load\+Records (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Rekordok betöltése a program indításakor. Ha nem sikerül, hibaüzenetet ad. \mbox{\Hypertarget{classbackend_1_1_controller_a3d288bed2c6f58de68501e8adf44fb0d}\label{classbackend_1_1_controller_a3d288bed2c6f58de68501e8adf44fb0d}} 
+\index{backend.Controller@{backend.Controller}!pauseGame@{pauseGame}}
+\index{pauseGame@{pauseGame}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{pauseGame()}{pauseGame()}}
+{\footnotesize\ttfamily boolean backend.\+Controller.\+pause\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Megállítja a játékot \begin{DoxyReturn}{Visszatérési érték}
+A játék most meg van-\/e állítva. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbackend_1_1_controller_ae1c3cd6bcb7159e8b75766452725471a}\label{classbackend_1_1_controller_ae1c3cd6bcb7159e8b75766452725471a}} 
+\index{backend.Controller@{backend.Controller}!resetWindowSize@{resetWindowSize}}
+\index{resetWindowSize@{resetWindowSize}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{resetWindowSize()}{resetWindowSize()}}
+{\footnotesize\ttfamily void backend.\+Controller.\+reset\+Window\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Visszaállítja az ablak méretét az alapértelmezett értékére \mbox{\Hypertarget{classbackend_1_1_controller_aaf38f6934579949ff774ff08185aa3ad}\label{classbackend_1_1_controller_aaf38f6934579949ff774ff08185aa3ad}} 
+\index{backend.Controller@{backend.Controller}!saveGame@{saveGame}}
+\index{saveGame@{saveGame}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{saveGame()}{saveGame()}}
+{\footnotesize\ttfamily void backend.\+Controller.\+save\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Elmenti a játékállást. Először megállítja a játék futását, aztán megpróbálja elmenteni. A sikertől függően visszaad egy feedback üzenetet. \mbox{\Hypertarget{classbackend_1_1_controller_a3dd801a1a6bc87c22933ed9b3ba8c5d3}\label{classbackend_1_1_controller_a3dd801a1a6bc87c22933ed9b3ba8c5d3}} 
+\index{backend.Controller@{backend.Controller}!saveRecords@{saveRecords}}
+\index{saveRecords@{saveRecords}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{saveRecords()}{saveRecords()}}
+{\footnotesize\ttfamily void backend.\+Controller.\+save\+Records (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Rekorok elmentése a program bezárásakor. \mbox{\Hypertarget{classbackend_1_1_controller_a53de878c447997628bf8eaed8378eff6}\label{classbackend_1_1_controller_a53de878c447997628bf8eaed8378eff6}} 
+\index{backend.Controller@{backend.Controller}!setDiff@{setDiff}}
+\index{setDiff@{setDiff}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{setDiff()}{setDiff()}}
+{\footnotesize\ttfamily void backend.\+Controller.\+set\+Diff (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumbackend_1_1_difficulty}{Difficulty}}}]{d }\end{DoxyParamCaption})}
+
+Beállítja a controller által kezelt nehézséget \mbox{\Hypertarget{classbackend_1_1_controller_a1bdd458132cfcd051cb2d09e92ca4558}\label{classbackend_1_1_controller_a1bdd458132cfcd051cb2d09e92ca4558}} 
+\index{backend.Controller@{backend.Controller}!setGame@{setGame}}
+\index{setGame@{setGame}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{setGame()}{setGame()}}
+{\footnotesize\ttfamily void backend.\+Controller.\+set\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfrontend_1_1_game}{Game}}}]{g }\end{DoxyParamCaption})}
+
+Beállítja a controller által kezelt játékot \mbox{\Hypertarget{classbackend_1_1_controller_a3f8a0bd1a9260f313195fb195a48985d}\label{classbackend_1_1_controller_a3f8a0bd1a9260f313195fb195a48985d}} 
+\index{backend.Controller@{backend.Controller}!setGameMenuBarEn@{setGameMenuBarEn}}
+\index{setGameMenuBarEn@{setGameMenuBarEn}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{setGameMenuBarEn()}{setGameMenuBarEn()}}
+{\footnotesize\ttfamily void backend.\+Controller.\+set\+Game\+Menu\+Bar\+En (\begin{DoxyParamCaption}\item[{boolean}]{b }\end{DoxyParamCaption})}
+
+Beállítja a controller által kezelt fejléc játék mezőjének engedélyezettségét \mbox{\Hypertarget{classbackend_1_1_controller_ad3eb0fa7bcffd9e1b439651b94ff3c82}\label{classbackend_1_1_controller_ad3eb0fa7bcffd9e1b439651b94ff3c82}} 
+\index{backend.Controller@{backend.Controller}!setMenuBar@{setMenuBar}}
+\index{setMenuBar@{setMenuBar}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{setMenuBar()}{setMenuBar()}}
+{\footnotesize\ttfamily void backend.\+Controller.\+set\+Menu\+Bar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfrontend_1_1_my_menu_bar}{My\+Menu\+Bar}}}]{m }\end{DoxyParamCaption})}
+
+Beállítja a controller által kezelt fejlécet \mbox{\Hypertarget{classbackend_1_1_controller_a484eaba99147033216e7d0d9cfc39574}\label{classbackend_1_1_controller_a484eaba99147033216e7d0d9cfc39574}} 
+\index{backend.Controller@{backend.Controller}!setPanel@{setPanel}}
+\index{setPanel@{setPanel}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{setPanel()}{setPanel()}}
+{\footnotesize\ttfamily void backend.\+Controller.\+set\+Panel (\begin{DoxyParamCaption}\item[{JPanel}]{panel,  }\item[{boolean}]{needs\+Resize }\end{DoxyParamCaption})}
+
+Beállítja az ablak Paneljét. 
+\begin{DoxyParams}{Paraméterek}
+{\em panel} & A beállítandó JPanel \\
+\hline
+{\em needs\+Resize} & Azt jelöli, hogy szükséges lehet-\/e az ablak átméretezése. (Leginkább ha játékot kezdünk) \\
+\hline
+\end{DoxyParams}
+Egyszerűbb itt mindig engedélyezni, aztán máshol letiltani\mbox{\Hypertarget{classbackend_1_1_controller_aa586f2d757777a3beeb42ee302dcd767}\label{classbackend_1_1_controller_aa586f2d757777a3beeb42ee302dcd767}} 
+\index{backend.Controller@{backend.Controller}!setSaveBtnEn@{setSaveBtnEn}}
+\index{setSaveBtnEn@{setSaveBtnEn}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{setSaveBtnEn()}{setSaveBtnEn()}}
+{\footnotesize\ttfamily void backend.\+Controller.\+set\+Save\+Btn\+En (\begin{DoxyParamCaption}\item[{boolean}]{b }\end{DoxyParamCaption})}
+
+Beállítja a mentés gomb engedélyezettségét \mbox{\Hypertarget{classbackend_1_1_controller_a28d137bc91ecc6fa7e8c37ffaf3401ee}\label{classbackend_1_1_controller_a28d137bc91ecc6fa7e8c37ffaf3401ee}} 
+\index{backend.Controller@{backend.Controller}!setWindow@{setWindow}}
+\index{setWindow@{setWindow}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{setWindow()}{setWindow()}}
+{\footnotesize\ttfamily void backend.\+Controller.\+set\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfrontend_1_1_window}{Window}}}]{w }\end{DoxyParamCaption})}
+
+Beállítja a controller által kezelt ablakot \mbox{\Hypertarget{classbackend_1_1_controller_abddb4739a00f0e52c9a41bff0b14de12}\label{classbackend_1_1_controller_abddb4739a00f0e52c9a41bff0b14de12}} 
+\index{backend.Controller@{backend.Controller}!setWindowSize@{setWindowSize}}
+\index{setWindowSize@{setWindowSize}!backend.Controller@{backend.Controller}}
+\doxysubsubsection{\texorpdfstring{setWindowSize()}{setWindowSize()}}
+{\footnotesize\ttfamily void backend.\+Controller.\+set\+Window\+Size (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+Beállítja az ablak méretét. 
+\begin{DoxyParams}{Paraméterek}
+{\em w} & Az ablak szélessége. \\
+\hline
+{\em h} & Az ablak magassága. \\
+\hline
+\end{DoxyParams}
+
+
+Ez a dokumentáció az osztályról a következő fájl alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+src/backend/Controller.\+java\end{DoxyCompactItemize}

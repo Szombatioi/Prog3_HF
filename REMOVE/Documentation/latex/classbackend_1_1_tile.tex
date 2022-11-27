@@ -1,0 +1,290 @@
+\hypertarget{classbackend_1_1_tile}{}\doxysection{backend.\+Tile osztályreferencia}
+\label{classbackend_1_1_tile}\index{backend.Tile@{backend.Tile}}
+
+
+A backend.\+Tile osztály származási diagramja\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbackend_1_1_tile__inherit__graph}
+\end{center}
+\end{figure}
+
+
+A backend.\+Tile osztály együttműködési diagramja\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{classbackend_1_1_tile__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbackend_1_1_tile_a9c8bf3591d0d5212f1133da40886bec4}{Tile}} (\mbox{\hyperlink{classbackend_1_1_board}{Board}} b)
+\item 
+int \mbox{\hyperlink{classbackend_1_1_tile_a488e6ff848fd612c13474b6f1fb35f58}{get\+Value}} ()
+\item 
+int \mbox{\hyperlink{classbackend_1_1_tile_a4818884169c68a82030a4a07b2046ee6}{get\+Bombs\+Around}} ()
+\item 
+boolean \mbox{\hyperlink{classbackend_1_1_tile_a84be183cbf2c022416b1004ee90d8462}{is\+Flagged}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_tile_abc834983d2e5c5e065bcab5fc1e0250b}{set\+Flagged}} (boolean b)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_tile_a2c5bb5a284ef876dd16c59f0c50c27c6}{set\+Bombs\+Around}} (int b)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_tile_a94bdb43b556929bb185989e9eab5df19}{set\+Revealed}} (boolean b)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_tile_a53d950ead27e4c813ec045a6159a833d}{set\+Coords}} (int \mbox{\hyperlink{classbackend_1_1_tile_ac56f4893d11d46666c43808d0b350129}{x}}, int y)
+\item 
+void \mbox{\hyperlink{classbackend_1_1_tile_aaa19752e3f03f7d183c594e227d9e82a}{flag}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_tile_ad5e347216ba3051fff783d88a784be10}{load\+Icon}} ()
+\item 
+Image \mbox{\hyperlink{classbackend_1_1_tile_a19b365548fcbaff44894251e03bbaae4}{get\+Corresponding\+Icon}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_tile_a13953870b057b478805b584d92c2ef0d}{reveal}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_tile_a0707fc91d3a8afbeb5a5cafc4dc0c0ef}{reveal\+End}} ()
+\item 
+void \mbox{\hyperlink{classbackend_1_1_tile_a7eed35e64f63488047fbbe7cb585cd53}{paint\+Component}} (Graphics g)
+\end{DoxyCompactItemize}
+\doxysubsection*{Statikus publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classbackend_1_1_tile_ac155e9873dcb13c22f4802b3b06a2ad7}{getW}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Védett tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classbackend_1_1_tile_ab3fbc4b6a11af9d742d3919ac485204a}{change\+Icon}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Védett attribútumok}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classbackend_1_1_tile_a4ba5c34d9a8bd0f4ac1dd52edde8a4fc}{is\+Flagged}}
+\item 
+boolean \mbox{\hyperlink{classbackend_1_1_tile_a5c02b18b4027ed9795f2d4c02b97f790}{is\+Revealed}}
+\item 
+\mbox{\hyperlink{classbackend_1_1_board}{Board}} \mbox{\hyperlink{classbackend_1_1_tile_ad9b7596e319dbb517116868bed9d769e}{master}}
+\item 
+int \mbox{\hyperlink{classbackend_1_1_tile_ac56f4893d11d46666c43808d0b350129}{x}}
+\item 
+int \mbox{\hyperlink{classbackend_1_1_tile_a6b4f014040a9aa344d17ef52cfce7df4}{bombs\+Around}}
+\item 
+transient Image \mbox{\hyperlink{classbackend_1_1_tile_a056d517170ae1063aefa5e8b095016bb}{icon}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Statikus védett attribútumok}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classbackend_1_1_tile_a2bb6b12438a68f6c85e8fb6bd1205026}{w}} = 25
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Részletes leírás}
+Cella ősosztály. A táblát ezen cellák alkotják, melyek lehetnek sima cellák, illetve bombák. 
+
+\doxysubsection{Konstruktorok és destruktorok dokumentációja}
+\mbox{\Hypertarget{classbackend_1_1_tile_a9c8bf3591d0d5212f1133da40886bec4}\label{classbackend_1_1_tile_a9c8bf3591d0d5212f1133da40886bec4}} 
+\index{backend.Tile@{backend.Tile}!Tile@{Tile}}
+\index{Tile@{Tile}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{Tile()}{Tile()}}
+{\footnotesize\ttfamily backend.\+Tile.\+Tile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbackend_1_1_board}{Board}}}]{b }\end{DoxyParamCaption})}
+
+Létrehozásakor beállítja, hogy nincs megjelölve, illetve felfedve. Alapból egy fedett mező az ikonja, beállítja az őt tartalmazó táblát. 
+\begin{DoxyParams}{Paraméterek}
+{\em b} & \+: az őt tartalmazó tábla. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Tagfüggvények dokumentációja}
+\mbox{\Hypertarget{classbackend_1_1_tile_ab3fbc4b6a11af9d742d3919ac485204a}\label{classbackend_1_1_tile_ab3fbc4b6a11af9d742d3919ac485204a}} 
+\index{backend.Tile@{backend.Tile}!changeIcon@{changeIcon}}
+\index{changeIcon@{changeIcon}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{changeIcon()}{changeIcon()}}
+{\footnotesize\ttfamily void backend.\+Tile.\+change\+Icon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Átállítja az ikont a megfelelő ikonjára. 
+
+Újraimplementáló leszármazottak\+: \mbox{\hyperlink{classbackend_1_1_reset_flag_bomb_a7b23c1797b4ef29e09eb21f0b8b54134}{backend.\+Reset\+Flag\+Bomb}}, \mbox{\hyperlink{classbackend_1_1_reset_bomb_a527bf835d7b08fe7673aee522c766ba6}{backend.\+Reset\+Bomb}}, \mbox{\hyperlink{classbackend_1_1_difused_bomb_ab422ec1892c32ab778c019112949f68a}{backend.\+Difused\+Bomb}}, \mbox{\hyperlink{classbackend_1_1_cluster_bomb_a1255449d7e4c4a0e75fae0111aedf0ad}{backend.\+Cluster\+Bomb}}, \mbox{\hyperlink{classbackend_1_1_bomb_ad999689884d27e5a218c03ecf14344b6}{backend.\+Bomb}} és \mbox{\hyperlink{classbackend_1_1_big_bomb_a138a21aa2244c11c2786734896e4db5f}{backend.\+Big\+Bomb}}.
+
+\mbox{\Hypertarget{classbackend_1_1_tile_aaa19752e3f03f7d183c594e227d9e82a}\label{classbackend_1_1_tile_aaa19752e3f03f7d183c594e227d9e82a}} 
+\index{backend.Tile@{backend.Tile}!flag@{flag}}
+\index{flag@{flag}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{flag()}{flag()}}
+{\footnotesize\ttfamily void backend.\+Tile.\+flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Cella megjelölése. Ha még van elég elhelyezhető zászló, akkor megcseréli a státuszát, illetve ennek megfelelően átírja a tábla zászlóinak számát. Ha nincs elég zászló már, akkor ha meg van jelölve, leszedi róla a jelölést. Végezetül megváltoztatja az ikonját annak függvényében, hogy most meg van-\/e jelölve vagy sem. 
+
+Újraimplementáló leszármazottak\+: \mbox{\hyperlink{classbackend_1_1_bomb_adb0a023df3e3f13ae4fafed698f06e71}{backend.\+Bomb}}.
+
+\mbox{\Hypertarget{classbackend_1_1_tile_a4818884169c68a82030a4a07b2046ee6}\label{classbackend_1_1_tile_a4818884169c68a82030a4a07b2046ee6}} 
+\index{backend.Tile@{backend.Tile}!getBombsAround@{getBombsAround}}
+\index{getBombsAround@{getBombsAround}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{getBombsAround()}{getBombsAround()}}
+{\footnotesize\ttfamily int backend.\+Tile.\+get\+Bombs\+Around (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get függvény a cella körüli bombák számának lekérdezésére. \mbox{\Hypertarget{classbackend_1_1_tile_a19b365548fcbaff44894251e03bbaae4}\label{classbackend_1_1_tile_a19b365548fcbaff44894251e03bbaae4}} 
+\index{backend.Tile@{backend.Tile}!getCorrespondingIcon@{getCorrespondingIcon}}
+\index{getCorrespondingIcon@{getCorrespondingIcon}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{getCorrespondingIcon()}{getCorrespondingIcon()}}
+{\footnotesize\ttfamily Image backend.\+Tile.\+get\+Corresponding\+Icon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A megfelelő ikont adja vissza a bombaszámtól függően. Ha több, mint 8 bomba van a cella körül, akkor egy \char`\"{}?\char`\"{} ikont állít be. \begin{DoxyReturn}{Visszatérési érték}
+a megfelelő ikon. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbackend_1_1_tile_a488e6ff848fd612c13474b6f1fb35f58}\label{classbackend_1_1_tile_a488e6ff848fd612c13474b6f1fb35f58}} 
+\index{backend.Tile@{backend.Tile}!getValue@{getValue}}
+\index{getValue@{getValue}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily int backend.\+Tile.\+get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A get\+Bombs\+Around függvénynél használatos. \begin{DoxyReturn}{Visszatérési érték}
+0 bombának megfelelő az értéke. 
+\end{DoxyReturn}
+
+
+Újraimplementáló leszármazottak\+: \mbox{\hyperlink{classbackend_1_1_bomb_a6a1e771d96da9cdf3697a0ea8d60b093}{backend.\+Bomb}} és \mbox{\hyperlink{classbackend_1_1_big_bomb_ab8f36d92c29ded72a62fcc9f72d15ddf}{backend.\+Big\+Bomb}}.
+
+\mbox{\Hypertarget{classbackend_1_1_tile_ac155e9873dcb13c22f4802b3b06a2ad7}\label{classbackend_1_1_tile_ac155e9873dcb13c22f4802b3b06a2ad7}} 
+\index{backend.Tile@{backend.Tile}!getW@{getW}}
+\index{getW@{getW}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{getW()}{getW()}}
+{\footnotesize\ttfamily static int backend.\+Tile.\+getW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Statikus get függvény a cella szélességének lekérdezésére. \mbox{\Hypertarget{classbackend_1_1_tile_a84be183cbf2c022416b1004ee90d8462}\label{classbackend_1_1_tile_a84be183cbf2c022416b1004ee90d8462}} 
+\index{backend.Tile@{backend.Tile}!isFlagged@{isFlagged}}
+\index{isFlagged@{isFlagged}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{isFlagged()}{isFlagged()}}
+{\footnotesize\ttfamily boolean backend.\+Tile.\+is\+Flagged (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Meg van-\/e jelölve a cella \mbox{\Hypertarget{classbackend_1_1_tile_ad5e347216ba3051fff783d88a784be10}\label{classbackend_1_1_tile_ad5e347216ba3051fff783d88a784be10}} 
+\index{backend.Tile@{backend.Tile}!loadIcon@{loadIcon}}
+\index{loadIcon@{loadIcon}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{loadIcon()}{loadIcon()}}
+{\footnotesize\ttfamily void backend.\+Tile.\+load\+Icon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Újratölti a cella ikonját. (Játék betöltésekor hasznos) Ha nincs felfedve, akkor ha meg van jelölve zászló, egyéb esetben sima cella lesz az ikonja. Ha fel van fedve, akkor a \mbox{\hyperlink{classbackend_1_1_tile_ab3fbc4b6a11af9d742d3919ac485204a}{change\+Icon()}} függvényt hívja meg. \mbox{\Hypertarget{classbackend_1_1_tile_a7eed35e64f63488047fbbe7cb585cd53}\label{classbackend_1_1_tile_a7eed35e64f63488047fbbe7cb585cd53}} 
+\index{backend.Tile@{backend.Tile}!paintComponent@{paintComponent}}
+\index{paintComponent@{paintComponent}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{paintComponent()}{paintComponent()}}
+{\footnotesize\ttfamily void backend.\+Tile.\+paint\+Component (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+Cella kirajzolása. Egy négyzetes képet rajzol a cella megfelelő koordinátáira. 
+\begin{DoxyParams}{Paraméterek}
+{\em g} & \+: A grafikáért felelős paraméter. Az őt tároló \mbox{\hyperlink{classbackend_1_1_board}{Board}} adja át. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbackend_1_1_tile_a13953870b057b478805b584d92c2ef0d}\label{classbackend_1_1_tile_a13953870b057b478805b584d92c2ef0d}} 
+\index{backend.Tile@{backend.Tile}!reveal@{reveal}}
+\index{reveal@{reveal}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{reveal()}{reveal()}}
+{\footnotesize\ttfamily void backend.\+Tile.\+reveal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Cella felfedése. Elsősorban csökketi a tábla fedett mezőinek számát, aztán beállítja a megfelelő ikonját, valamint hogy fel van fedve már. 
+
+Újraimplementáló leszármazottak\+: \mbox{\hyperlink{classbackend_1_1_difused_bomb_ac134a81e6bc3989d3237836ab774d901}{backend.\+Difused\+Bomb}} és \mbox{\hyperlink{classbackend_1_1_bomb_a27df2a1a4b14d45029b72641356982ca}{backend.\+Bomb}}.
+
+\mbox{\Hypertarget{classbackend_1_1_tile_a0707fc91d3a8afbeb5a5cafc4dc0c0ef}\label{classbackend_1_1_tile_a0707fc91d3a8afbeb5a5cafc4dc0c0ef}} 
+\index{backend.Tile@{backend.Tile}!revealEnd@{revealEnd}}
+\index{revealEnd@{revealEnd}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{revealEnd()}{revealEnd()}}
+{\footnotesize\ttfamily void backend.\+Tile.\+reveal\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Végső felfedés. A játék végénél használatos, amikor a bombák miatt felrobban a pálya. Először csökkenti a fedett mezők számát, majd beállítja a megfelelő ikont. Ha meg volt jelölve egy sima cella, akkor egy áthúzott zászlót állít be ikonnak. 
+
+Újraimplementáló leszármazottak\+: \mbox{\hyperlink{classbackend_1_1_bomb_aeede4132c394386cd1dce310dde70519}{backend.\+Bomb}}.
+
+\mbox{\Hypertarget{classbackend_1_1_tile_a2c5bb5a284ef876dd16c59f0c50c27c6}\label{classbackend_1_1_tile_a2c5bb5a284ef876dd16c59f0c50c27c6}} 
+\index{backend.Tile@{backend.Tile}!setBombsAround@{setBombsAround}}
+\index{setBombsAround@{setBombsAround}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{setBombsAround()}{setBombsAround()}}
+{\footnotesize\ttfamily void backend.\+Tile.\+set\+Bombs\+Around (\begin{DoxyParamCaption}\item[{int}]{b }\end{DoxyParamCaption})}
+
+Beállítja a cella körüli bombák számát. 
+
+Újraimplementáló leszármazottak\+: \mbox{\hyperlink{classbackend_1_1_bomb_a57153317e31ddef9323538eadc2c8e7f}{backend.\+Bomb}}.
+
+\mbox{\Hypertarget{classbackend_1_1_tile_a53d950ead27e4c813ec045a6159a833d}\label{classbackend_1_1_tile_a53d950ead27e4c813ec045a6159a833d}} 
+\index{backend.Tile@{backend.Tile}!setCoords@{setCoords}}
+\index{setCoords@{setCoords}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{setCoords()}{setCoords()}}
+{\footnotesize\ttfamily void backend.\+Tile.\+set\+Coords (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Beállítja a cella koordinátáit a képernyőn. 
+\begin{DoxyParams}{Paraméterek}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbackend_1_1_tile_abc834983d2e5c5e065bcab5fc1e0250b}\label{classbackend_1_1_tile_abc834983d2e5c5e065bcab5fc1e0250b}} 
+\index{backend.Tile@{backend.Tile}!setFlagged@{setFlagged}}
+\index{setFlagged@{setFlagged}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{setFlagged()}{setFlagged()}}
+{\footnotesize\ttfamily void backend.\+Tile.\+set\+Flagged (\begin{DoxyParamCaption}\item[{boolean}]{b }\end{DoxyParamCaption})}
+
+Beállítja, hogy meg van-\/e jelölve a cella. A reset\+Flags-\/nél használatos \mbox{\Hypertarget{classbackend_1_1_tile_a94bdb43b556929bb185989e9eab5df19}\label{classbackend_1_1_tile_a94bdb43b556929bb185989e9eab5df19}} 
+\index{backend.Tile@{backend.Tile}!setRevealed@{setRevealed}}
+\index{setRevealed@{setRevealed}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{setRevealed()}{setRevealed()}}
+{\footnotesize\ttfamily void backend.\+Tile.\+set\+Revealed (\begin{DoxyParamCaption}\item[{boolean}]{b }\end{DoxyParamCaption})}
+
+Beállítja, hogy fel van-\/e fedve a cella. Legfőképp a pálya újrakezdésénél van haszna. 
+\begin{DoxyParams}{Paraméterek}
+{\em b} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Adattagok dokumentációja}
+\mbox{\Hypertarget{classbackend_1_1_tile_a6b4f014040a9aa344d17ef52cfce7df4}\label{classbackend_1_1_tile_a6b4f014040a9aa344d17ef52cfce7df4}} 
+\index{backend.Tile@{backend.Tile}!bombsAround@{bombsAround}}
+\index{bombsAround@{bombsAround}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{bombsAround}{bombsAround}}
+{\footnotesize\ttfamily int backend.\+Tile.\+bombs\+Around\hspace{0.3cm}{\ttfamily [protected]}}
+
+A körülötte lévő bombák száma. \mbox{\Hypertarget{classbackend_1_1_tile_a056d517170ae1063aefa5e8b095016bb}\label{classbackend_1_1_tile_a056d517170ae1063aefa5e8b095016bb}} 
+\index{backend.Tile@{backend.Tile}!icon@{icon}}
+\index{icon@{icon}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{icon}{icon}}
+{\footnotesize\ttfamily transient Image backend.\+Tile.\+icon\hspace{0.3cm}{\ttfamily [protected]}}
+
+A megjelenítendő ikonja. A játék menete során változik. \mbox{\Hypertarget{classbackend_1_1_tile_a4ba5c34d9a8bd0f4ac1dd52edde8a4fc}\label{classbackend_1_1_tile_a4ba5c34d9a8bd0f4ac1dd52edde8a4fc}} 
+\index{backend.Tile@{backend.Tile}!isFlagged@{isFlagged}}
+\index{isFlagged@{isFlagged}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{isFlagged}{isFlagged}}
+{\footnotesize\ttfamily boolean backend.\+Tile.\+is\+Flagged\hspace{0.3cm}{\ttfamily [protected]}}
+
+Meg van-\/e jelölve zászlóval. Ilyenkor nem lehet felfedni. \mbox{\Hypertarget{classbackend_1_1_tile_a5c02b18b4027ed9795f2d4c02b97f790}\label{classbackend_1_1_tile_a5c02b18b4027ed9795f2d4c02b97f790}} 
+\index{backend.Tile@{backend.Tile}!isRevealed@{isRevealed}}
+\index{isRevealed@{isRevealed}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{isRevealed}{isRevealed}}
+{\footnotesize\ttfamily boolean backend.\+Tile.\+is\+Revealed\hspace{0.3cm}{\ttfamily [protected]}}
+
+Fel van-\/e fedve már. Azért kell, hogy a felfedés flood-\/fill algoritmusa megálljon. \mbox{\Hypertarget{classbackend_1_1_tile_ad9b7596e319dbb517116868bed9d769e}\label{classbackend_1_1_tile_ad9b7596e319dbb517116868bed9d769e}} 
+\index{backend.Tile@{backend.Tile}!master@{master}}
+\index{master@{master}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{master}{master}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbackend_1_1_board}{Board}} backend.\+Tile.\+master\hspace{0.3cm}{\ttfamily [protected]}}
+
+Az őt tartalmazó tábla. \mbox{\Hypertarget{classbackend_1_1_tile_a2bb6b12438a68f6c85e8fb6bd1205026}\label{classbackend_1_1_tile_a2bb6b12438a68f6c85e8fb6bd1205026}} 
+\index{backend.Tile@{backend.Tile}!w@{w}}
+\index{w@{w}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily int backend.\+Tile.\+w = 25\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+A cellák szélessége (és egyben magassága) \mbox{\Hypertarget{classbackend_1_1_tile_ac56f4893d11d46666c43808d0b350129}\label{classbackend_1_1_tile_ac56f4893d11d46666c43808d0b350129}} 
+\index{backend.Tile@{backend.Tile}!x@{x}}
+\index{x@{x}!backend.Tile@{backend.Tile}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int backend.\+Tile.\+x\hspace{0.3cm}{\ttfamily [protected]}}
+
+A cella x és y koordinátája a képernyőn. 
+
+Ez a dokumentáció az osztályról a következő fájl alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+src/backend/Tile.\+java\end{DoxyCompactItemize}
