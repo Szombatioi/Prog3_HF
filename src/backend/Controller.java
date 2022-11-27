@@ -71,7 +71,7 @@ public class Controller {
 		 */
 		setSaveBtnEn(true); 
 		if(!needsResize) resetWindowSize();
-		else if(diff.rows() > 21 || diff.cols() > 29) {
+		else if(diff.rows() > 15 || diff.cols() > 29) {
 			int newW = (diff.cols()+1)*Tile.getW();
 			int newH = (diff.rows()+5)*Tile.getW();
 			setWindowSize(newW, newH);

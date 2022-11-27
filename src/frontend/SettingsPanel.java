@@ -21,17 +21,17 @@ import backend.Images;
  */
 public class SettingsPanel extends JPanel{
 	/**Az őt (is) irányító controller. */
-	Controller controller;
+	private Controller controller;
 	/**Legördülő lista a nehézség kiválasztására.*/
 	JComboBox<Difficulty> cb;
 	/**A sorok, oszlopok, bombák megadásáért felelős szövegdobozok előtti szövegek, illetve a fent megjelenő szöveg.*/
-	JLabel rowText, colText, bombText, titleText;
+	private JLabel rowText, colText, bombText, titleText;
 	/**A sorok oszlopok és bombák megadására használt szövegdobozok.*/
 	JTextField rowTextField,colTextField,bombTextField;
 	/**A menü, új játék és kilépés gombok.*/
-	JButton menuBtn, newGameBtn, exitBtn;
+	private JButton menuBtn, newGameBtn, exitBtn;
 	/**A kiválasztott nehézség.*/
-	Difficulty chosen;
+	private Difficulty chosen;
 	/**
 	 * A panel konstruktora. Beállítja a controllert, majd beállítja a grafikus elemeket és beállítja azok actionListener-jeit.
 	 * @param controller Az őt (is) irányító controller.

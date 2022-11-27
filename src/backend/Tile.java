@@ -112,8 +112,8 @@ public class Tile implements Serializable{
 	 */
 	public void reveal() {
 		master.decHiddenTiles();
-		icon = getCorrespondingIcon();
 		isRevealed = true;
+		icon = getCorrespondingIcon();
 	}
 	
 	/**
@@ -122,8 +122,8 @@ public class Tile implements Serializable{
 	 */
 	public void revealEnd() {
 		master.decHiddenTiles();
-		icon = isFlagged ? Images.flag2 : getCorrespondingIcon();
 		isRevealed = true;
+		icon = isFlagged ? Images.flag2 : getCorrespondingIcon();
 	}
 	
 	/**

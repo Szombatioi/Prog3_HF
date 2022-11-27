@@ -24,7 +24,7 @@ public class VictoryPanel extends JPanel {
 	/**A rekord leadásának gombja. Ha nem megfelelő hosszú a beírt név (min 1, max 33 hosszú), akkor hibaüzenetet dob.*/
 	private JButton submit;
 	/**A név beírására szolgáló szövegdoboz.*/
-	private JTextField nameTextField;
+	JTextField nameTextField;
 	/**Azt tárolja, hogy egyéni nehézségen játszottunk-e.*/
 	private boolean custom;
 	/**A játékos ideje.*/

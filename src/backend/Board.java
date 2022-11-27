@@ -16,7 +16,7 @@ public class Board implements Serializable{
 	/** A játék, ami tartalmazza őt.*/
 	Game game;
 	/**A rajta lévő cellák mátrixa*/
-	private Tile[][] tiles;
+	Tile[][] tiles;
 	/** Értékek a fedett cellákról, az elhelyezhető zászlókról, a hátralévő bombákról és az össz bombaszámról.*/
 	private int hiddenTiles, flagsLeft, bombsLeft, bombsNr;
 	/** A tábla sorainak és oszlopainak száma*/
@@ -86,6 +86,7 @@ public class Board implements Serializable{
 		cols = c;
 		
 		tiles = new Tile[cols][rows];
+		
 		for(int i = 0; i < tiles.length; i++) {
 			for(int j = 0; j < tiles[i].length; j++) {
 				tiles[i][j] = new Tile(this);
@@ -99,7 +100,6 @@ public class Board implements Serializable{
 	 */
 	public void generateBombs(int startBombNr) {
 		Random random = new Random();
-		
 		int c,r;
 		for(int i = startBombNr; i < bombsNr; i++) { //elsőre ez 0-tól indul, addMoreBombsnál meg a régi bombaszámtól
 			c = random.nextInt(cols);
@@ -255,7 +255,7 @@ public class Board implements Serializable{
 		int temp = bombsNr;
 		bombsNr += db;
 		bombsLeft += db;
-		generateBombs(temp); 
+		generateBombs(temp);
 		setBombsAroundNums();
 		loadImages();
 	}
@@ -283,4 +283,6 @@ public class Board implements Serializable{
 		g.setColor(Color.red);
 		g.drawString(((Integer)flagsLeft).toString(), 0, startY-10);
 	}
+
+	
 }
