@@ -84,7 +84,6 @@ public class MenuPanel extends JPanel{
 		});
 		loadBtn.addActionListener(a->{
 			controller.loadGame();
-			controller.setGameMenuBarEn(true);
 		});
 		settingsBtn.addActionListener(a -> {
 			controller.setPanel(new SettingsPanel(controller), false);

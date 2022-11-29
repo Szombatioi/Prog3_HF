@@ -192,5 +192,6 @@ public class Controller {
 		setPanel(g, true);
 		g.reload(g.getTime());
 		menuBar.setPauseBtnText(g.running() && game.started());
+		setGameMenuBarEn(true);
 	}
 }
